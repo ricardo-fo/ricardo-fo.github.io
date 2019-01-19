@@ -11,6 +11,7 @@ header {
 	width: 100%;
 	margin: auto;
 	height: 92vh;
+	min-height: 300px;
 	background: #000 url(../imagens/bg1.jpeg) no-repeat 50% 50%;
 	top: 0;
 	display: table;
@@ -23,19 +24,112 @@ header h1 {
 	font-family: 'Montserrat', sans-serif;
 }
 
+a:hover {
+	text-decoration: none;
+}
+
 .caixa-resumo {
 	width: 35%;
 	min-width: 300px;
 	max-width: 1080px;
 	padding: 20px;
 	background: rgba(50, 50, 50, 0.7);
-	/*overflow: hidden;*/
 	position: absolute;
-	top: 42%;
+	top: 40%;
 	left: 50%;
+	margin-top: 30px;
 	transform: translate(-50%, -50%);
 	border-radius: 10px;
 	box-shadow: 2px 2px 12px black;
+}
+
+/*Extra small devices (portrait phones, menor que 576px)*/
+@media (max-width: 575.98px) {
+	header {
+		height: 92vh;
+	}
+	nav {
+		height: 8vh;
+	}
+	body {
+		font-size: 0.7em;
+	}
+	h1 {
+		font-size: 0.7em;
+	}
+	.caixa-resumo {
+		height: 79vh;
+		margin-top: 4vh;
+		margin-bottom: 1vh;
+		width: 90%;
+	}
+	.caixa-conteudo {
+		height: 70vh;
+		margin-top: 70vh;
+	}
+	#contato h1 {
+		font-size: 3.8em;
+	}
+}
+
+/*Small devices (landscape phones, 576px e maiores)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	header {
+		height: 92vh;
+	}
+	nav {
+		height: 8vh;
+	}
+	body {
+		background: red;
+		font-size: 0.8em;
+	}
+	.caixa-resumo {
+		height: 65vh;
+		margin-top: 4vh;
+		margin-bottom: 1vh;
+		width: 70%;
+	}
+}
+
+/*Medium devices (tablets, 768px e maiores)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+	header {
+		height: 92vh;
+	}
+	nav {
+		height: 8vh;
+	}
+	body {
+		background: blue;
+		font-size: 0.9em;
+	}
+	.caixa-resumo {
+		height: 70vh;
+		margin-top: 4vh;
+		margin-bottom: 1vh;
+		width: 50%;
+	}
+}
+
+/*Large devices (desktops, 992px e maiores)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+		header {
+		height: 92vh;
+	}
+	nav {
+		height: 8vh;
+	}
+	body {
+		background: yellow;
+		font-size: 1em;
+	}
+	.caixa-resumo {
+		height: 79vh;
+		margin-top: 4vh;
+		margin-bottom: 1vh;
+		width: 40%;
+	}
 }
 
 .caixa-conteudo {
@@ -45,13 +139,30 @@ header h1 {
 	padding: 0;
 }
 
-.caixa-conteudo img {
-	margin-left: auto;
+.caixa-resumo img {
+	margin: auto;
+	display: block;
+	-moz-border-radius: 360px;
+	-ms-border-radius: 360px;
+	-o-border-radius: 360px;
+	-webkit-border-radius: 360px;
+	border-radius: 360px;
+}
+
+.caixa-resumo a {
+	color: #01c79c;
+	padding: 1px 3px;
+}
+
+.caixa-resumo a:hover {
+	border-bottom: 1px dashed #01c79c;
 }
 
 /*Configuração da barra de menu*/
 nav {
 	background-color: #212121;
+	width: 100%;
+	height: 8vh;
 }
 
 a#logo {
@@ -78,4 +189,25 @@ a.bordaLink:hover {
 	height: 100%;
 	width: 100%;
 	min-width: 200px;
+}
+
+/*Rodapé*/
+footer {
+	height: 92vh;
+	width: 100%;
+}
+
+#contato {
+	height: 87vh;
+	background: #00858a;
+}
+
+#contato h1 {
+	border-radius: 40px;
+	background: #000;
+}
+
+#copyright {
+	height: 5vh;
+	background: #000;
 }
