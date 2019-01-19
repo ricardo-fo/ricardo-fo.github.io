@@ -46,7 +46,9 @@ a:hover {
 /*Extra small devices (portrait phones, menor que 576px)*/
 @media (max-width: 575.98px) {
 	header {
-		height: 92vh;
+		height: 82vh;
+		background: #000;
+		opacity: 1;
 	}
 	nav {
 		height: 8vh;
@@ -114,7 +116,7 @@ a:hover {
 
 /*Large devices (desktops, 992px e maiores)*/
 @media (min-width: 992px) and (max-width: 1199.98px) {
-		header {
+	header {
 		height: 92vh;
 	}
 	nav {
@@ -163,8 +165,6 @@ nav {
 	background-color: #212121;
 	width: 100%;
 	height: 8vh;
-	position: fixed;
-	top: 0;
 }
 
 a#logo {
