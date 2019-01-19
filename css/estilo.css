@@ -61,6 +61,9 @@ a:hover {
 	h1 {
 		font-size: 3.7em;
 	}
+	#principal section h1 {
+		font-size: 2.4em;
+	}
 	.caixa-resumo {
 		display: inline-block;
 		margin-top: 4vh;
@@ -83,9 +86,6 @@ a:hover {
 @media (min-width: 576px) and (max-width: 767.98px) {
 	header {
 		height: 92vh;
-	}
-	nav {
-		height: 8vh;
 	}
 	body {
 		font-size: 0.8em;
