@@ -55,16 +55,16 @@ a:hover {
 		font-size: 0.7em;
 	}
 	h1 {
-		font-size: 0.7em;
+		font-size: 3.7em;
 	}
 	.caixa-resumo {
-		height: 79vh;
+		display: inline-block;
 		margin-top: 4vh;
 		margin-bottom: 1vh;
 		width: 90%;
 	}
 	.caixa-conteudo {
-		height: 70vh;
+		display: inline-block;
 		margin-top: 70vh;
 	}
 	#contato h1 {
@@ -163,6 +163,8 @@ nav {
 	background-color: #212121;
 	width: 100%;
 	height: 8vh;
+	position: fixed;
+	top: 0;
 }
 
 a#logo {
