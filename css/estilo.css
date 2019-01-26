@@ -11,9 +11,67 @@ a {
 	text-decoration: none;
 }
 
+#btn a {
+	width: 60px;
+	height: 30px;
+	display: block;
+	border-radius: 100px;
+	position: relative;
+}
+
+#btn a.btn-pt {
+	background: #3E8F48 url(../img/pt.png) no-repeat;
+	background-size: 20px;
+	background-position: right;
+}
+
+#btn a.btn-eng {
+	background: #821F18 url(../img/eng.png) no-repeat;
+	background-size: 20px;
+	background-position: left;
+}
+
+#btn a:after {
+	content: '';
+	position: absolute;
+	top: 1px;
+	width: 25px;
+	height: 25px;
+	background: #fff;
+	border-radius: 90px;
+	transition: 0.2s;
+}
+
+#btn a.btn-pt:after {
+	left: 3px;
+}
+
+#btn a.btn-eng:after {
+	right: 3px;
+}
+
+#btn a.btn-pt:active {
+	background: #821F18;
+}
+
+#btn a.btn-eng:active {
+	background: #3E8F48;
+}
+
+#btn a.btn-pt:active:after {
+	left: 100%;
+	transform: translateX(-100%);
+}
+
+#btn a.btn-eng:active:after {
+	right: 100%;
+	transform: translateX(100%);
+}
+
+
 #home {
 	height: 92vh;
-	background: #212121 url(../img/bg.jpg) no-repeat;
+	/*background: #212121 url(../img/bg.jpg) no-repeat;*/
 	background-size: cover;
 	background-attachment: fixed;
 	width: 100%;
