@@ -1,0 +1,77 @@
+.featured-braven {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 2;
+    justify-content: space-between;
+    padding-bottom: var(--spacing-very-big);
+    padding-left: 32px;
+}
+
+.featured-braven > .action {
+    display: block;
+    text-indent: -9999px;
+    height: 82px;
+    width: 82px;
+    border: 3px solid var(--color-first);
+    border-radius: 50%;
+    position: relative;
+    transition: transform 200ms linear, background-color 200ms linear;
+}
+
+.featured-braven > .action::before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-15%, -50%);
+    width: 0px;
+    height: 0px;
+    border-left: 18px solid var(--color-first);
+    border-top: 20px solid transparent;
+    border-right: 18px solid transparent;
+    border-bottom: 20px solid transparent;
+}
+
+.featured-braven > .action:hover,
+.featured-braven > .action:focus {
+    transform: scale(1.05);
+    background-color: var(--color-zero-light);
+}
+
+.featured-braven > .title {
+    display: inline-block;
+    font-weight: 900;
+    font-size: 1.176em;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: var(--color-first);
+    transform-origin: left top;
+    transform: rotate(-90deg) translate(-100px, 30px);
+}
+
+.featured-braven > .subtitle {
+    font-size: 1.7em;
+    font-weight: 900;
+    font-style: italic;
+    color: var(--color-second);
+}
+
+.featured-braven > .subtitle > strong {
+    display: block;
+    font-style: normal;
+    font-size: 1.47em;
+    color: var(--color-first);
+}
+
+.featured-braven > .subtitle > span {
+    background: url("../../img/star.svg") no-repeat left center;
+    background-size: 25px;
+    padding-left: 30px;
+}
+
+.featured-braven > .subtitle > small {
+    font-size: 1rem;
+    color: var(--color-first-light);
+    letter-spacing: 0.029em;
+}

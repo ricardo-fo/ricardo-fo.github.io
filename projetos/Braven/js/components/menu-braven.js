@@ -1,6 +1,5 @@
 // IIFE
 /* Funcionalidade: fazer o menu animado
-** Passo a passo:
  * 1. Pegar o menu hamburguer; (OK)
  * 2. Adicionar um evento de click no menu; (OK)
  * 3. Pegar o items; (OK)
