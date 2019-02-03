@@ -8,8 +8,8 @@
         <!-- Normalize CSS -->
         <link rel="stylesheet" type="text/css" href="css/normalize.css">
 
-        <!-- CSS customizado -->
-        <link rel="stylesheet" type="text/css" href="css/estilo.css">
+        <!-- CSS customizado 
+        <link rel="stylesheet" type="text/css" href="css/estilo.css">-->
 
         <!-- Bootstrap CSS -->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -20,84 +20,74 @@
         <!-- Fonts Google -->
         <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow|Raleway" rel="stylesheet">
 
+        <link rel="icon" href="img/favicon.png">
+
         <title>Ricardo Oliveira</title>
     </head>
+
     <body>
 
-        <header id="home" class="bg-danger"><!-- Home -->
+        <header id="home">
 
-            <div class="w-100 border-bottom border-dark" id="container-principal"><!-- container-principal -->
-                <div class="container h-100 text-white flex-nowrap"><!-- Container responsivo -->
+            <!-- MENU DE NAVEGAÇÃO -->
+            <nav class="navbar navbar-expand-sm navbar-dark fixed-top">
+                <div class="container-fluid bg-danger">
 
-                    <div class="row h-75"><!-- Apresentação -->
-                        <div class="col-md-10 col-12 d-flex">
-                            <div class="align-self-center">
+                    <a href="#" class="navbar-brand">
+                        <img src="img/logo.png" width="95" class="img-fluid">
+                    </a>
+                    <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
 
-                                <h3 class="d-inline-block pr-2 font-h3 my-4 text-info">Ricardo Oliveira</h3>
-
-                                <div class="col-md-11 col-12">
-                                    <p class="text-justify pr-4">
-                                        Sou estudante de 
-                                        <span class="text-info">
-                                            Ciência da Computação
-                                        </span>
-                                        pela <a class="text-white px-1" href="https://www.unisantos.br" target="_blank">Universidade Católica de Santos</a>.
-                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-                                    </p>
-                                    
-                                </div>
-                            </div>
-                        </div> 
-                    </div><!-- Fim apresentação -->
-
-                    <div class="row"><!-- Botão de rolagem -->
-                        <div class="col-6 offset-3 d-flex">
-                            <div class="align-self-end text-center mb-4 w-100">
-                                <a class="btn btn-outline-light btn-lg rounded-circle" href="#educacao">
-                                    <i class="fas fa-angle-down" alt="botão descer"></i>
-                                </a>
-                            </div>
-                        </div>  
-                    </div><!-- Fim botão de rolagem -->
-
-                </div><!-- Fim do container responsivo -->
-            </div><!-- Fim container-principal -->
-            
-        </header><!-- Fim home -->
-
-        <nav class="navbar navbar-expand-sm navbar-dark sticky-top">
-            <div class="container-fluid">
-                <a href="#home" class="navbar-brand">Ricardo Oliveira</a>
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="nav-principal">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#educacao">Educação</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#conhecimentos">Conhecimentos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#projetos">Projetos</a>
-                        </li>
-                        <li class="nav-item mr-3">
-                            <a class="nav-link" href="#contato">Contato</a>
-                        </li>
-                    </ul>
-
-                    <div id="btn">
-                        <a href="en.html" class="btn btn-pt" role="button" aria-pressed="true">
-                            <span class="sr-only">Idioma: português</span>
-                        </a>
+                    <div class="collapse navbar-collapse bg-success" id="nav-principal">
+                        <ul class="navbar-nav ml-auto col-6 bg-warning">
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#educacao">Sobre</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#conhecimentos">Habilidades</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#projetos">Projetos</a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="#contato">Contato</a>
+                            </li>
+                            <li class="nav-item mr-3">
+                                <a class="nav-link" href="#contato">Idioma</a>
+                            </li>
+                        </ul>
+                        <!--
+                        <div id="btn">
+                            <a href="en.html" class="btn btn-pt" role="button" aria-pressed="true">
+                                <span class="sr-only">Idioma: português</span>
+                            </a>
+                        </div>-->
                     </div>
                 </div>
+            </nav>
+
+            <div class="container-fluid container-preloader">
+                <div class="container caixa-preloader">
+
+                    <div class="row row-preloader">
+                        <div class="col-12 col-md-10 offset-md-1 column-preloader">
+
+                            <div class="texto">
+                                <span class="verde">Home<span class="cinza">:</span><span class="azul">~</span><span class="cinza">$</span></span>
+                                <p class="anim-typewriter">Ricardo Oliveira...</p>
+                            </div>
+
+                        </div>                        
+                    </div><!-- fim row -->
+
+                </div>
             </div>
-        </nav>
+        </header>
 
         <section class="pt-5 mt-5 bg-danger" id="educacao"><!-- início da seção home -->
             <div class="container bg-success">
@@ -145,7 +135,7 @@
             </div>
         </section><!-- fim seção saiba -->
 
-        <section class=""><!-- início seção juros -->
+        <section class=""><!-- início seção juros -->>
             <div class="container">
                 <div class="row">
                      <div class="col-md-6">

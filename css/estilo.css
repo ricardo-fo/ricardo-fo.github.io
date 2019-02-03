@@ -1,76 +1,32 @@
-html, body {
+/*Layout*/
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+html {
 	scroll-behavior: smooth;
-	font-size: 1em;
-	font-family: 'PT Sans Narrow', sans-serif;
+	overflow-x: hidden;
+	font-size: 16px;
 }
 
-p {
-	font-family: 'PT Sans Narrow', sans-serif;
-	letter-spacing: 1px;
-	line-height: 27px;
+body {
+	font-size: 16px;
+	font-family: 'Roboto', sans-serif;
+	width: 100vw;
+	height: 100vh;
 }
+/**********************************************************/
 
-.font-h3 {
-	font-family: 'Raleway', sans-serif;
-	font-weight: lighter;
-	text-transform: uppercase;
-	letter-spacing: 1px;
-}
-
-/*Extra small devices (portrait phones, menor que 576px)*/
-@media (max-width: 575.98px) {
-    html {
-        font-size: 1.2em;
-    }
-}
-
-/*Small devices (landscape phones, 576px e maiores)*/
-@media (min-width: 576px) and (max-width: 767.98px) {
-    html {
-        font-size: 1.4em;
-    }
-}
-
-/*Medium devices (tablets, 768px e maiores)*/
-@media (min-width: 768px) and (max-width: 991.98px) {
-    html {
-        font-size: 1.6em;
-    }
-    .font-h3 {
-    	font-size: 10em;
-    }
-}
-
-/*Large devices (desktops, 992px e maiores)*/
-@media (min-width: 992px) and (max-width: 1199.98px) {
-    html {
-        font-size: 1.8em;
-    }
-    .font-h3 {
-    	font-size: 10em;
-    }
-}
-
-/*Extra large devices (large desktops, 1200px  e maiores)*/
-@media (min-width: 1200px) {
-    html {
-    	font-size: 1.3em;
-    }
-    .font-h3 {
-    	font-size: 3.2em;
-    }
-}
-
-
-a {
-	text-decoration: none;
+/*Cabeçalho*/
+header {
+	height: 100%;
+	width: 100%;
 }
 
 /*Barra de navegação*/
 nav {
 	background: #000;
-	width: 100%;
-	font-size: 0.8em;
+	font-size: 16px;
+	border-bottom: 1px solid #212121;
+	width: 100vw;
 }
 
 #btn a {
@@ -100,16 +56,16 @@ nav {
 	width: 25px;
 	height: 25px;
 	background: #fff;
-	border-radius: 90px;
+	border-radius: 50%;
 	transition: 0.2s;
 }
 
 #btn a.btn-pt:after {
-	left: 3px;
+	left: 2px;
 }
 
 #btn a.btn-eng:after {
-	right: 3px;
+	right: 2px;
 }
 
 #btn a.btn-pt:active {
@@ -130,10 +86,161 @@ nav {
 	transform: translateX(100%);
 }
 
-/*Apresentação*/
+/*Preloader*/
+.container-preloader {
+	background-color: #000;
+	height: 100%;
+	width: 100%;
+}
+
+.caixa-preloader,
+.row-preloader {
+	height: 100%;
+}
+
+.column-preloader {
+	display: flex;
+	justify-content: center;
+}
+
+.container-preloader .texto {
+	display: inline-block;
+	position: absolute;
+	bottom: 30%;
+	left: 0;
+	margin: 0 auto;
+	padding-top: 1em;
+
+	color: rgba(255, 255, 255, 0.75);
+	font-family: "Lucida Sans Typewriter", "Lucida Console", monospace;
+	line-height: 0.5em;
+
+	white-space: nowrap;
+	border-right: 30px solid rgba(255, 255, 255, 0.75);
+	overflow: hidden;
+	transform: translateY(-50%);
+	animation: blinkTextCursor 850ms steps(40) infinite normal;
+}
+
+.container-preloader span.verde {
+	color: #71D426;
+	letter-spacing: 2px;
+}
+
+.container-preloader span.azul {
+	color: #4A53A4;
+}
+
+.container-preloader span.cinza {
+	color: #707070;
+}
+
+/*Animação*/
+.container-preloader .anim-typewriter {
+	display: inline-block;
+	animation: typewriter 3s steps(40) 0.2s 1 normal both;
+}
+
+@keyframes typewriter {
+	from {
+		width: 0;
+	}
+	to {
+		width: 11.5em;
+	}
+}
+
+@keyframes blinkTextCursor {
+	from {
+		border-right-color: rgba(255, 255, 255, 0.75);
+	}
+	to {
+		border-right-color: transparent;
+	}
+}
+/*****************************************************/
+/*
+p {
+	font-family: 'PT Sans Narrow', sans-serif;
+	letter-spacing: 1px;
+	line-height: 27px;
+}
+
+.font-h3 {
+	font-family: 'Raleway', sans-serif;
+	font-weight: lighter;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+
+/*Extra small devices (portrait phones, menor que 576px)*/
+@media (max-width: 575.98px) {
+    html {
+        font-size: 1.2em;
+    }
+    .texto {
+    	font-size: 1em;
+    }
+}
+
+/*Small devices (landscape phones, 576px e maiores)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    html {
+        font-size: 1.4em;
+    }
+    .texto {
+    	font-size: 1.2em;
+    }
+}
+
+/*Medium devices (tablets, 768px e maiores)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    html {
+        font-size: 1.6em;
+    }
+    .font-h3 {
+    	font-size: 10em;
+    }
+    .texto {
+    	font-size: 1.2em;
+    }
+}
+
+/*Large devices (desktops, 992px e maiores)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    html {
+        font-size: 1.8em;
+    }
+    .font-h3 {
+    	font-size: 10em;
+    }
+    .texto {
+    	font-size: 1.4em;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px  e maiores)*/
+@media (min-width: 1200px) {
+    html {
+    	font-size: 1.3em;
+    }
+    .font-h3 {
+    	font-size: 3.2em;
+    }
+    .texto {
+    	font-size: 2.7em;
+    }
+}
+
+
+a {
+	text-decoration: none;
+}
+
+/*Apresentação*
 #home {
 	height: 92vh;
-	/*background: #212121 url(../img/bg.jpg) no-repeat;*/
+	/*background: #212121 url(../img/bg.jpg) no-repeat;*
 	background-size: cover;
 	background-attachment: fixed;
 	width: 100%;
@@ -159,11 +266,11 @@ nav {
 	border-bottom-right-radius: 10px;
 }
 
-/*Rodapé*/
+/*Rodapé*
 footer {
 	height: 92vh;
 }
 
 #copyright {
 	background: #000;
-}
+}*/
