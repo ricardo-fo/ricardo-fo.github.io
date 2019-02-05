@@ -1,0 +1,31 @@
+/*Media queries para menu responsivo*/
+
+/*Extra small devices (portrait phones, menor que 576px)*/
+@media (max-width: 575.98px) {
+    .barra-navegacao .muda-menu {
+    	background-color: var(--color-negative-light);
+    }
+    .muda-menu > li.linha {
+		line-height: 15px;
+		text-align: center;
+	}
+}
+
+/*Small devices (landscape phones, 576px e maiores)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .barra-navegacao .muda-menu {
+    	background-color: var(--color-negative-light);
+    }
+    .muda-menu > li.linha {
+		line-height: 15px;
+		text-align: center;
+	}
+}
+
+.muda-menu a.linkmenu {
+	color: var(--color-zero-light);
+}
+
+.muda-menu a.linkmenu:hover {
+	color: var(--color-zero);
+}

@@ -1,0 +1,13 @@
+:root {
+	--color-zero: #FFF;
+	--color-zero-light: rgba(255, 255, 255, 0.6);
+	--color-negative: #000;
+	--color-negative-light: rgba(0, 0, 0, 0.9);
+
+	--color-first: #343A48;
+	--color-first-light: #616774;
+	--color-second: #68BAC6;
+	--color-second-light: #B2D9DF;
+
+	--home-hover: #222;
+}

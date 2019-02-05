@@ -1,0 +1,157 @@
+/*FONTES*/
+/*Montserrat*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900');
+
+/*Roboto Mono*/
+@import url('https://fonts.googleapis.com/css?family=Roboto+Mono:300,400');
+/********************************************************/
+
+/*Layout*/
+html,
+body, {
+	margin: 0;
+	padding: 0;
+	height: 100vh;
+	width: 100vw;
+}
+
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px;
+	color: var(--color-zero);
+}
+
+/*Headings*/
+h1,
+h2,
+h3,
+h4 {
+	margin: 0;
+	padding: 0;
+}
+
+h1.titulo {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 80px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+	color: var(--color-zero);
+}
+
+h2.subtitulo {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 10px;
+	font-weight: lighter;
+	text-transform: uppercase;
+	color: var(--color-zero);
+
+	display: inline-block;
+}
+
+h3.subtitulo2 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 52px;
+	font-weight: lighter;
+	text-transform: uppercase;
+	color: var(--color-zero);
+}
+
+h4.subtitulo3 {
+	font-family: 'Montserrat', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+
+	display: inline-block;
+}
+
+/*Headings responsivos*/
+/*Extra small devices (portrait phones, menor que 576px)*/
+@media (max-width: 575.98px) {
+    h1.titulo {
+    	font-size: 1.8em;
+    	letter-spacing: 0.1em;
+    }
+    h3.subtitulo2 {
+    	font-size: 1.8em;
+    }
+    h4.subtitulo3 {
+    	font-size: 1em;
+    }
+}
+
+/*Small devices (landscape phones, 576px e maiores)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+	h1.titulo {
+    	font-size: 1.9em;
+    	letter-spacing: 0.2em;
+    }
+    h3.subtitulo2 {
+    	font-size: 1.9em;
+    }
+    h4.subtitulo3 {
+    	font-size: 1.2em;
+    }
+}
+
+/*Medium devices (tablets, 768px e maiores)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    h1.titulo {
+    	font-size: 2.5em;
+    	letter-spacing: 0.2em;
+    }
+    h3.subtitulo2 {
+    	font-size: 2em;
+    }
+    h4.subtitulo3 {
+    	font-size: 1.3em;
+    }
+}
+
+/*Large devices (desktops, 992px e maiores)*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    h1.titulo {
+    	font-size: 3.5em;
+    	letter-spacing: 0.2em;
+    }
+    h3.subtitulo2 {
+    	font-size: 2.3em;
+    }
+    h4.subtitulo3 {
+    	font-size: 1.4em;
+    }
+}
+
+/*Extra large devices (large desktops, 1200px  e maiores)*/
+@media (min-width: 1200px) {
+
+}
+
+
+/*Links*/
+a {
+	text-decoration: none;
+	color: var(--color-zero);
+}
+
+a:hover {
+	color: var(--color-negative);
+}
+
+/*Listas*/
+ul {
+	list-style: none;
+}
+
+li {
+	margin: 0;
+	padding: 0;
+}
