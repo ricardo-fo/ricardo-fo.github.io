@@ -75,10 +75,24 @@ h4.subtitulo3 {
 
 /*Headings responsivos*/
 /*Extra small devices (portrait phones, menor que 576px)*/
-@media (max-width: 575.98px) {
+@media (max-width: 374.98px) {
     h1.titulo {
-    	font-size: 1.8em;
-    	letter-spacing: 0.1em;
+    	font-size: 1.5em;
+    	letter-spacing: 0.05em;
+    }
+    h3.subtitulo2 {
+    	font-size: 1.5em;
+    }
+    h4.subtitulo3 {
+    	font-size: 0.8em;
+    }
+}
+
+/*Extra small devices (portrait phones, menor que 576px)*/
+@media (min-width: 375px) and (max-width: 575.98px) {
+    h1.titulo {
+    	font-size: 1.9em;
+    	letter-spacing: 0.05em;
     }
     h3.subtitulo2 {
     	font-size: 1.8em;
@@ -137,13 +151,13 @@ h4.subtitulo3 {
 
 
 /*Links*/
-a {
+a.link {
 	text-decoration: none;
 	color: var(--color-zero);
 }
 
-a:hover {
-	color: var(--color-negative);
+a.link:hover {
+	color: var(--color-negative-light);
 }
 
 /*Listas*/

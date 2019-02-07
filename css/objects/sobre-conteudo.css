@@ -1,0 +1,36 @@
+.sobre-conteudo .caixa-esquerda {
+	background-color: var(--color-second);
+}
+
+.sobre-conteudo .caixa-direita {
+	background-color: var(--color-first);
+}
+
+.sobre-conteudo .padding-top {
+	padding-top: 60px;
+}
+
+.sobre-conteudo .textoadicional {
+	font-size: 10px;
+	font-style: italic;
+}
+
+.sobre-conteudo .textosobre {
+	font-size: 1.2em;
+}
+
+.sobre-conteudo .destaquesobre {
+	color: var(--color-first-light);
+}
+
+.sobre-conteudo a {
+	color: var(--color-zero);
+}
+
+.sobre-conteudo a:hover {
+	color: var(--color-zero);
+}
+
+.sobre-conteudo .linkexterno {
+	font-size: 14px;
+}

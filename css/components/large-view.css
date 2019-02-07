@@ -7,11 +7,20 @@
     .container-principal .caixa-direita {
     	height: 100vh;
     }
+    .container-principal .caixa-esquerda {
+    	height: 100vh;
+    }
 }
 
 /*Extra large devices (large desktops, 1200px  e maiores)*/
 @media (min-width: 1200px) {
     .container-principal .large-view {
+    	height: 100vh;
+    }
+    .container-principal .caixa-direita {
+    	height: 100vh;
+    }
+    .container-principal .caixa-esquerda {
     	height: 100vh;
     }
 }

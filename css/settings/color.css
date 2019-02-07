@@ -3,6 +3,8 @@
 	--color-zero-light: rgba(255, 255, 255, 0.6);
 	--color-negative: #000;
 	--color-negative-light: rgba(0, 0, 0, 0.9);
+	--color-medium: #666;
+	--color-medium-light: rgba(150, 150, 150, 0.7);
 
 	--color-first: #343A48;
 	--color-first-light: #616774;
