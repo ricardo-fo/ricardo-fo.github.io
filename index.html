@@ -27,6 +27,7 @@
         <!-- Objects -->
         <link rel="stylesheet" type="text/css" href="css/objects/home-conteudo.css">
         <link rel="stylesheet" type="text/css" href="css/objects/sobre-conteudo.css">
+        <link rel="stylesheet" type="text/css" href="css/objects/habilidades-conteudo.css">
 
 
         <!-- Bootstrap CSS -->
@@ -82,9 +83,12 @@
                             <a class="nav-link dropdown-toggle linkmenu" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Idioma</a>
 
                             <div class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
-                                <a class="dropdown-item active bg-dark" href="">Português</a>
-                                
-                                <a class="dropdown-item" href="">Inglês</a>
+                                <button class="dropdown-item bg-dark disabled" type="button">
+                                    <span class="text-white">Português</span>
+                                </button>
+                                <button class="dropdown-item" type="button">
+                                    <a class="linkdropdown" href="english.html">English</a>
+                                </button>
                             </div>
                         </li>
                         <!-- Fim botão dropdown -->
@@ -101,9 +105,11 @@
         <div class="botoes-laterais">
             <a class="link js-prev js-scroll-to anterior" href="#">
                 <img src="img/seta-anterior.png" width="10" class="img-fluid">
+                <span class="sr-only">Anterior</span>
             </a>
             <a class="link js-next proximo" href="#">
                 <img src="img/seta-proximo.png" width="10" class="img-fluid">
+                <span class="sr-only">Próximo</span>
             </a>
         </div>
         <!-- FIM BOTÕES PRÓXIMO E ANTERIOR -->
@@ -133,9 +139,11 @@
                         <!-- Botão conheça -->
                         <div class="row botao">
                             <div class="col-6 offset-3 col-md-4 offset-md-4 col-lg-2 offset-lg-5">
-                                <h2 class="subtitulo conheca">
-                                    <a class="linkconheca" href="#sobre">Conheça o meu trabalho</a>
-                                </h2>
+                                <button class="btn conheca" type="button">
+                                    <h2 class="subtitulo">
+                                        <a class="linkconheca" href="#sobre">Conheça o meu trabalho</a>
+                                    </h2>
+                                </button>
                             </div>
                         </div>
                         <!-- Fim botão conheça -->
@@ -174,7 +182,7 @@
                                             <h4 class="subtitulo3 mr-1">Universidade</h4>
                                             <span class="textoadicional">2018 - previsão 2021</span>
                                             <div class="col-12 m-0 p-0 text-justify text-md-left">
-                                                <p class="textosobre">Sou estudante de <span class="destaquesobre">Ciência da Computação</span> pela 
+                                                <p class="texto">Sou estudante de <span class="destaquesobre">Ciência da Computação</span> pela 
                                                 <a href="https://www.unisantos.br" target="_blank">     Universidade Católica Santos
                                                 <i class="fas fa-external-link-alt linkexterno"></i>
                                                 </a>; ingressei no curso de bacharelado em janeiro de 2018.</p>
@@ -187,7 +195,7 @@
                                             <h4 class="subtitulo3 mr-1">Inglês</h4>
                                             <span class="textoadicional">Intermediário</span>
                                             <div class="col-12 m-0 p-0 text-justify text-md-left">
-                                                <p class="textosobre">Estudo inglês na rede de ensino de idiomas <a href="https://www.wizard.com.br" target="_blank">
+                                                <p class="texto">Estudo inglês na rede de ensino de idiomas <a href="https://www.wizard.com.br" target="_blank">
                                                 Wizard
                                                 <i class="fas fa-external-link-alt linkexterno"></i>
                                                 </a>. Tendo dado início às aulas no segundo semestre de 2018. Porém, antes do curso, eu já estudava o idioma e pude pular alguns anos de curso.</p>
@@ -215,25 +223,18 @@
 
                                         <!-- Texto 1 -->
                                         <div class="col-lg-11 col-12 text-left text-md-right">
-                                            <h4 class="subtitulo3 ml-1">Universidade</h4>
+                                            <h4 class="subtitulo3 ml-1">Conquistas</h4>
                                             <div class="col-12 m-0 p-0 text-justify text-md-right">
-                                                <p class="textosobre">Sou estudante de <span class="destaquesobre">Ciência da Computação</span> pela 
-                                                <a href="https://www.unisantos.br" target="_blank">Universidade Católica Santos
-                                                <i class="fas fa-external-link-alt linkexterno"></i>
-                                                </a>; ingressei no curso de bacharelado em janeiro de 2018.</p>
+                                                <p class="texto">Fui classificado para a fase Estadual da XX Olimpíada Brasileira de Informática, OBI, na Modalidade Programação, nível Sênior.</p>
                                             </div>
                                         </div>
                                         <!-- Fim texto 1 -->
 
                                         <!-- Texto 2 -->
                                         <div class="col-lg-11 col-12 text-left text-md-right">
-                                            <h4 class="subtitulo3 ml-1">Inglês</h4>
+                                            <h4 class="subtitulo3 ml-1">Objetivos</h4>
                                             <div class="col-12 m-0 p-0 text-justify text-md-right">
-                                                <p class="textosobre">Estudo inglês na rede de ensino de idiomas 
-                                                <a href="https://www.wizard.com.br" target="_blank">Wizard
-                                                <i class="fas fa-external-link-alt linkexterno"></i>
-                                                </a>
-                                                . Tendo dado início às aulas no segundo semestre de 2018. Porém, antes do curso, eu já estudava o idioma.</p>
+                                                <p class="texto">Pretendo poder contribuir com o que sei e ser lembrado por ter feito parte dessa conquista.</p>
                                             </div>
                                         </div>
                                         <!-- Fim texto 2 -->
@@ -250,9 +251,255 @@
                 </div>
             </section>
             <!-- FIM SEÇÃO SOBRE -->
+
+            <!-- SEÇÃO PARA QUEBRA DE DIVS EM MOBILES -->
+            <section class="d-block d-md-none bg-pattern">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <img class="img-fluid" src="img/divisor.png" width="350">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- FIM SEÇÃO PARA QUEBRA DE DIVS EM MOBILES -->
+
+            <!-- SEÇÃO HABILIDADES -->
+            <section id="habilidades" class="large-view">
+                <div class="container-fluid habilidades-conteudo">
+                    <div class="row">
+
+                        <!-- Caixa esquerda -->
+                        <div class="col-12 col-lg-6 padding-top caixa-esquerda">
+                            <div class="container">
+                                <div class="row">
+
+                                    <!-- Conteúdo esquerda -->
+                                    <div class="col-lg-11 col-12">
+                                        <h3 class="subtitulo2">Habilidades</h3>
+
+                                        <!-- Texto 1 -->
+                                        <div class="col-lg-11 col-12 text-left">
+                                            <h4 class="subtitulo3">Conhecimentos</h4>
+                                            <div class="col-12 m-0 p-0 text-justify text-md-left">
+                                                <p class="texto pb-2 border-bottom border-white text-justify">Os conhecimentos ao lado são de níveis diferentes e podem ser verificados em meus repositórios no GitHub.</p>
+                                            </div>
+                                        </div>
+                                        <!-- Fim texto 1 -->
+
+                                        <!-- Texto 2 -->
+                                        <div class="col-lg-11 col-12 text-md-left mt-5">
+                                            <h4 class="subtitulo3">Cursos</h4>
+                                            <div class="col-12 m-0 p-0">
+                                                <p class="texto-menor text-justify">Alguns dos cursos profissionalizantes que cursei, e outros que estou cursando:</p>
+
+                                                <h5 class="subtitulo4">Desenvolvimento Web</h5><span class="textoadicional ml-2">107 horas - em andamento</span>
+                                                <p class="texto-menor text-justify">São agrupados 20 cursos, que vão desde desenvolvimento front-end até o back-end, e 20 projetos.</p>
+
+                                                <h5 class="subtitulo4">Treinamento OBI - Programação C</h5><span class="textoadicional ml-2">30 horas - 03/2018 à 05/2018</span>
+                                                <p class="texto-menor text-justify">Oferecido pela Universidade Católica de Santos, o curso abordou desde conceitos básicos até funções e estruturas. <a href="https://www.dropbox.com/s/s0g71nqlb4a093j/comprovante-treinamento.pdf?dl=0" target="_blank" class="link-certificado">Certificado <i class="fas fa-external-link-alt linkexterno"><span class="sr-only">Link externo</span></i></a></p>
+
+                                                <h5 class="subtitulo4">Fundamentos do Design Gráfico</h5><span class="textoadicional ml-2">6 horas - 12/2018</span>
+                                                <p class="texto-menor text-justify">Com tópicos que variam desde Teoria das Cores até editores de imagem, o curso ofereceu noções fundamentais do design gráfico. <a href="https://www.dropbox.com/s/d585dxim1fa213q/fundacao_bradesco_fundamentos_design_grafico_paisagem.pdf?dl=0" target="_blank" class="link-certificado">Certificado <i class="fas fa-external-link-alt"><span class="sr-only">Link externo</span></i></a></p>
+                                            </div>
+                                        </div>
+                                        <!-- Fim texto 2 -->
+
+                                    </div>
+                                    <!-- Fim conteúdo esquerda -->
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Fim caixa esquerda -->
+
+
+                        <!-- Caixa direita -->
+                        <div class="col-12 col-lg-6 padding-top caixa-direita">
+
+                            <div class="container-fluid">
+
+                                <!-- Habilidades -->
+                                <div class="row">
+
+                                    <!-- C -->
+                                    <div class="col-12 col-md-4">
+                                        <div class="col-10 offset-1">
+                                            <div class="caixa-habilidades">
+                                                <div class="caixaimg">
+                                                    <span class="font-weight-bold">C</span>
+                                                </div>
+                                                <div class="caixatexto">
+                                                    <h6 class="subtitulo5">C18</h6>
+                                                    <p class="texto-nano">Avançado</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fim C -->
+
+                                    <!-- HTML -->
+                                    <div class="col-12 col-md-4">
+                                        <div class="col-10 offset-1">
+                                            <div class="caixa-habilidades">
+                                                <div class="caixaimg">
+                                                    <i class="fab fa-html5"></i>
+                                                </div>
+                                                <div class="caixatexto">
+                                                    <h6 class="subtitulo5">HTML5</h6>
+                                                    <p class="texto-nano">Intermediário</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fim HTML -->
+
+                                    <!-- CSS -->
+                                    <div class="col-12 col-md-4">
+                                        <div class="col-10 offset-1">
+                                            <div class="caixa-habilidades">
+                                                <div class="caixaimg">
+                                                    <i class="fab fa-css3-alt"></i>
+                                                </div>
+                                                <div class="caixatexto">
+                                                    <h6 class="subtitulo5">CSS3</h6>
+                                                    <p class="texto-nano">Intermediário</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fim CSS -->
+
+                                    <!-- Bootstrap -->
+                                    <div class="col-12 col-md-4">
+                                        <div class="col-10 offset-1">
+                                            <div class="caixa-habilidades">
+                                                <div class="caixaimg">
+                                                    <span class="font-weight-bold">B</span>
+                                                </div>
+                                                <div class="caixatexto">
+                                                    <h6 class="subtitulo5">Bootstrap</h6>
+                                                    <p class="texto-nano">Intermediário</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fim Bootstrap -->
+
+                                    <!-- Git -->
+                                    <div class="col-12 col-md-4">
+                                        <div class="col-10 offset-1">
+                                            <div class="caixa-habilidades">
+                                                <div class="caixaimg">
+                                                    <i class="fab fa-git"></i>
+                                                </div>
+                                                <div class="caixatexto">
+                                                    <h6 class="subtitulo5">Git</h6>
+                                                    <p class="texto-nano">Intermediário</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fim Git -->
+
+                                    <!-- Python -->
+                                    <div class="col-12 col-md-4">
+                                        <div class="col-10 offset-1">
+                                            <div class="caixa-habilidades">
+                                                <div class="caixaimg">
+                                                    <i class="fab fa-python"></i>
+                                                </div>
+                                                <div class="caixatexto">
+                                                    <h6 class="subtitulo5">Python 3</h6>
+                                                    <p class="texto-nano">Estudando</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fim Python -->
+
+                                    <!-- Adobe XD -->
+                                    <div class="col-12 col-md-4">
+                                        <div class="col-10 offset-1">
+                                            <div class="caixa-habilidades">
+                                                <div class="caixaimg">
+                                                    <span class="font-weight-bold">XD</span>
+                                                </div>
+                                                <div class="caixatexto">
+                                                    <h6 class="subtitulo5">Adobe XD</h6>
+                                                    <p class="texto-nano">Estudando</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                   <!-- Fim Adobe XD -->
+                                   
+                                   <!-- Visual Studio -->
+                                    <div class="col-12 col-md-4">
+                                        <div class="col-10 offset-1">
+                                            <div class="caixa-habilidades">
+                                                <div class="caixaimg">
+                                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iOTAiIGhlaWdodD0iOTAiCnZpZXdCb3g9IjAgMCAyMjQgMjI0IgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDIyNHYtMjI0aDIyNHYyMjR6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzMzMzMzMyI+PHBhdGggZD0iTTIwNC4wMTkyLDM1Ljg2OTg3bC0zNS40NjY2NywtMTIuMTMzMzNjLTIuMzUyLC0wLjgwNjQgLTQuOTgwMjcsLTAuMzgwOCAtNi45NTg5MywxLjEzNDkzbC03OS45NTMwNyw2MS4zMDEzM2wtNDAuNDQ2OTMsLTI0LjQyMzQ3Yy0yLjA3NTczLC0xLjI2MTg3IC00LjYyOTMzLC0xLjQzMzYgLTYuODU0NCwtMC40NTU0N2wtMTQuOTMzMzMsNi41MzMzM2MtMi43MTc4NywxLjE4NzIgLTQuNDcyNTMsMy44NzUyIC00LjQ3MjUzLDYuODM5NDd2NzQuNjY2NjdjMCwyLjk2NDI3IDEuNzU0NjcsNS42NTIyNyA0LjQ3MjUzLDYuODM5NDdsMTQuOTMzMzMsNi41MzMzM2MyLjIxNzYsMC45NzgxMyA0Ljc3MTIsMC43OTg5MyA2Ljg1NDQsLTAuNDU1NDdsNDAuNDM5NDcsLTI0LjQyMzQ3bDc5Ljk1MzA3LDYxLjMwMTMzYzEuMzIxNiwxLjAxNTQ3IDIuOTI2OTMsMS41MzgxMyA0LjUzOTczLDEuNTM4MTNjMC44MTM4NywwIDEuNjI3NzMsLTAuMTM0NCAyLjQxOTIsLTAuNDAzMmwzNS40NjY2NywtMTIuMTMzMzNjMy4wMjQsLTEuMDMwNCA1LjA1NDkzLC0zLjg2NzczIDUuMDU0OTMsLTcuMDYzNDd2LTEzOC4xMzMzM2MwLC0zLjE5NTczIC0yLjAzMDkzLC02LjAzMzA3IC01LjA0NzQ3LC03LjA2MzQ3ek00NC44LDEyNS4xODYxM3YtMjYuMzcyMjdsMjEuODI1MDcsMTMuMTg2MTN6TTE2NC4yNjY2NywxNDcuMjIwMjdsLTUxLjk4MjkzLC0zNS4yMjAyN2w1MS45ODI5MywtMzUuMjIwMjd6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4=" width="70" class="img-fluid">
+                                                </div>
+                                                <div class="caixatexto">
+                                                    <h6 class="subtitulo5">Visual Studio</h6>
+                                                    <p class="texto-nano">Estudando</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fim Visual Studio -->
+
+                                    <!-- JavaScript -->
+                                    <div class="col-12 col-md-4">
+                                        <div class="col-10 offset-1">
+                                            <div class="caixa-habilidades">
+                                                <div class="caixaimg">
+                                                    <i class="fab fa-js-square"></i>
+                                                </div>
+                                                <div class="caixatexto">
+                                                    <h6 class="subtitulo5">JavaScript</h6>
+                                                    <p class="texto-nano">Estudando</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!-- Fim JavaScript -->
+
+                                </div>
+                                <!-- Fim habilidades -->
+
+                            </div>
+                        </div>
+                        <!-- Fim caixa direita -->
+                        
+                    </div>
+                                
+                </div>
+                
+            </section>
+            <!-- FIM SEÇÃO HABILIDADES -->
+
+            <!-- SEÇÃO PROJETOS -->
+            <section id="projetos" class="large-view bg-warning">
+                
+            </section>
+            <!-- FIM SEÇÃO PROJETOS -->
+
+            <!-- SEÇÃO CONTATO -->
+            <section id="contato" class="large-view bg-info">
+                
+            </section>
+            <!-- FIM SEÇÃO CONTATO -->
             
         </main>
         <!-- FIM DO CONTEÚDO PRINCIPAL -->
+
+        <!-- RODAPÉ -->
+        <footer>
+            
+        </footer>
+        <!-- FIM RODAPÉ -->
 
         <!-- JavaScript (Opcional) -->
         <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->

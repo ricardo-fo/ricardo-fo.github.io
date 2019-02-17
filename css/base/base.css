@@ -73,6 +73,42 @@ h4.subtitulo3 {
 	display: inline-block;
 }
 
+h5.subtitulo4 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--color-second);
+
+    display: inline-block;
+}
+
+h6.subtitulo5 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--color-first);
+
+    display: inline-block;
+}
+
+p.texto {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 17px;
+}
+
+p.texto-menor {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 13.5px;
+}
+
+p.texto-nano {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 10px;
+}
+
 /*Headings responsivos*/
 /*Extra small devices (portrait phones, menor que 576px)*/
 @media (max-width: 374.98px) {
@@ -85,6 +121,9 @@ h4.subtitulo3 {
     }
     h4.subtitulo3 {
     	font-size: 0.8em;
+    }
+    h5.subtitulo4 {
+        font-size: 0.7em;
     }
 }
 

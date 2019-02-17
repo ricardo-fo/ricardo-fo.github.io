@@ -6,19 +6,6 @@
 	background-color: var(--color-first);
 }
 
-.sobre-conteudo .padding-top {
-	padding-top: 60px;
-}
-
-.sobre-conteudo .textoadicional {
-	font-size: 10px;
-	font-style: italic;
-}
-
-.sobre-conteudo .textosobre {
-	font-size: 1.2em;
-}
-
 .sobre-conteudo .destaquesobre {
 	color: var(--color-first-light);
 }

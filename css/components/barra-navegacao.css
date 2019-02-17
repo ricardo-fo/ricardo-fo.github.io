@@ -29,3 +29,11 @@
 .muda-menu a.linkmenu:hover {
 	color: var(--color-zero);
 }
+
+.muda-menu a.linkdropdown {
+	color: var(--color-negative-light);
+}
+
+.muda-menu a.linkdropdown:hover {
+	color: var(--color-negative);
+}

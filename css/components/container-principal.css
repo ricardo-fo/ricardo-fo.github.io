@@ -3,3 +3,16 @@
 	height: 100%;
 	color: var(--color-zero);
 }
+
+.container-principal .padding-top {
+	padding-top: 60px;
+}
+
+.container-principal .bg-pattern {
+	background-color: var(--color-fisrt);
+}
+
+.container-principal .textoadicional {
+	font-size: 10px;
+	font-style: italic;
+}
