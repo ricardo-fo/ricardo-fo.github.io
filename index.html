@@ -44,16 +44,18 @@
     <body class="bg-dark">
 
         <!-- MENU DE NAVEGAÇÃO -->
-        <nav class="navbar navbar-expand-md fixed-top barra-navegacao">
+        <nav class="navbar navbar-expand-md fixed-top barra-navegacao" id="menu">
             <div class="container-fluid">
 
                 <!-- Botão responsivo -->
                 <a href="#" class="navbar-brand">
-                    <img src="img/logo.png" alt="Ricardo Oliveira" width="80">
+                    <img src="img/logo.png" alt="Ricardo Oliveira" width="65" class="img-fluid">
                 </a>
-                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                <button id="hamburger-block" class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
                     <span class="navbar-toggler">
-                        <i class="fas fa-bars text-white"></i>
+                        <div id="hamburger-icon" class="nav-icon">
+                            <div></div>
+                        </div>
                     </span>
                 </button>
                 <!-- Fim botão responsivo -->
@@ -82,11 +84,11 @@
                         <li class="nav-item dropdown mr-2 linha">
                             <a class="nav-link dropdown-toggle linkmenu" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Idioma</a>
 
-                            <div class="dropdown-menu bg-secondary" aria-labelledby="navbarDropdown">
-                                <button class="dropdown-item bg-dark disabled" type="button">
-                                    <span class="text-white">Português</span>
+                            <div class="dropdown-menu muda-dropdown" aria-labelledby="navbarDropdown">
+                                <button class="dropdown-item disabled" type="button">
+                                    <span>Português</span>
                                 </button>
-                                <button class="dropdown-item" type="button">
+                                <button class="dropdown-item btn-current" type="button">
                                     <a class="linkdropdown" href="english.html">English</a>
                                 </button>
                             </div>
@@ -502,6 +504,30 @@
         <!-- FIM RODAPÉ -->
 
         <!-- JavaScript (Opcional) -->
+        <script type="text/javascript">
+            var element = document.getElementById('menu');
+            var numPx = '1';
+            window.addEventListener('scroll', function() {
+                if(window.scrollY > numPx) {
+                    element.classList.add('mudaCor');
+                } else {
+                    element.classList.remove('mudaCor');
+                }
+            });
+        </script>
+
+        <script type="text/javascript">
+            var element = document.getElementById("hamburger-block");
+            var myHamburger = document.getElementById("hamburger-icon").classList;
+            element.addEventListener('click', function() {
+                if(myHamburger.contains("clicked")) {
+                    myHamburger.remove("clicked");
+                } else {
+                    myHamburger.add("clicked");
+                }
+            });
+        </script>
+
         <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
