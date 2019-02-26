@@ -505,13 +505,13 @@
 
         <!-- JavaScript (Opcional) -->
         <script type="text/javascript">
-            var element = document.getElementById('menu');
+            var el = document.getElementById('menu');
             var numPx = '1';
             window.addEventListener('scroll', function() {
                 if(window.scrollY > numPx) {
-                    element.classList.add('mudaCor');
+                    el.classList.add('mudaCor');
                 } else {
-                    element.classList.remove('mudaCor');
+                    el.classList.remove('mudaCor');
                 }
             });
         </script>
