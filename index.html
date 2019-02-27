@@ -44,14 +44,15 @@
     <body class="bg-dark">
 
         <!-- MENU DE NAVEGAÇÃO -->
-        <nav class="navbar navbar-expand-md fixed-top barra-navegacao" id="menu">
+        <nav class="navbar navbar-expand-md barra-navegacao" id="menu">
             <div class="container-fluid">
 
                 <!-- Botão responsivo -->
                 <a href="#" class="navbar-brand">
-                    <img src="img/logo.png" alt="Ricardo Oliveira" width="65" class="img-fluid">
+                    <img src="img/logo.png" alt="Ricardo Oliveira" width="65" class="img-fluid"><span class="sr-only">Logo marca</span>
                 </a>
-                <button id="hamburger-block" class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal" onclick="changeHamburger()">
+                <span class="sr-only">Botão de menu</span>
+                <button class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal" onclick="changeHamburger()">
                     <span class="navbar-toggler">
                         <div id="hamburger-icon" class="nav-icon">
                             <div></div>
@@ -105,13 +106,13 @@
 
         <!-- BOTÕES PRÓXIMO E ANTERIOR -->
         <div class="botoes-laterais">
-            <a class="link prev js-scroll-to anterior" id="btn-next">
+            <a class="link prev">
                 <img src="img/seta-anterior.png" width="10" class="img-fluid" onclick="prevAnchor()">
-                <span class="sr-only">Anterior</span>
+                <span class="sr-only">Botão nterior</span>
             </a>
-            <a class="link next proximo" id="btn-next">
+            <a class="link next">
                 <img src="img/seta-proximo.png" width="10" class="img-fluid" onclick="nextAnchor()">
-                <span class="sr-only">Próximo</span>
+                <span class="sr-only">Botão próximo</span>
             </a>
         </div>
         <!-- FIM BOTÕES PRÓXIMO E ANTERIOR -->
@@ -130,23 +131,21 @@
                     <div class="container-fluid home-conteudo">
 
                         <!-- Apresentação do nome -->
-                        <div class="row">
+                        <div class="row home-nome">
                             <div class="col-12 col-lg-10 offset-lg-1">
                                 <h1 class="titulo">Ricardo Oliveira</h1>
-                                <img class="img-fluid" src="img/divisor.png" width="350">
+                                <img class="img-fluid" src="img/divisor.png" width="350" alt="divisor"><span class="sr-only">Quebra de linha</span>
                             </div>
                         </div>
                         <!-- Fim apresentação do nome -->
 
                         <!-- Botão conheça -->
-                        <div class="row botao">
-                            <div class="col-6 offset-3 col-md-4 offset-md-4 col-lg-2 offset-lg-5">
-                                <button class="btn conheca" type="button">
-                                    <h2 class="subtitulo">
-                                        <a class="linkconheca" href="#sobre">Conheça o meu trabalho</a>
-                                    </h2>
-                                </button>
-                            </div>
+                        <div class="row home-botao">
+                            <button class="conheca" type="button">
+                                <h2 class="subtitulo">
+                                    <a class="linkconheca" href="#sobre">Conheça o meu trabalho</a>
+                                </h2>
+                            </button>
                         </div>
                         <!-- Fim botão conheça -->
                         
@@ -170,82 +169,71 @@
                     <div class="row">
 
                         <!-- Caixa esquerda -->
-                        <div class="col-12 col-md-6 caixa-esquerda padding-top">
-                            <div class="container">
-                                <div class="row">
+                        <div class="col-12 col-md-6 caixa-esquerda">
+                            <div class="sptop-desktop"></div>
 
-                                    <!-- Conteúdo da esquerda -->
-                                    <div class="col-lg-10 col-12">
+                            <!-- Conteúdo da esquerda -->
+                            <div class="col-lg-11 col-12">
 
-                                        <!-- Texto 1 -->
-                                        <h3 class="subtitulo2">Sobre mim</h3>
+                                <h3 class="subtitulo2">Sobre mim</h3>
 
-                                        <div class="col-lg-11 col-12 text-left">
-                                            <h4 class="subtitulo3 mr-1">Universidade</h4>
-                                            <span class="textoadicional">2018 - previsão 2021</span>
-                                            <div class="col-12 m-0 p-0 text-justify text-md-left">
-                                                <p class="texto">Sou estudante de <span class="destaquesobre">Ciência da Computação</span> pela 
-                                                <a href="https://www.unisantos.br" target="_blank">     Universidade Católica Santos
-                                                <i class="fas fa-external-link-alt linkexterno"></i>
-                                                </a>; ingressei no curso de bacharelado em janeiro de 2018.</p>
-                                            </div>
-                                        </div>
-                                        <!-- Fim texto 1 -->
+                                <!-- Texto 1 -->
+                                <div class="col-lg-11 col-12 text-left">
+                                    <h4 class="subtitulo3 mr-1">Universidade</h4>
+                                    <span class="textoadicional">2018 - previsão 2021</span>
 
-                                        <!-- Texto 2 -->
-                                        <div class="col-lg-11 col-12 text-left">
-                                            <h4 class="subtitulo3 mr-1">Inglês</h4>
-                                            <span class="textoadicional">Intermediário</span>
-                                            <div class="col-12 m-0 p-0 text-justify text-md-left">
-                                                <p class="texto">Estudo inglês na rede de ensino de idiomas <a href="https://www.wizard.com.br" target="_blank">
-                                                Wizard
-                                                <i class="fas fa-external-link-alt linkexterno"></i>
-                                                </a>. Tendo dado início às aulas no segundo semestre de 2018. Porém, antes do curso, eu já estudava o idioma e pude pular alguns anos de curso.</p>
-                                            </div>
-                                        </div>
-                                        <!-- Fim texto 2 -->
-
+                                    <div class="col-12 m-0 p-0 text-justify text-md-left">
+                                        <p class="texto">Sou estudante de <span class="destaquesobre">Ciência da Computação</span> pela <a href="https://www.unisantos.br" target="_blank">Universidade Católica Santos <i class="fas fa-external-link-alt linkexterno"><span class="sr-only">Link externo</span></i></a>; ingressei no curso de bacharelado em janeiro de 2018.</p>
                                     </div>
-                                    <!-- Fim conteúdo da esquerda -->
-
                                 </div>
+                                <!-- Fim texto 1 -->
+
+                                <!-- Texto 2 -->
+                                <div class="col-lg-11 col-12 text-left">
+                                    <h4 class="subtitulo3 mr-1">Inglês</h4>
+                                    <span class="textoadicional">Intermediário</span>
+
+                                    <div class="col-12 m-0 p-0 text-justify text-md-left">
+                                        <p class="texto">Estudo inglês na rede de ensino de idiomas <a href="https://www.wizard.com.br" target="_blank">Wizard <i class="fas fa-external-link-alt linkexterno"><span class="sr-only">Link externo</span></i>
+                                        </a>. Tendo dado início às aulas no segundo semestre de 2018. Porém, antes do curso, eu já estudava o idioma e pude pular alguns anos de curso.</p>
+                                    </div>
+                                </div>
+                                <!-- Fim texto 2 -->
+                            <!-- Fim conteúdo da esquerda -->
                             </div>
                         </div>
                         <!-- Fim caixa esquerda -->
 
                         <!-- Caixa direita -->
-                        <div class="col-12 col-md-6 caixa-direita padding-top">
-                            <div class="container">
-                                <div class="row">
+                        
+                        <div class="col-12 col-md-6 caixa-direita">
+                            <div class="sptop-mobile"></div>
 
-                                    <!-- Conteúdo da direita -->
-                                    <div class="col-lg-10 offset-lg-2 col-12">
+                            <!-- Conteúdo da direita -->
+                            <div class="col-lg-11 offset-lg-1 col-12">
 
-                                        <div class="padding-top d-none d-md-block"></div>
+                                <div class="padding-top d-none d-md-block"></div>
 
-                                        <!-- Texto 1 -->
-                                        <div class="col-lg-11 col-12 text-left text-md-right">
-                                            <h4 class="subtitulo3 ml-1">Conquistas</h4>
-                                            <div class="col-12 m-0 p-0 text-justify text-md-right">
-                                                <p class="texto">Fui classificado para a fase Estadual da XX Olimpíada Brasileira de Informática, OBI, na Modalidade Programação, nível Sênior.</p>
-                                            </div>
-                                        </div>
-                                        <!-- Fim texto 1 -->
-
-                                        <!-- Texto 2 -->
-                                        <div class="col-lg-11 col-12 text-left text-md-right">
-                                            <h4 class="subtitulo3 ml-1">Objetivos</h4>
-                                            <div class="col-12 m-0 p-0 text-justify text-md-right">
-                                                <p class="texto">Pretendo poder contribuir com o que sei e ser lembrado por ter feito parte dessa conquista.</p>
-                                            </div>
-                                        </div>
-                                        <!-- Fim texto 2 -->
-
+                                <!-- Texto 1 -->
+                                <div class="col-lg-11 col-12 text-left text-md-right">
+                                    <h4 class="subtitulo3 ml-1">Conquistas</h4>
+                                    <div class="col-12 m-0 p-0 text-justify text-md-right">
+                                        <p class="texto">Fui classificado para a fase Estadual da XX Olimpíada Brasileira de Informática, OBI, na Modalidade Programação, nível Sênior.</p>
                                     </div>
-                                    <!-- Conteúdo da direita -->
-
                                 </div>
+                                <!-- Fim texto 1 -->
+
+                                <!-- Texto 2 -->
+                                <div class="col-lg-11 col-12 text-left text-md-right">
+                                    <h4 class="subtitulo3 ml-1">Objetivos</h4>
+                                    <div class="col-12 m-0 p-0 text-justify text-md-right">
+                                        <p class="texto">Pretendo poder contribuir com o que sei e ser lembrado por ter feito parte dessa conquista.</p>
+                                    </div>
+                                </div>
+                                <!-- Fim texto 2 -->
+
                             </div>
+                            <!-- Conteúdo da direita -->
                         </div>
                         <!-- Fim caixa direita -->
 
@@ -272,7 +260,8 @@
                     <div class="row">
 
                         <!-- Caixa esquerda -->
-                        <div class="col-12 col-lg-6 padding-top caixa-esquerda">
+                        <div class="col-12 col-lg-6 caixa-esquerda">
+                            <div class="sptop-desktop"></div>
                             <div class="container">
                                 <div class="row">
 
@@ -318,6 +307,7 @@
 
                         <!-- Caixa direita -->
                         <div class="col-12 col-lg-6 padding-top caixa-direita">
+                            <div class="sptop-mobile"></div>
 
                             <div class="container-fluid">
 

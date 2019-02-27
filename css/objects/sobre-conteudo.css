@@ -1,3 +1,21 @@
+.sobre-conteudo {
+	box-sizing: border-box;
+	height: 100%;
+}
+
+.sobre-conteudo .caixa-esquerda,
+.sobre-conteudo .caixa-direita {
+	box-sizing: border-box;
+	height: 100%;
+}
+
+@media (min-width: 1100px) {
+	.sobre-conteudo .caixa-esquerda,
+	.sobre-conteudo .caixa-direita {
+		height: 100vh;
+	}
+}
+
 .sobre-conteudo .caixa-esquerda {
 	background-color: var(--color-second);
 }

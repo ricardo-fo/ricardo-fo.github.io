@@ -1,4 +1,4 @@
-.botoes-laterais > a.anterior {
+.botoes-laterais > a.prev {
 	position: fixed;
 	top: 18%;
 	left: 1%;
@@ -6,16 +6,28 @@
 	cursor: pointer;
 }
 
-.botoes-laterais > a.proximo {
+.botoes-laterais > a.next {
 	position: fixed;
 	bottom: 8%;
 	right: 1%;
 	z-index: 10;
 	cursor: pointer;
-	
+
 	-webkit-transform: rotate(180deg);
 	-moz-transform: rotate(180deg);
 	-ms-transform: rotate(180deg);
 	-o-transform: rotate(180deg);
 	transform: rotate(180deg);
+}
+
+/*Media query para menu lateral responsivo*/
+/*Small devices (landscape phones, 768 e maiores)*/
+@media (max-width: 768px) {
+	.botoes-laterais > a.prev {
+		left: 2.3%;
+		top: 15%;
+	}
+	.botoes-laterais > a.next {
+		right: 2.3%;
+	}
 }
