@@ -51,7 +51,7 @@
                 <a href="#" class="navbar-brand">
                     <img src="img/logo.png" alt="Ricardo Oliveira" width="65" class="img-fluid">
                 </a>
-                <button id="hamburger-block" class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal">
+                <button id="hamburger-block" class="navbar-toggler" data-toggle="collapse" data-target="#nav-principal" onclick="changeHamburger()">
                     <span class="navbar-toggler">
                         <div id="hamburger-icon" class="nav-icon">
                             <div></div>
@@ -63,8 +63,8 @@
                 <!-- Lista de itens -->
                 <div class="collapse navbar-collapse" id="nav-principal">
 
-                    <ul class="navbar-nav ml-auto muda-menu">
-                        <li class="nav-item linha">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item linha linha1">
                             <a class="nav-link linkmenu" href="#">Home</a>
                         </li>
                         <li class="nav-item linha">
@@ -105,12 +105,12 @@
 
         <!-- BOTÕES PRÓXIMO E ANTERIOR -->
         <div class="botoes-laterais">
-            <a class="link js-prev js-scroll-to anterior" href="#">
-                <img src="img/seta-anterior.png" width="10" class="img-fluid">
+            <a class="link prev js-scroll-to anterior" id="btn-next">
+                <img src="img/seta-anterior.png" width="10" class="img-fluid" onclick="prevAnchor()">
                 <span class="sr-only">Anterior</span>
             </a>
-            <a class="link js-next proximo" href="#">
-                <img src="img/seta-proximo.png" width="10" class="img-fluid">
+            <a class="link next proximo" id="btn-next">
+                <img src="img/seta-proximo.png" width="10" class="img-fluid" onclick="nextAnchor()">
                 <span class="sr-only">Próximo</span>
             </a>
         </div>
@@ -505,27 +505,94 @@
 
         <!-- JavaScript (Opcional) -->
         <script type="text/javascript">
-            var el = document.getElementById('menu');
+            /* Função que muda a cor do menu ao rolar a página */
+            var element = document.getElementById('menu');
             var numPx = '1';
+
             window.addEventListener('scroll', function() {
                 if(window.scrollY > numPx) {
-                    el.classList.add('mudaCor');
+                    element.classList.add('muda-cor');
                 } else {
-                    el.classList.remove('mudaCor');
+                    element.classList.remove('muda-cor');
                 }
             });
         </script>
 
         <script type="text/javascript">
-            var element = document.getElementById("hamburger-block");
+            /* Função que muda o icone do menu hamburguer */
             var myHamburger = document.getElementById("hamburger-icon").classList;
-            element.addEventListener('click', function() {
+
+            function changeHamburger() {
                 if(myHamburger.contains("clicked")) {
                     myHamburger.remove("clicked");
                 } else {
                     myHamburger.add("clicked");
                 }
-            });
+            }
+        </script>
+
+        <script type="text/javascript">
+            function nextAnchor() {
+                /* Função que move para a próxima anchor */
+                var anchorList = ["home", "sobre", "habilidades", "projetos", "contato"];
+                var currentHash = location.hash;
+                currentHash = currentHash.slice(1);
+                var i;
+
+                if(currentHash.length == 0) {
+                    /* Caso esteja na home, não há anchor */
+                    i = 1;
+                } else {
+                    for(i = 0; i < anchorList.length; i++){
+                        if(anchorList[i] == currentHash) break;
+                    }
+
+                    if(i == 4) {
+                        i = 0;
+                    } else {
+                        i++;
+                    }
+                }
+
+                var el = document.getElementById(anchorList[i]);
+                var url = location.href;
+                url = url.slice(0, url.search("#"));
+                url = url + "#" + anchorList[i];
+                history.replaceState(null, null, url)
+
+                el.scrollIntoView();
+            }
+
+            function prevAnchor() {
+                 /* Função que move para a anchor anterior */
+                var anchorList = ["home", "sobre", "habilidades", "projetos", "contato"];
+                var currentHash = location.hash;
+                currentHash = currentHash.slice(1);
+                var i;
+
+                if(currentHash.length == 0) {
+                    /* Caso esteja na home, não há anchor */
+                    i = 4;
+                } else {
+                    for(i = 0; i < anchorList.length; i++){
+                        if(anchorList[i] == currentHash) break;
+                    }
+
+                    if(i == 0) {
+                        i = 4;
+                    } else {
+                        i--;
+                    }
+                }
+
+                var el = document.getElementById(anchorList[i]);
+                var url = location.href;
+                url = url.slice(0, url.search("#"));
+                url = url + "#" + anchorList[i];
+                history.replaceState(null, null, url)
+
+                el.scrollIntoView();
+            }
         </script>
 
         <!-- jQuery primeiro, depois Popper.js, depois Bootstrap JS -->

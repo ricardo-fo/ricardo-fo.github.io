@@ -1,26 +1,44 @@
 /*Media query para menu responsivo*/
 /*Small devices (landscape phones, 768 e maiores)*/
 @media (max-width: 768px) {
-    .muda-menu > li.linha {
-		line-height: 15px;
-		text-align: center;
+	.barra-navegacao {
+		background-color: var(--color-negative-light);
+	}
+	.barra-navegacao li.linha {
+		padding-left: 5px;
+	}
+	.barra-navegacao li.linha:not(.linha1) {
+		border-top: 1px dotted var(--dark);
 	}
 }
 
-.muda-menu a.linkmenu {
+/* Configurações */
+.barra-navegacao {
+	position: fixed !important;
+	top: 0 !important;
+	left: 0;
+	width: 100%;
+	z-index: 9999;
+	-webkit-transition: background-color 0.3s ease-out;
+	-moz-transition: background-color 0.3s ease-out;
+	-o-transition: background-color 0.3s ease-out;
+	transition: background-color 0.3s ease-out;
+}
+
+.barra-navegacao a.linkmenu {
 	color: var(--color-zero-light);
 }
 
-.muda-menu a.linkmenu:hover {
+.barra-navegacao a.linkmenu:hover {
 	color: var(--color-zero);
 }
 
-.muda-menu .muda-dropdown {
+.barra-navegacao .muda-dropdown {
 	background-color: var(--color-negative-light);
 	color: var(--color-zero-light);
 }
 
-.muda-dropdown a.linkdropdown {
+.barra-navegacao a.linkdropdown {
 	color: var(--color-zero);
 }
 
@@ -28,11 +46,13 @@
 	background-color: var(--color-negative-light);
 }
 
-.mudaCor {
+.muda-cor {
 	background-color: var(--color-negative-light);
-	transition: all 1.3s;
+	-webkit-transition: all 1s ease-in;
+	-moz-transition: all 1s ease-in;
+	-o-transition: all 1s ease-in;
+	transition: all 1s ease-in;
 }
-
 
 /* Hamburger icon - responsive*/
 .nav-icon {
@@ -51,17 +71,33 @@
 	display: block;
 	height: 3px;
 	margin-top: 3px;
+
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	-o-transition: all 0.5s;
 	transition: all 0.5s;
 }
 
 .clicked:before {
+	-webkit-transform: translateY(6px) rotate(135deg);
+	-moz-transform: translateY(6px) rotate(135deg);
+	-ms-transform: translateY(6px) rotate(135deg);
+	-o-transform: translateY(6px) rotate(135deg);
 	transform: translateY(6px) rotate(135deg);
 }
 
 .clicked:after {
+	-webkit-transform: translateY(-6px) rotate(-135deg);
+	-moz-transform: translateY(-6px) rotate(-135deg);
+	-ms-transform: translateY(-6px) rotate(-135deg);
+	-o-transform: translateY(-6px) rotate(-135deg);
 	transform: translateY(-6px) rotate(-135deg);
 }
 
 .clicked div {
+	-webkit-transform: scale(0);
+	-moz-transform: scale(0);
+	-ms-transform: scale(0);
+	-o-transform: scale(0);
 	transform: scale(0);
 }
