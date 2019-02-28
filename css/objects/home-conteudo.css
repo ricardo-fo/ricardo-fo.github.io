@@ -26,7 +26,11 @@
 /*Small devices (landscape phones, 768 e maiores)*/
 @media (max-width: 500px) {
 	.home-conteudo > .home-nome {
+<<<<<<< HEAD
 		margin-top: calc(40% - 30px);
+=======
+		margin-top: calc(50% - 30px);
+>>>>>>> 58306985d787c5042b61b62bc65ae8703d9389a4
 	}
 	.home-conteudo > .home-botao {
 		bottom: 0;
