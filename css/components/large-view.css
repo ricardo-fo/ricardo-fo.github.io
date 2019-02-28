@@ -1,9 +1,7 @@
 /*Media queries para melhor visualização*/
 /*Large devices (desktops, 992px e maiores)*/
 @media (min-width: 1100px) {
-    .container-principal .large-view,
-    .container-principal .caixa-direita,
-    .container-principal .caixa-esquerda {
+    .container-principal .large-view {
     	height: 100vh;
     }
 }

@@ -1,18 +1,23 @@
-.home-apresentacao {
-	height: 100%;
-	width: 100%;
-	position: relative;
-
+.container-rodape {
+	width: 100vw;
+	height: 25px;
+	background-color: var(--color-negative);
+	
 	display: -webkit-flex;
 	display: flex;
 	-webkit-flex: 1;
 	-ms-flex: 1;
 	flex: 1;
+
 	-webkit-justify-content: center;
 	-moz-justify-content: center;
 	justify-content: center;
 	-webkit-align-items: center;
 	align-items: center;
-	
-	text-align: center;
+}
+
+.container-rodape h3.copyright {
+	font-family: "Montserrat", sans-serif;
+	font-size: 12px;
+	color: var(--color-zero-light);
 }

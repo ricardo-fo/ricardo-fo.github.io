@@ -1,9 +1,6 @@
 /*Media query para menu responsivo*/
 /*Small devices (landscape phones, 768 e maiores)*/
 @media (max-width: 768px) {
-	.barra-navegacao {
-		background-color: var(--color-negative-light);
-	}
 	.barra-navegacao li.linha {
 		padding-left: 5px;
 	}
@@ -12,13 +9,14 @@
 	}
 }
 
-/* Configurações */
+/* Configurações barra de menu */
 .barra-navegacao {
 	position: fixed !important;
 	top: 0 !important;
 	left: 0;
 	width: 100%;
 	z-index: 9999;
+
 	-webkit-transition: background-color 0.3s ease-out;
 	-moz-transition: background-color 0.3s ease-out;
 	-o-transition: background-color 0.3s ease-out;
@@ -33,6 +31,7 @@
 	color: var(--color-zero);
 }
 
+/* botão dropdown */
 .barra-navegacao .muda-dropdown {
 	background-color: var(--color-negative-light);
 	color: var(--color-zero-light);
@@ -46,15 +45,17 @@
 	background-color: var(--color-negative-light);
 }
 
+/* efeito que muda a cor com a rolagem da página */
 .muda-cor {
 	background-color: var(--color-negative-light);
+
 	-webkit-transition: all 1s ease-in;
 	-moz-transition: all 1s ease-in;
 	-o-transition: all 1s ease-in;
 	transition: all 1s ease-in;
 }
 
-/* Hamburger icon - responsive*/
+/* Hamburger icon - responsivo */
 .nav-icon {
 	width: 25px;
 	height: 0px;
@@ -66,7 +67,11 @@
 .nav-icon:before,
 .nav-icon div {
 	background-color: var(--color-zero-light);
+
+	-webkit-border-radius: 3px;
+	-moz-border-radius: 3px;
 	border-radius: 3px;
+	
 	content: '';
 	display: block;
 	height: 3px;

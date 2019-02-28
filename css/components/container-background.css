@@ -5,7 +5,7 @@
 	top: 0;
 	left: 0;
 
-	background: #212121 url("../../img/bg1.jpg");
+	background: var(--dark) url("../../img/bg1.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
