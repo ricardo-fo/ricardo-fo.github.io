@@ -7,9 +7,9 @@
 	left: 0;
 
 	background: var(--color-first);
-	background-image: url("../../img/bg1.jpg");
+	background-image: url("../../img/bg6.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;
-	filter: blur(5px);
+	filter: blur(2.5px);
 }

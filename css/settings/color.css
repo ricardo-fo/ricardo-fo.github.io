@@ -5,6 +5,8 @@
 	--color-zero-lighter: rgba(255, 255, 255, 0.2);
 	--color-negative: #000;
 	--color-negative-light: rgba(0, 0, 0, 0.9);
+	--color-negative-lighter: rgba(0, 0, 0, 0.6);
+	--color-negative-very-lighter: rgba(0, 0, 0, 0.3);
 	--color-medium: #666;
 	--color-medium-light: rgba(150, 150, 150, 0.2);
 	--color-first: #343A48;

@@ -166,6 +166,7 @@
 	-moz-border-radius: 10px;
 	border-radius: 10px;
 
+	background-color: var(--color-negative-very-lighter);
 	color: var(--color-zero-light);
 	text-decoration: none;
 	letter-spacing: 2px;
