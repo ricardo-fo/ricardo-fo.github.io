@@ -1,6 +1,5 @@
 .container-rodape {
 	width: 100vw;
-	height: 25px;
 	background-color: var(--color-negative);
 	
 	display: -webkit-flex;

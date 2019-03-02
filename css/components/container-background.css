@@ -1,3 +1,4 @@
+/* Configurações do background da página home */
 .container-background {
 	height: 100vh;
 	width: 100vw;
@@ -5,7 +6,8 @@
 	top: 0;
 	left: 0;
 
-	background: var(--dark) url("../../img/bg1.jpg");
+	background: var(--color-first);
+	background-image: url("../../img/bg1.jpg");
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-attachment: fixed;

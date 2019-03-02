@@ -142,11 +142,11 @@
 
                         <!-- Botão conheça -->
                         <div class="row home-botao">
-                            <button class="conheca" type="button">
+                            <div class="conheca">
                                 <h2 class="subtitulo">
                                     <a class="linkconheca" href="#sobre">Conheça o meu trabalho</a>
                                 </h2>
-                            </button>
+                            </div>
                         </div>
                         <!-- Fim botão conheça -->
                         
@@ -213,7 +213,7 @@
                             <!-- Conteúdo da direita -->
                             <div class="col-lg-11 offset-lg-1 col-12">
 
-                                <div class="padding-top d-none d-md-block"></div>
+                                <div class="d-none d-md-block"></div>
 
                                 <!-- Texto 1 -->
                                 <div class="col-lg-11 col-12 text-left text-md-right">
@@ -232,6 +232,15 @@
                                     </div>
                                 </div>
                                 <!-- Fim texto 2 -->
+                                <div class="d-block d-md-none">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-12 d-flex justify-content-center">
+                                                <img class="img-fluid align-self-baseline" src="img/divisor.png" width="350">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
                             <!-- Conteúdo da direita -->
@@ -243,8 +252,8 @@
             </section>
             <!-- FIM SEÇÃO SOBRE -->
 
-            <!-- SEÇÃO PARA QUEBRA DE DIVS EM MOBILES -->
-            <section class="d-block d-md-none bg-pattern">
+            <!-- SEÇÃO PARA QUEBRA DE DIVS EM MOBILES
+            <section class="d-block d-md-none">
                 <div class="container">
                     <div class="row">
                         <div class="col-12">
@@ -252,7 +261,7 @@
                         </div>
                     </div>
                 </div>
-            </section>
+            </section>-->
             <!-- FIM SEÇÃO PARA QUEBRA DE DIVS EM MOBILES -->
 
             <!-- SEÇÃO HABILIDADES -->
@@ -531,9 +540,15 @@
             function nextAnchor() {
                 /* Função que move para a próxima anchor */
                 var anchorList = ["home", "sobre", "habilidades", "projetos", "contato"];
+                var readUrl = location.href;
                 var currentHash = location.hash;
                 currentHash = currentHash.slice(1);
                 var i;
+
+                if(readUrl.search("#")) {
+                    readUrl = readUrl + "#";
+                    history.replaceState(null, null, readUrl);
+                }
 
                 if(currentHash.length == 0) {
                     /* Caso esteja na home, não há anchor */
@@ -554,7 +569,7 @@
                 var url = location.href;
                 url = url.slice(0, url.search("#"));
                 url = url + "#" + anchorList[i];
-                history.replaceState(null, null, url)
+                history.replaceState(null, null, url);
 
                 el.scrollIntoView();
             }
@@ -562,9 +577,15 @@
             function prevAnchor() {
                  /* Função que move para a anchor anterior */
                 var anchorList = ["home", "sobre", "habilidades", "projetos", "contato"];
+                var readUrl = location.href;
                 var currentHash = location.hash;
                 currentHash = currentHash.slice(1);
                 var i;
+
+                if(readUrl.search("#")) {
+                    readUrl = readUrl + "#";
+                    history.replaceState(null, null, readUrl);
+                }
 
                 if(currentHash.length == 0) {
                     /* Caso esteja na home, não há anchor */
@@ -585,7 +606,7 @@
                 var url = location.href;
                 url = url.slice(0, url.search("#"));
                 url = url + "#" + anchorList[i];
-                history.replaceState(null, null, url)
+                history.replaceState(null, null, url);
 
                 el.scrollIntoView();
             }

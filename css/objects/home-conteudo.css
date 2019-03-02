@@ -1,15 +1,17 @@
+/* Configurações do conteúdo da página home */
 .home-conteudo {
+	display: block;
 	position: absolute;
 	width: 100%;
 	min-height: 50%;
-	-webkit-align-self: center;
-	align-self: center;
 }
 
+/* Nome de home */
 .home-conteudo > .home-nome {
 	margin-top: 5%;
 }
 
+/* Botão de home */
 .home-conteudo > .home-botao {
 	position: absolute;
 	bottom: 3%;
@@ -22,63 +24,190 @@
 	justify-content: center;
 }
 
-/*Media query para home responsivo*/
-/*Small devices (landscape phones, 768 e maiores)*/
-@media (max-width: 500px) {
+/*Media query para altura do home responsivo, aplicado ao nome */
+@media (max-width: 376px) and (max-height: 668px){
 	.home-conteudo > .home-nome {
-<<<<<<< HEAD
-		margin-top: calc(40% - 30px);
-=======
-		margin-top: calc(50% - 30px);
->>>>>>> 58306985d787c5042b61b62bc65ae8703d9389a4
+		margin-top: 20%;
 	}
 	.home-conteudo > .home-botao {
 		bottom: 0;
 	}
 }
 
-.home-conteudo .conheca {
-	background-color: transparent;
-	padding: 10px 5px;
-	min-width: 28px;
+@media (min-width: 373px) and (min-height: 669px) and (max-width: 769px) and (max-height: 1025px){
+	.home-conteudo > .home-nome {
+		margin-top: 35%;
+	}
+	.home-conteudo > .home-botao {
+		bottom: 0;
+	}
+}
 
-	-webkit-animation: pulse 3s linear infinite;
-	-moz-animation: pulse 3s linear infinite;
-	-o-animation: pulse 3s linear infinite;
-	animation: pulse 3s linear infinite;
+/* Configurações do botão de home */
+.home-botao > .conheca {
+	position: relative;
+	width: 300px;
+	height: 50px;
 
-	-webkit-border-radius: 25px;
-	-moz-border-radius: 25px;
-	border-radius: 25px;
-	border-color: transparent;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	border: 2px solid var(--color-zero-lighter);
+
+	-webkit-animation: pulse 2.5s ease-out infinite;
+	-moz-animation: pulse 2.5s ease-out infinite;
+	-o-animation: pulse 2.5s ease-out infinite;
+	animation: pulse 2.5s ease-out infinite;
+}
+
+/* Animação com efeito de pulsar do botão de home */
+@-webkit-keyframes pulse {
+	0% {
+		opacity: 0.3;
+		box-shadow: 0 0 5px 0 var(--color-pulse-start);
+	}
+	25% {
+		opacity: 0.5;
+		box-shadow: 0 0 10px 1px var(--color-pulse-middle);
+	}
+	50% {
+		opacity: 0.8;
+		box-shadow: 0 0 15px 2px var(--color-pulse-end);
+	}
+	75% {
+		opacity: 0.5;
+		box-shadow: 0 0 10px 1px var(--color-pulse-middle);
+	}
+	100% {
+		box-shadow: 0 0 5px 0 var(--color-pulse-start);
+		opacity: 0.3;
+	}
+}
+
+@-moz-keyframes pulse {
+	0% {
+		opacity: 0.3;
+		box-shadow: 0 0 5px 0 var(--color-pulse-start);
+	}
+	25% {
+		opacity: 0.5;
+		box-shadow: 0 0 10px 1px var(--color-pulse-middle);
+	}
+	50% {
+		opacity: 0.8;
+		box-shadow: 0 0 15px 2px var(--color-pulse-end);
+	}
+	75% {
+		opacity: 0.5;
+		box-shadow: 0 0 10px 1px var(--color-pulse-middle);
+	}
+	100% {
+		box-shadow: 0 0 5px 0 var(--color-pulse-start);
+		opacity: 0.3;
+	}
+}
+
+@-o-keyframes pulse {
+	0% {
+		opacity: 0.3;
+		box-shadow: 0 0 5px 0 var(--color-pulse-start);
+	}
+	25% {
+		opacity: 0.5;
+		box-shadow: 0 0 10px 1px var(--color-pulse-middle);
+	}
+	50% {
+		opacity: 0.8;
+		box-shadow: 0 0 15px 2px var(--color-pulse-end);
+	}
+	75% {
+		opacity: 0.5;
+		box-shadow: 0 0 10px 1px var(--color-pulse-middle);
+	}
+	100% {
+		box-shadow: 0 0 5px 0 var(--color-pulse-start);
+		opacity: 0.3;
+	}
 }
 
 @keyframes pulse {
 	0% {
-		box-shadow: 0 0 0 0 var(--color-medium);
+		opacity: 0.3;
+		box-shadow: 0 0 5px 0 var(--color-pulse-start);
 	}
-	40% {
-		box-shadow: 0 0 10px 5px var(--color-medium-light);
+	25% {
+		opacity: 0.5;
+		box-shadow: 0 0 10px 1px var(--color-pulse-middle);
 	}
-	80% {
-		box-shadow: 0 0 10px 5px var(--color-medium-light);
+	50% {
+		opacity: 0.8;
+		box-shadow: 0 0 15px 2px var(--color-pulse-end);
+	}
+	75% {
+		opacity: 0.5;
+		box-shadow: 0 0 10px 1px var(--color-pulse-middle);
 	}
 	100% {
-		box-shadow: 0 0 0 0 var(--color-medium-light);
+		box-shadow: 0 0 5px 0 var(--color-pulse-start);
+		opacity: 0.3;
 	}
 }
 
-.home-conteudo a.linkconheca {
-	min-width: 28px;
-	padding: 13% 0;
-	-webkit-border-radius: 25px;
-	-moz-border-radius: 25px;
-	border-radius: 25px;
+/* Configurações da âncora de home */
+.home-botao .linkconheca {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 100%;
+	height: 100%;
+	transform: translate(-50%, -50%);
+
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
 
 	color: var(--color-zero-light);
+	text-decoration: none;
+	letter-spacing: 2px;
+	line-height: 45px;
+
+	box-sizing: border-box;
+	overflow: hidden;
+	transition: 1s all ease;
 }
 
-.home-conteudo a.linkconheca:hover {
-	text-decoration: none;
-	color: var(--color-second-light);
+/* Configurações do efeito usado em hover */
+.home-botao .linkconheca::before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	content: "";
+	width: 100%;
+	height: 0;
+	z-index: -1;
+
+	transform: translate(-50%, -50%) rotate(-45deg);
+	background: var(--color-zero);	
+	transition: all 0.6s ease;
+}
+
+.home-botao .linkconheca:hover::before {
+	height: 510%;
+}
+
+
+.home-botao a.linkconheca:hover {
+	color: var(--color-negative-light);
+	font-weight: bold;
+	transition: color 0.8s ease-in;
+}
+
+.home-botao > .conheca:hover {
+	background-color: var(--color-zero);
+
+	-webkit-animation: pulse 0s;
+	-moz-animation: pulse 0s;
+	-o-animation: pulse 0s;
+	animation: pulse 0s;
+	transition: all 1.5s;
 }

@@ -47,10 +47,9 @@ h1.titulo {
 
 h2.subtitulo {
 	font-family: 'Montserrat', sans-serif;
-	font-size: 10px;
-	font-weight: lighter;
+	font-size: 12px;
+	font-weight: normal;
 	text-transform: uppercase;
-	color: var(--color-zero);
 
 	display: inline-block;
 }
