@@ -27,7 +27,7 @@
 /*Media query para altura do home responsivo, aplicado ao nome */
 @media (max-width: 376px) and (max-height: 668px){
 	.home-conteudo > .home-nome {
-		margin-top: 20%;
+		margin-top: 5%;
 	}
 	.home-conteudo > .home-botao {
 		bottom: 0;
@@ -36,7 +36,7 @@
 
 @media (min-width: 373px) and (min-height: 669px) and (max-width: 769px) and (max-height: 1025px){
 	.home-conteudo > .home-nome {
-		margin-top: 35%;
+		margin-top: 15%;
 	}
 	.home-conteudo > .home-botao {
 		bottom: 0;
