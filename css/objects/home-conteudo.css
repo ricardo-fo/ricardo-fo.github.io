@@ -60,6 +60,8 @@
 	animation: pulse 2.5s ease-out infinite;
 }
 
+/* Inserir media query para home-botao responsivo */
+
 /* Animação com efeito de pulsar do botão de home */
 @-webkit-keyframes pulse {
 	0% {

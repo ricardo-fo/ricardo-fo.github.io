@@ -20,4 +20,11 @@
 	--color-pulse-start: rgba(150, 150, 150, 0);
 	--color-pulse-middle: rgba(150, 150, 150, 0.2);
 	--color-pulse-end: rgba(150, 150, 150, 0.5);
+
+	/* Cores para teste */
+	--color-base: #162128;
+	--color-right: #26323E;
+	--color-most-right: #C16763;
+	--color-left: #DAB6C1;
+	--color-most-left: #A58D91;
 }
