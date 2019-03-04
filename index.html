@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
     <head>
-        <!-- Meta tags Obrigatórias -->
+        <!-- Meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
@@ -22,13 +22,15 @@
         <link rel="stylesheet" type="text/css" href="css/components/container-home.css">
         <link rel="stylesheet" type="text/css" href="css/components/home-apresentacao.css">
         <link rel="stylesheet" type="text/css" href="css/components/container-principal.css">
+        <link rel="stylesheet" type="text/css" href="css/components/container-sobre.css">
+        <link rel="stylesheet" type="text/css" href="css/components/container-habilidades.css">
         <link rel="stylesheet" type="text/css" href="css/components/container-rodape.css">
-        <link rel="stylesheet" type="text/css" href="css/components/large-view.css">
 
         <!-- Objects -->
         <link rel="stylesheet" type="text/css" href="css/objects/home-conteudo.css">
         <link rel="stylesheet" type="text/css" href="css/objects/sobre-conteudo.css">
         <link rel="stylesheet" type="text/css" href="css/objects/habilidades-conteudo.css">
+        <!-- Fim CSS customizado -->
 
 
         <!-- Bootstrap CSS -->
@@ -37,6 +39,7 @@
         <!-- Font Awesome -->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
+        <!-- Ícone de miniatura da página -->
         <link rel="icon" href="img/favicon.png">
 
         <title>Ricardo Oliveira</title>
@@ -67,7 +70,7 @@
 
                     <ul class="navbar-nav ml-auto">
                         <li class="nav-item linha linha1">
-                            <a class="nav-link linkmenu" href="#">Home</a>
+                            <a class="nav-link linkmenu" href="#home">Home</a>
                         </li>
                         <li class="nav-item linha">
                             <a class="nav-link linkmenu" href="#sobre">Sobre</a>
@@ -122,6 +125,7 @@
         <header>
 
             <!-- Background -->
+            <!-- Fonte: https://unsplash.com/photos/FO7JIlwjOtU -->
             <div class="container-background"></div>
 
             <!-- Conteúdo da Home -->
@@ -167,331 +171,136 @@
         <main class="container-principal">
 
             <!-- SEÇÃO SOBRE -->
-            <section id="sobre" class="large-view">
-                <div class="container-fluid sobre-conteudo">
+            <section id="sobre" class="container-sobre">
+                <div class="container">
                     <div class="row">
 
-                        <!-- Caixa esquerda -->
-                        <div class="col-12 col-md-6 caixa-esquerda">
+                        <div class="col-12">
                             <div class="sptop-desktop"></div>
 
-                            <!-- Conteúdo da esquerda -->
-                            <div class="col-lg-11 col-12">
+                            <!-- Conteúdo de sobre -->
+                            <div class="sobre-conteudo mt-2">
+                                <div class="sobre-texto">
 
-                                <h3 class="subtitulo2">Sobre mim</h3>
+                                    <!-- Cabeçalho -->
+                                    <h3 class="subtitulo2">Sobre mim</h3>
+                                    <p class="texto border-bottom pb-2">Desde criança gostei de ciências exatas e trabalhar de forma criativa para solucionar problemas. Mais tarde, percebi que a área da computação tem os atrativos e desafios que gosto.
+                                    <br>
+                                    Sempre busco aprender coisas novas e manter-me atualizado. Valorizo o conhecimento e o esforço. Almejo fazer grandes contribuições e ser lembrado por ter participado delas.
+                                    </p>
+                                    <!-- Fim cabeçalho -->
 
-                                <!-- Texto 1 -->
-                                <div class="col-12 text-left">
-                                    <h4 class="subtitulo3 mr-1">Universidade</h4>
-                                    <span class="textoadicional">2018 - previsão 2021</span>
+                                    <!-- Texto 1 -->
+                                    <h4 class="subtitulo3">Universidade</h4>
+                                    <span class="texto-nano">2018 - previsão 2021</span>
+                                    <p class="texto mb-4">Sou estudante de <strong>Ciência da Computação</strong> pela <a href="https://www.unisantos.br" target="_blank" class="sobrelink">Universidade Católica de Santos <i class="fas fa-external-link-alt"></i><span class="sr-only">Link externo</span></a>. Ingressei no curso de bacharelado em janeiro de 2018.</p>
+                                    <!-- Fim texto 1 -->
 
-                                    <div class="col-12 m-0 p-0 text-justify text-md-left">
-                                        <p class="texto">Sou estudante de <span class="destaquesobre">Ciência da Computação</span> pela <a href="https://www.unisantos.br" target="_blank">Universidade Católica Santos <i class="fas fa-external-link-alt linkexterno"><span class="sr-only">Link externo</span></i></a>; ingressei no curso de bacharelado em janeiro de 2018.</p>
-                                    </div>
+                                    <!-- Texto 2 -->
+                                    <h4 class="subtitulo3">Idioma</h4>
+                                    <span class="texto-nano">Intermediário</span>
+                                    <p class="texto mb-4">Curso <strong>inglês</strong> na rede de ensino de idiomas <a href="https://www.wizard.com.br" target="_blank" class="sobrelink">Wizard <i class="fas fa-external-link-alt"></i><span class="sr-only">Link externo</span></a> desde o segundo semestre de 2018. Porém, antes de iniciar o curso, pude avançar alguns anos de estudo devido a conhecimento prévio do idioma. </p>
+                                    <!-- Fim texto 2 -->
+
+                                    <!-- Texto 3 -->
+                                    <h4 class="subtitulo3">Consquistas</h4>
+                                    <p class="texto py-2 border-bottom">Participei da XX <a href="https://olimpiada.ic.unicamp.br" target="_blank" class="sobrelink">Olimpíada Brasileira de Informática <i class="fas fa-external-link-alt"></i><span class="sr-only">Link externo</span></a>, OBI 2018, na modalidade Programação, nível Sênior. Da baixada santista, fui um dos seis classificados, dessa modalidade, para a fase Estadual da competição.</p>
+
+                                    <p class="texto">Competi na XI <a href="https://portal.unisantos.br/santoscuderi/" target="_blank" class="sobrelink">Maratona de Programação Santo Scuderi <i class="fas fa-external-link-alt"></i><span class="sr-only">Link externo</span></a>, em 2018. Participaram 25 equipes, sendo que, junto à equipe que participei, a RNR, fomos classificados em 7º lugar.</p>
+                                    <!-- Fim texto 3 -->
+
                                 </div>
-                                <!-- Fim texto 1 -->
-
-                                <!-- Texto 2 -->
-                                <div class="col-12 text-left">
-                                    <h4 class="subtitulo3 mr-1">Inglês</h4>
-                                    <span class="textoadicional">Intermediário</span>
-
-                                    <div class="col-12 m-0 p-0 text-justify text-md-left">
-                                        <p class="texto">Estudo inglês na rede de ensino de idiomas <a href="https://www.wizard.com.br" target="_blank">Wizard <i class="fas fa-external-link-alt linkexterno"><span class="sr-only">Link externo</span></i>
-                                        </a>. Tendo dado início às aulas no segundo semestre de 2018. Porém, antes do curso, eu já estudava o idioma e pude pular alguns anos de curso.</p>
-                                    </div>
-                                </div>
-                                <!-- Fim texto 2 -->
-
                             </div>
-                            <!-- Fim conteúdo da esquerda -->
-
+                            <!-- Conteúdo de sobre -->
+                            <div class="sptop-desktop"></div>
                         </div>
-                        <!-- Fim caixa esquerda -->
-
-                        <!-- Caixa direita -->
-                        <div class="col-12 col-md-6 caixa-direita">
-                            <div class="sptop-mobile"></div>
-                            <div class="sptop-mobile"></div>
-
-                            <!-- Conteúdo da direita -->
-                            <div class="col-lg-11 offset-lg-1 col-12">
-
-                                <!-- Texto 1 -->
-                                <div class="col-12 text-left text-md-right">
-                                    <h4 class="subtitulo3 ml-1">Conquistas</h4>
-                                    <div class="col-12 m-0 p-0 text-justify text-md-right">
-                                        <p class="texto">Fui classificado para a fase Estadual da XX Olimpíada Brasileira de Informática, OBI, na Modalidade Programação, nível Sênior.</p>
-                                    </div>
-                                </div>
-                                <!-- Fim texto 1 -->
-
-                                <!-- Texto 2 -->
-                                <div class="col-12 text-left text-md-right">
-                                    <h4 class="subtitulo3 ml-1">Objetivos</h4>
-                                    <div class="col-12 m-0 p-0 text-justify text-md-right">
-                                        <p class="texto">Pretendo poder contribuir com o que sei e ser lembrado por ter feito parte dessa conquista.</p>
-                                    </div>
-                                </div>
-                                <!-- Fim texto 2 -->
-                                <div class="d-block d-md-none">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-12 d-flex justify-content-center">
-                                                <img class="img-fluid align-self-baseline" src="img/divisor.png" width="350">
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                            </div>
-                            <!-- Conteúdo da direita -->
-                        </div>
-                        <!-- Fim caixa direita -->
 
                     </div>
                 </div>
             </section>
             <!-- FIM SEÇÃO SOBRE -->
 
-            <!-- SEÇÃO PARA QUEBRA DE DIVS EM MOBILES
-            <section class="d-block d-md-none">
+            <!-- SEÇÃO HABILIDADES -->
+            <section id="habilidades" class="container-habilidades">
                 <div class="container">
                     <div class="row">
+
                         <div class="col-12">
-                            <img class="img-fluid" src="img/divisor.png" width="350">
-                        </div>
-                    </div>
-                </div>
-            </section>-->
-            <!-- FIM SEÇÃO PARA QUEBRA DE DIVS EM MOBILES -->
-
-            <!-- SEÇÃO HABILIDADES -->
-            <section id="habilidades" class="large-view">
-                <div class="container-fluid habilidades-conteudo">
-                    <div class="row">
-
-                        <!-- Caixa esquerda -->
-                        <div class="col-12 col-lg-6 caixa-esquerda">
                             <div class="sptop-desktop"></div>
-                            <div class="container">
-                                <div class="row">
 
-                                    <!-- Conteúdo esquerda -->
-                                    <div class="col-lg-11 col-12">
+                            <!-- Conteúdo de habilidades -->
+                            <div class="habilidades-conteudo">
+                                <div class="habilidades-texto">
+
+                                    <!-- Cabeçalho -->
+                                    <div class="cabecalho">
                                         <h3 class="subtitulo2">Habilidades</h3>
-
-                                        <!-- Texto 1 -->
-                                        <div class="col-lg-11 col-12 text-left">
-                                            <h4 class="subtitulo3">Conhecimentos</h4>
-                                            <div class="col-12 m-0 p-0 text-justify text-md-left">
-                                                <p class="texto pb-2 border-bottom border-white text-justify">Os conhecimentos ao lado são de níveis diferentes e podem ser verificados em meus repositórios no GitHub.</p>
-                                            </div>
-                                        </div>
-                                        <!-- Fim texto 1 -->
-
-                                        <!-- Texto 2 -->
-                                        <div class="col-lg-11 col-12 text-md-left mt-5">
-                                            <h4 class="subtitulo3">Cursos</h4>
-                                            <div class="col-12 m-0 p-0">
-                                                <p class="texto-menor text-justify">Alguns dos cursos profissionalizantes que cursei, e outros que estou cursando:</p>
-
-                                                <h5 class="subtitulo4">Desenvolvimento Web</h5><span class="textoadicional ml-2">107 horas - em andamento</span>
-                                                <p class="texto-menor text-justify">São agrupados 20 cursos, que vão desde desenvolvimento front-end até o back-end, e 20 projetos.</p>
-
-                                                <h5 class="subtitulo4">Treinamento OBI - Programação C</h5><span class="textoadicional ml-2">30 horas - 03/2018 à 05/2018</span>
-                                                <p class="texto-menor text-justify">Oferecido pela Universidade Católica de Santos, o curso abordou desde conceitos básicos até funções e estruturas. <a href="https://www.dropbox.com/s/s0g71nqlb4a093j/comprovante-treinamento.pdf?dl=0" target="_blank" class="link-certificado">Certificado <i class="fas fa-external-link-alt linkexterno"><span class="sr-only">Link externo</span></i></a></p>
-
-                                                <h5 class="subtitulo4">Fundamentos do Design Gráfico</h5><span class="textoadicional ml-2">6 horas - 12/2018</span>
-                                                <p class="texto-menor text-justify">Com tópicos que variam desde Teoria das Cores até editores de imagem, o curso ofereceu noções fundamentais do design gráfico. <a href="https://www.dropbox.com/s/d585dxim1fa213q/fundacao_bradesco_fundamentos_design_grafico_paisagem.pdf?dl=0" target="_blank" class="link-certificado">Certificado <i class="fas fa-external-link-alt"><span class="sr-only">Link externo</span></i></a></p>
-                                            </div>
-                                        </div>
-                                        <!-- Fim texto 2 -->
-
+                                        <p class="texto-menor">Todos os conhecimentos a seguir podem ser conferidos acessando meus repositórios no Github. Como alguns dos cursos que realizo não possuem certificação, então deixo os códigos-fonte nele.</p>
                                     </div>
-                                    <!-- Fim conteúdo esquerda -->
+                                    <!-- Fim cabeçalho -->
 
+                                    <!-- Conhecimentos -->
+                                    <div class="caixa-conhecimentos">
+                                        <h4 class="subtitulo3">Conhecimentos</h4>
+                                        <ul class="lista-conhecimentos">
+
+                                            <li class="item">
+                                                <button type="button" class="btn-item">
+                                                    <i class="fas fa-caret-right"></i>
+                                                    <h5 class="subtitulo4">C</h5>
+                                                    <span>Avançaco</span>
+                                                </button>
+                                            </li>
+
+                                            <li class="item">
+                                                <button type="button" class="btn-item">
+                                                    <i class="fas fa-caret-right"></i>
+                                                    <h5 class="subtitulo4">HTML 5</h5>
+                                                    <span>Intermediário</span>
+                                                </button>
+                                            </li>
+
+                                            <li class="item">
+                                                <button type="button" class="btn-item">
+                                                    <i class="fas fa-caret-right"></i>
+                                                    <h5 class="subtitulo4">CSS 3</h5>
+                                                    <span>Intermediário</span>
+                                                </button>
+                                            </li>
+
+                                            <li class="item">
+                                                <button type="button" class="btn-item">
+                                                    <i class="fas fa-caret-right"></i>
+                                                    <h5 class="subtitulo4">PYTHON 3</h5>
+                                                    <span>Estudando</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <!-- Fim conhecimentos -->
+
+                                    <!-- Cursos -->
+                                    <div class="caixa-cursos">
+                                        <h4 class="subtitulo3">Cursos</h4>
+                                    </div>
+                                    <!-- Fim cursos -->
                                 </div>
                             </div>
+                            <!-- Fim conteúdo de habilidades -->
                         </div>
-                        <!-- Fim caixa esquerda -->
-
-
-                        <!-- Caixa direita -->
-                        <div class="col-12 col-lg-6 padding-top caixa-direita">
-                            <div class="sptop-mobile"></div>
-
-                            <div class="container-fluid">
-
-                                <!-- Habilidades -->
-                                <div class="row">
-
-                                    <!-- C -->
-                                    <div class="col-12 col-md-4">
-                                        <div class="col-10 offset-1">
-                                            <div class="caixa-habilidades">
-                                                <div class="caixaimg">
-                                                    <span class="font-weight-bold">C</span>
-                                                </div>
-                                                <div class="caixatexto">
-                                                    <h6 class="subtitulo5">C18</h6>
-                                                    <p class="texto-nano">Avançado</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Fim C -->
-
-                                    <!-- HTML -->
-                                    <div class="col-12 col-md-4">
-                                        <div class="col-10 offset-1">
-                                            <div class="caixa-habilidades">
-                                                <div class="caixaimg">
-                                                    <i class="fab fa-html5"></i>
-                                                </div>
-                                                <div class="caixatexto">
-                                                    <h6 class="subtitulo5">HTML5</h6>
-                                                    <p class="texto-nano">Intermediário</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Fim HTML -->
-
-                                    <!-- CSS -->
-                                    <div class="col-12 col-md-4">
-                                        <div class="col-10 offset-1">
-                                            <div class="caixa-habilidades">
-                                                <div class="caixaimg">
-                                                    <i class="fab fa-css3-alt"></i>
-                                                </div>
-                                                <div class="caixatexto">
-                                                    <h6 class="subtitulo5">CSS3</h6>
-                                                    <p class="texto-nano">Intermediário</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Fim CSS -->
-
-                                    <!-- Bootstrap -->
-                                    <div class="col-12 col-md-4">
-                                        <div class="col-10 offset-1">
-                                            <div class="caixa-habilidades">
-                                                <div class="caixaimg">
-                                                    <span class="font-weight-bold">B</span>
-                                                </div>
-                                                <div class="caixatexto">
-                                                    <h6 class="subtitulo5">Bootstrap</h6>
-                                                    <p class="texto-nano">Intermediário</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Fim Bootstrap -->
-
-                                    <!-- Git -->
-                                    <div class="col-12 col-md-4">
-                                        <div class="col-10 offset-1">
-                                            <div class="caixa-habilidades">
-                                                <div class="caixaimg">
-                                                    <i class="fab fa-git"></i>
-                                                </div>
-                                                <div class="caixatexto">
-                                                    <h6 class="subtitulo5">Git</h6>
-                                                    <p class="texto-nano">Intermediário</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Fim Git -->
-
-                                    <!-- Python -->
-                                    <div class="col-12 col-md-4">
-                                        <div class="col-10 offset-1">
-                                            <div class="caixa-habilidades">
-                                                <div class="caixaimg">
-                                                    <i class="fab fa-python"></i>
-                                                </div>
-                                                <div class="caixatexto">
-                                                    <h6 class="subtitulo5">Python 3</h6>
-                                                    <p class="texto-nano">Estudando</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Fim Python -->
-
-                                    <!-- Adobe XD -->
-                                    <div class="col-12 col-md-4">
-                                        <div class="col-10 offset-1">
-                                            <div class="caixa-habilidades">
-                                                <div class="caixaimg">
-                                                    <span class="font-weight-bold">XD</span>
-                                                </div>
-                                                <div class="caixatexto">
-                                                    <h6 class="subtitulo5">Adobe XD</h6>
-                                                    <p class="texto-nano">Estudando</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                   <!-- Fim Adobe XD -->
-                                   
-                                   <!-- Visual Studio -->
-                                    <div class="col-12 col-md-4">
-                                        <div class="col-10 offset-1">
-                                            <div class="caixa-habilidades">
-                                                <div class="caixaimg">
-                                                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHg9IjBweCIgeT0iMHB4Igp3aWR0aD0iOTAiIGhlaWdodD0iOTAiCnZpZXdCb3g9IjAgMCAyMjQgMjI0IgpzdHlsZT0iIGZpbGw6IzAwMDAwMDsiPjxnIGZpbGw9Im5vbmUiIGZpbGwtcnVsZT0ibm9uemVybyIgc3Ryb2tlPSJub25lIiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZS1saW5lY2FwPSJidXR0IiBzdHJva2UtbGluZWpvaW49Im1pdGVyIiBzdHJva2UtbWl0ZXJsaW1pdD0iMTAiIHN0cm9rZS1kYXNoYXJyYXk9IiIgc3Ryb2tlLWRhc2hvZmZzZXQ9IjAiIGZvbnQtZmFtaWx5PSJub25lIiBmb250LXdlaWdodD0ibm9uZSIgZm9udC1zaXplPSJub25lIiB0ZXh0LWFuY2hvcj0ibm9uZSIgc3R5bGU9Im1peC1ibGVuZC1tb2RlOiBub3JtYWwiPjxwYXRoIGQ9Ik0wLDIyNHYtMjI0aDIyNHYyMjR6IiBmaWxsPSJub25lIj48L3BhdGg+PGcgZmlsbD0iIzMzMzMzMyI+PHBhdGggZD0iTTIwNC4wMTkyLDM1Ljg2OTg3bC0zNS40NjY2NywtMTIuMTMzMzNjLTIuMzUyLC0wLjgwNjQgLTQuOTgwMjcsLTAuMzgwOCAtNi45NTg5MywxLjEzNDkzbC03OS45NTMwNyw2MS4zMDEzM2wtNDAuNDQ2OTMsLTI0LjQyMzQ3Yy0yLjA3NTczLC0xLjI2MTg3IC00LjYyOTMzLC0xLjQzMzYgLTYuODU0NCwtMC40NTU0N2wtMTQuOTMzMzMsNi41MzMzM2MtMi43MTc4NywxLjE4NzIgLTQuNDcyNTMsMy44NzUyIC00LjQ3MjUzLDYuODM5NDd2NzQuNjY2NjdjMCwyLjk2NDI3IDEuNzU0NjcsNS42NTIyNyA0LjQ3MjUzLDYuODM5NDdsMTQuOTMzMzMsNi41MzMzM2MyLjIxNzYsMC45NzgxMyA0Ljc3MTIsMC43OTg5MyA2Ljg1NDQsLTAuNDU1NDdsNDAuNDM5NDcsLTI0LjQyMzQ3bDc5Ljk1MzA3LDYxLjMwMTMzYzEuMzIxNiwxLjAxNTQ3IDIuOTI2OTMsMS41MzgxMyA0LjUzOTczLDEuNTM4MTNjMC44MTM4NywwIDEuNjI3NzMsLTAuMTM0NCAyLjQxOTIsLTAuNDAzMmwzNS40NjY2NywtMTIuMTMzMzNjMy4wMjQsLTEuMDMwNCA1LjA1NDkzLC0zLjg2NzczIDUuMDU0OTMsLTcuMDYzNDd2LTEzOC4xMzMzM2MwLC0zLjE5NTczIC0yLjAzMDkzLC02LjAzMzA3IC01LjA0NzQ3LC03LjA2MzQ3ek00NC44LDEyNS4xODYxM3YtMjYuMzcyMjdsMjEuODI1MDcsMTMuMTg2MTN6TTE2NC4yNjY2NywxNDcuMjIwMjdsLTUxLjk4MjkzLC0zNS4yMjAyN2w1MS45ODI5MywtMzUuMjIwMjd6Ij48L3BhdGg+PC9nPjwvZz48L3N2Zz4=" width="70" class="img-fluid">
-                                                </div>
-                                                <div class="caixatexto">
-                                                    <h6 class="subtitulo5">Visual Studio</h6>
-                                                    <p class="texto-nano">Estudando</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Fim Visual Studio -->
-
-                                    <!-- JavaScript -->
-                                    <div class="col-12 col-md-4">
-                                        <div class="col-10 offset-1">
-                                            <div class="caixa-habilidades">
-                                                <div class="caixaimg">
-                                                    <i class="fab fa-js-square"></i>
-                                                </div>
-                                                <div class="caixatexto">
-                                                    <h6 class="subtitulo5">JavaScript</h6>
-                                                    <p class="texto-nano">Estudando</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <!-- Fim JavaScript -->
-
-                                </div>
-                                <!-- Fim habilidades -->
-
-                            </div>
-                        </div>
-                        <!-- Fim caixa direita -->
-                        
                     </div>
-                                
                 </div>
-                
             </section>
             <!-- FIM SEÇÃO HABILIDADES -->
 
             <!-- SEÇÃO PROJETOS -->
-            <section id="projetos" class="large-view bg-warning">
+            <section id="projetos" class="container-projetos bg-warning">
                 
             </section>
             <!-- FIM SEÇÃO PROJETOS -->
 
             <!-- SEÇÃO CONTATO -->
-            <section id="contato" class="large-view bg-info">
+            <section id="contato" class="container-contato bg-info">
                 
             </section>
             <!-- FIM SEÇÃO CONTATO -->
@@ -505,7 +314,8 @@
                 <h3 class="copyright">
                     <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">
                         <img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by/4.0/80x15.png" />
-                    </a>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a></h3>
+                    </a>This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>
+                </h3>
             </div>
         </footer>
         <!-- FIM RODAPÉ -->
