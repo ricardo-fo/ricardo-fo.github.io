@@ -17,6 +17,6 @@
 /* Adicionar media query para background-size */
 @media (max-width: 450.98px) {
 	.container-background {
-		background-size: 250% 100%;
+		background-size: 200% 100%;
 	}
 }

@@ -92,17 +92,17 @@ h6.subtitulo5 {
     display: inline-block;
 }
 
-p.texto {
+.texto {
     font-family: 'Montserrat', sans-serif;
-    font-size: 17px;
+    font-size: 16px;
 }
 
-p.texto-menor {
+.texto-menor {
     font-family: 'Montserrat', sans-serif;
     font-size: 13.5px;
 }
 
-p.texto-nano {
+.texto-nano {
     font-family: 'Montserrat', sans-serif;
     font-size: 10px;
 }

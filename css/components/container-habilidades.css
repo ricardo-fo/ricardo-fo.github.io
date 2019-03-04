@@ -1,0 +1,8 @@
+.container-habilidades {
+	height: 100vh;
+	background-image: url("../../img/bg14.png");
+	background-repeat: no-repeat;
+	background-position: center left;
+	background-size: cover;
+	background-attachment: fixed;
+}

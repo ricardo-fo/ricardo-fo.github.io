@@ -8,7 +8,8 @@
 	--color-negative-lighter: rgba(0, 0, 0, 0.6);
 	--color-negative-very-lighter: rgba(0, 0, 0, 0.3);
 	--color-medium: #666;
-	--color-medium-light: rgba(150, 150, 150, 0.2);
+	--color-medium-light: rgba(150, 150, 150, 0.5);
+	--color-medium-lighter: rgba(150, 150, 150, 0.2);
 	--color-first: #343A48;
 	--color-first-light: #616774;
 	--color-second: #68BAC6;

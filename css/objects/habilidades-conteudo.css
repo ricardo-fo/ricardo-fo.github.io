@@ -1,63 +1,32 @@
-
 .habilidades-conteudo {
-	box-sizing: border-box;
-	background-color: var(--color-first);
+	padding: 20px 30px;
+	box-shadow: 0 0 10px 0 black;
+	background-color: var(--color-negative-very-lighter);
 }
 
-.habilidades-conteudo .caixa-direita {
-	background-image: url("../../img/bg4.jpg");
-	background-repeat: no-repeat;
-	background-size: contain;
-	background-position: right top;
-	background-attachment: fixed;
+.habilidades-conteudo .habilidades-texto {
+	text-align: justify;
 }
 
-.habilidades-conteudo .caixa-habilidades {
-	min-height: 150px;
-	background-color: var(--color-zero);
-	border-radius: 10px;
-	color: var(--color-first);
+.habilidades-texto > .cabecalho {
+	border-bottom: 1px solid var(--color-zero-lighter);
+	margin-bottom: 15px;
+}
+
+.habilidades-texto h3 {
 	text-align: center;
-	margin: 10px;
 }
 
-.caixa-habilidades > .caixaimg {
-	font-size: 50px;
+.caixa-conhecimentos > .lista-conhecimentos {
+	background-color: #f00;
+	padding: 0;
 }
 
-/*Background responsivo*/
-/*Extra small devices (portrait phones, menor que 576px)*/
-@media (max-width: 991.98px) {
-	.habilidades-conteudo .caixa-direita {
-		background-size: cover;
-	}
-	.habilidades-conteudo .caixa-habilidades {
-		min-height: 200px;
-	}
-	.caixa-habilidades > .caixaimg {
-		font-size: 90px;
-	}
+.lista-conhecimentos > .item {
+	background-color: #0f0;
 }
 
-@media (min-width: 992px) and (max-width: 1199.98px) {
-	.habilidades-conteudo .caixa-direita {
-		background-size: cover;
-	}
-	.habilidades-conteudo .caixa-habilidades {
-		min-height: 150px;
-		min-width: 90px;
-	}
-	.caixa-habilidades > .caixaimg {
-		font-size: 50px;
-	}
+.lista-conhecimentos .btn-item {
+	width: 100%;
+	text-align: justify;
 }
-
-.caixa-esquerda .link-certificado {
-	color: var(--color-link-alt);
-}
-
-.caixa-esquerda .link-certificado:hover {
-	color: var(--color-zero);
-	text-decoration: none;
-}
-
