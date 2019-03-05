@@ -77,7 +77,6 @@ h5.subtitulo4 {
     font-weight: lighter;
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: var(--color-second);
 
     display: inline-block;
 }
@@ -85,9 +84,7 @@ h5.subtitulo4 {
 h6.subtitulo5 {
     font-family: 'Montserrat', sans-serif;
     font-size: 12px;
-    font-weight: bold;
     text-transform: uppercase;
-    color: var(--color-first);
 
     display: inline-block;
 }
