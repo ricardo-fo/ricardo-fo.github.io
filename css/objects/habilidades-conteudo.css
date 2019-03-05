@@ -1,61 +1,76 @@
+/* Configuração geral */
 .habilidades-conteudo {
 	padding: 20px 30px;
-	box-shadow: 0 0 10px 0 black;
 	background-color: var(--color-negative-very-lighter);
+
+	-webkit-box-shadow: 0 0 10px 0 var(--color-negative);
+	-moz-box-shadow: 0 0 10px 0 var(--color-negative);
+	box-shadow: 0 0 10px 0 var(--color-negative);
+
+	text-align: justify;
 }
 
+/* Configuração do texto */
 .habilidades-texto > .cabecalho {
 	border-bottom: 1px solid var(--color-zero-lighter);
 	margin-bottom: 15px;
 }
 
-.habilidades-texto > .cabecalho h3 {
+.habilidades-texto .subtitulo2 {
 	text-align: center;
 }
 
+/* Configuração de conhecimentos */
 .caixa-conhecimentos > .lista-conhecimentos {
 	padding: 0;
 }
 
+/* Linha com botão dropdown */
 .lista-conhecimentos .dropdown-btn {
 	width: 100%;
-	background-color: var(--color-negative-lighter);
+	padding: 0;
 	border: none;
+	cursor: pointer;
+
+	background-color: var(--color-negative-lighter);
 	border-bottom: 1px solid var(--color-zero-lighter);
 	text-align: justify;
-	padding: 0;
-	cursor: pointer;
 }
 
+/* Botão dropdown */
 .dropdown-btn > .dropdown-header {
 	color: var(--color-zero);
 	margin: 0;
 	padding: 5px 10px;
 }
 
+/* Conteúdo do botão dropdown */
 .dropdown-btn > .dropdown-content {
+	display: none;
 	height: 0;
 	width: 100%;
 	margin: 0;
 	padding: 5px 20px;
-	display: none;
+	cursor: default;
+
 	background-color: var(--color-zero);
 	color: var(--color-negative);
-	cursor: default;
 }
 
+/* Efeito hover do botão dropdown */
 .lista-conhecimentos .dropdown-btn:hover {
 	background-color: var(--color-medium-lighter);
+
+	-webkit-transition: background-color 0.3s linear;
+	-moz-transition: background-color 0.3s linear;
+	-o-transition: background-color 0.3s linear;
 	transition: background-color 0.3s linear;
 }
 
+/* Efeito ao clicar no botão dropdown */
 .lista-conhecimentos .dropdown-btn:focus {
 	outline: 0;
-	background-color: rgba(20, 20, 20, 0.3);
-}
-
-.dropdown-btn:focus > .dropdown-header {
-	color: var(--color-zero);
+	background-color: var(--color-dark-grey-lighter);
 }
 
 .dropdown-btn:focus > .dropdown-content {
@@ -64,6 +79,107 @@
 }
 
 .dropdown-btn:focus > .dropdown-header i {
+	-webkit-transform: rotate(90deg);
+	-moz-transform: rotate(90deg);
+	-ms-transform: rotate(90deg);
+	-o-transform: rotate(90deg);
 	transform: rotate(90deg);
+
+	-webkit-transition: -webkit-transform 0.2s ease-in;
+	-moz-transition: -moz-transform 0.2s ease-in;
+	-o-transition: -o-transform 0.2s ease-in;
+	transition: transform 0.2s ease-in;
+}
+
+/* Configuração de cursos */
+.caixa-cursos > .lista-cursos {
+	padding: 0;
+	color: var(--color-negative);
+}
+
+.lista-cursos > .item-cursos {
+	margin-bottom: 5px;
+}
+
+/* Configuração dos textos */
+/* Configuração do título do curso */
+.item-cursos > .titulo {
+	padding: 4px 0 4px 10px;
+	background-color: var(--color-negative);
+	border-bottom: 1px solid var(--color-right);
+	color: var(--color-second);
+}
+
+.item-cursos .detalhes {
+	color: var(--color-zero-light);
+	margin-left: 5px;
+}
+
+.item-cursos .textoicone {
+	color: var(--color-zero-light);
+	margin-left: 2px;
+	margin-right: 10px; 
+}
+
+@media (max-width: 500px) {
+	.item-cursos > .subtitulo4 {
+		display: block;
+		padding-top: 10px;
+		margin: 0;
+	}
+	.item-cursos .detalhes {
+		display: block;
+		margin: 0;
+	}
+}
+
+/* Configuração do conteúdo do curso */
+.item-cursos > .conteudo {
+	padding: 5px 10px;
+	background-color: var(--color-zero);
+	text-align: justify;
+}
+
+.item-cursos .texto-menor {
+	margin-bottom: 10px;
+}
+
+.item-cursos .linkexterno{
+	font-size: 10px;
+}
+
+.item-cursos .sitecurso {
+	color: var(--color-negative);
+	border-bottom: 1px dotted var(--color-negative);
+}
+
+.item-cursos .sitecurso:hover {
+	text-decoration: none;
+	border-bottom: none;
+	background-color: var(--color-second-light);
+
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
+	transition: all 0.2s ease-in;
+}
+
+.item-cursos .certificado {
+	background-color: var(--color-medium-lighter);
+	color: var(--color-negative);
+	padding: 2px 5px;
+
+	-webkit-border-radius: 20px;
+	-moz-border-radius: 20px;
+	border-radius: 20px;
+}
+
+.item-cursos .certificado:hover {
+	background-color: var(--color-medium);
+	text-decoration: none;
+
+	-webkit-transition: all 0.2s ease-in;
+	-moz-transition: all 0.2s ease-in;
+	-o-transition: all 0.2s ease-in;
 	transition: all 0.2s ease-in;
 }

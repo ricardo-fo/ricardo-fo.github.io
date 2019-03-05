@@ -31,7 +31,9 @@ body {
 h1,
 h2,
 h3,
-h4 {
+h4,
+h5,
+h6 {
 	margin: 0;
 	padding: 0;
 }
@@ -96,7 +98,7 @@ h6.subtitulo5 {
 
 .texto-menor {
     font-family: 'Montserrat', sans-serif;
-    font-size: 13.5px;
+    font-size: 14px;
 }
 
 .texto-nano {
