@@ -181,14 +181,21 @@
 }
 
 @media (max-width: 900px) {
-	.item-cursos > .subtitulo4 {
+	.item-cursos > .subtitulo4,
+	.item-cursos .subtitulo5 {
 		display: block;
-		padding-top: 10px;
 		margin: 0;
 	}
-	.item-cursos .detalhes {
+	.item-cursos > .subtitulo4 {
+		padding-top: 10px;
+	}
+	.item-cursos .detalhes,
+	.item-cursos .mobilecollapse {
 		display: block;
 		margin: 0;
+	}
+	.item-cursos .mobilecollapse {
+		margin: 5px 0 10px 0;
 	}
 }
 
