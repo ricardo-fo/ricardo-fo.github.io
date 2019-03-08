@@ -1,13 +1,12 @@
 /* Configuração geral */
 .habilidades-conteudo {
 	padding: 20px 30px;
+	text-align: justify;
 	background-color: var(--color-negative-very-lighter);
 
 	-webkit-box-shadow: 0 0 10px 0 var(--color-negative);
 	-moz-box-shadow: 0 0 10px 0 var(--color-negative);
 	box-shadow: 0 0 10px 0 var(--color-negative);
-
-	text-align: justify;
 }
 
 /* Configuração do texto */
@@ -20,32 +19,62 @@
 	text-align: center;
 }
 
-/* Configuração de conhecimentos */
-.caixa-conhecimentos > .lista-conhecimentos {
+/* Configurações gerais das listas */
+.caixa-conhecimentos > .lista-conhecimentos,
+.caixa-cursos > .lista-cursos {
 	padding: 0;
+	margin: 0;
 }
 
+.habilidades-texto > .caixa-conhecimentos {
+	margin-bottom: 30px;
+}
+
+.habilidades-texto .titulo {
+	padding: 4px 0 4px 10px;
+	margin: 0;
+	text-align: left;
+	color: var(--color-second);
+}
+
+.habilidades-texto .detalhes {
+	display: inline-block;
+	color: var(--color-zero-light);
+	margin-left: 5px;
+}
+
+/* CONHECIMENTOS */
 /* Linha com botão dropdown */
-.lista-conhecimentos .dropdown-btn {
+.lista-conhecimentos .botao-dropdown {
 	width: 100%;
 	padding: 0;
 	border: none;
 	cursor: pointer;
 
-	background-color: var(--color-negative-lighter);
+	background-color: transparent;
 	border-bottom: 1px solid var(--color-zero-lighter);
-	text-align: justify;
 }
 
-/* Botão dropdown */
-.dropdown-btn > .dropdown-header {
-	color: var(--color-zero);
-	margin: 0;
-	padding: 5px 10px;
+.botao-dropdown .titulo {
+	background-color: var(--color-negative-lighter);
+
+	-webkit-transition: all 0.3s linear;
+	-moz-transition: all 0.3s linear;
+	-o-transition: all 0.3s linear;
+	transition: all 0.3s linear;
+}
+
+.botao-dropdown .detalhes {
+	margin-left: 3px;
+}
+
+.botao-dropdown .nivel {
+	display: inline-block;
+	margin-left: 2px;
 }
 
 /* Conteúdo do botão dropdown */
-.dropdown-btn > .dropdown-content {
+.botao-dropdown > .conteudo {
 	display: none;
 	height: 0;
 	width: 100%;
@@ -53,13 +82,23 @@
 	padding: 5px 20px;
 	cursor: default;
 
+	text-align: justify;
 	background-color: var(--color-zero);
+	color: var(--color-negative);
+
+	-webkit-transition: all 2s linear;
+	-moz-transition: all 2s linear;
+	-o-transition: all 2s linear;
+	transition: all 2s linear;
+}
+
+.botao-dropdown .conteudo .detalhes {
 	color: var(--color-negative);
 }
 
 /* Efeito hover do botão dropdown */
-.lista-conhecimentos .dropdown-btn:hover {
-	background-color: var(--color-medium-lighter);
+.botao-dropdown:hover > .titulo {
+	background-color: transparent;
 
 	-webkit-transition: background-color 0.3s linear;
 	-moz-transition: background-color 0.3s linear;
@@ -68,17 +107,44 @@
 }
 
 /* Efeito ao clicar no botão dropdown */
-.lista-conhecimentos .dropdown-btn:focus {
+.lista-conhecimentos .botao-dropdown:focus {
 	outline: 0;
-	background-color: var(--color-dark-grey-lighter);
 }
 
-.dropdown-btn:focus > .dropdown-content {
+.botao-dropdown:focus > .titulo,
+.botao-dropdown:focus .titulo .detalhes {
+	color: var(--color-zero);
+
+	-webkit-transition: color 0.3s linear;
+	-moz-transition: color 0.3s linear;
+	-o-transition: color 0.3s linear;
+	transition: color 0.3s linear;
+}
+
+.botao-dropdown:focus > .titulo {
+	background-color: var(--color-negative);
+
+	-webkit-transition: background-color 0.3s linear;
+	-moz-transition: background-color 0.3s linear;
+	-o-transition: background-color 0.3s linear;
+	transition: background-color 0.3s linear;
+}
+
+.botao-dropdown:focus > .conteudo {
 	display: block;
 	height: 100%;
 }
 
-.dropdown-btn:focus > .dropdown-header i {
+.botao-dropdown .expandir {
+	margin-right: 8px;
+
+	-webkit-transition: -webkit-transform 0.2s ease-in;
+	-moz-transition: -moz-transform 0.2s ease-in;
+	-o-transition: -o-transform 0.2s ease-in;
+	transition: transform 0.2s ease-in;
+}
+
+.botao-dropdown:focus .expandir {
 	-webkit-transform: rotate(90deg);
 	-moz-transform: rotate(90deg);
 	-ms-transform: rotate(90deg);
@@ -91,7 +157,7 @@
 	transition: transform 0.2s ease-in;
 }
 
-/* Configuração de cursos */
+/* CURSOS */
 .caixa-cursos > .lista-cursos {
 	padding: 0;
 	color: var(--color-negative);
@@ -106,13 +172,6 @@
 .item-cursos > .titulo {
 	padding: 4px 0 4px 10px;
 	background-color: var(--color-negative);
-	border-bottom: 1px solid var(--color-right);
-	color: var(--color-second);
-}
-
-.item-cursos .detalhes {
-	color: var(--color-zero-light);
-	margin-left: 5px;
 }
 
 .item-cursos .textoicone {
@@ -121,7 +180,7 @@
 	margin-right: 10px; 
 }
 
-@media (max-width: 500px) {
+@media (max-width: 900px) {
 	.item-cursos > .subtitulo4 {
 		display: block;
 		padding-top: 10px;
@@ -144,7 +203,7 @@
 	margin-bottom: 10px;
 }
 
-.item-cursos .linkexterno{
+.item-cursos .linkexterno {
 	font-size: 10px;
 }
 
