@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Montserrat&display=swap');
+@import url("../components/animacoes.css");
+
+/* APRESENTAÇÃO */
+.secao-home .apresentacao {
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+}
+
+.secao-home .titulo {
+	display: flex;
+	align-items: center;
+	flex-grow: 3;
+}
+
+.secao-home .nome {
+	font-family: 'Alegreya Sans SC', sans-serif;
+	text-shadow: 0px 0px 10px black;
+	font-size: 6rem;
+	color: #FFF;
+	display: block;
+	flex-grow: 1;
+	text-align: center;
+	border-bottom: 1px solid white;
+}
+/* CONTEÚDO */
+.secao-home .conteudo {
+	display: flex;
+	align-items: flex-start;
+	flex-grow: 2;
+}
+
+.secao-home .caixa {
+	display: inline;
+	margin: 0 auto;
+}
+
+.secao-home .texto {
+	width: inherit;
+	overflow: hidden;
+	white-space: nowrap;
+	border-right: 10px solid var(--color-zero);
+
+	font-family: monospace;
+	font-size: 2.7rem;
+	color: var(--color-zero);
+	text-align: center;
+}
+
+.animacao {
+	animation: digitarTexto 2.7s steps(40) 1s 1 normal both, piscarCursor 500ms steps(40) infinite normal;
+	-webkit-animation: digitarTexto 2.7s steps(40) 1s 1 normal both, piscarCursor 500ms steps(40) infinite normal;
+	-moz-animation: digitarTexto 2.7s steps(40) 1s 1 normal both, piscarCursor 500ms steps(40) infinite normal;
+	-o-animation: digitarTexto 2.7s steps(40) 1s 1 normal both, piscarCursor 500ms steps(40) infinite normal;
+}
+
+/* BOTÃO */
+.secao-home .conheca {
+	display: flex;
+	align-items: flex-start;
+	flex-grow: 2;
+	justify-content: center;
+}
+
+.secao-home .link {
+	text-decoration: none;
+}
+
+.secao-home .botao {
+	position: relative;
+	display: block;
+	text-align: center;
+	border: none;
+	outline: none;
+	padding: 10px;
+	overflow: hidden;
+
+	font-size: 1rem;
+	text-transform: uppercase;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	background-color: var(--color-one);
+	color: var(--color-two);
+
+	transition: all 1s ease;
+}
+
+.secao-home .botao:hover {
+	border-radius: 0px;
+	padding: 15px;
+	color: var(--color-zero);
+	background-color: var(--color-two);
+	transition: all 0.5s ease;
+}

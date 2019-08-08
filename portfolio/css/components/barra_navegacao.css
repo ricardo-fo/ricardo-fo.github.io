@@ -1,0 +1,189 @@
+@import url("animacoes.css");
+@import url("../settings/color.css");
+
+/* CONFIGURAÇÕES GERAIS */
+.barra-menu {
+	width: 4%;
+	min-width: 55px;
+	height: 100vh;
+	position: fixed;
+	left: 0;
+	z-index: 100;
+	display: flex;
+	flex-direction: column;
+	box-sizing: border-box;
+	text-align: center;
+
+	background-color: var(--color-menu-background);
+}
+
+/* LOGO */ 
+.barra-menu .caixa-logo {
+	flex-grow: 0;
+	margin: 1% 0 5% 0;
+}
+
+
+/* SELEÇÃO DE IDIOMA */
+.barra-menu .caixa-idiomas {
+	flex-grow: 1;
+	border-bottom: 1.2px dotted rgba(100, 100, 100, 0.3);
+}
+
+.barra-menu .lista {
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	box-sizing: border-box;
+}
+
+.caixa-idiomas .botao {
+	font-size: 1rem;
+	color: var(--color-zero);
+	width: 100%;
+	border: none;
+	background-color: var(--color-menu-background);
+}
+
+.caixa-idiomas .botao:hover,
+.caixa-idiomas .botao:focus,
+.caixa-idiomas .botao:active,
+.caixa-idiomas .ativo,
+.caixa-idiomas .ativo:hover,
+.caixa-idiomas .ativo:active,
+.caixa-idiomas .ativo:focus {
+	outline: none;
+	color: var(--color-one);
+}
+
+.caixa-idiomas .ativo,
+.caixa-idiomas .ativo:hover,
+.caixa-idiomas .ativo:active,
+.caixa-idiomas .ativo:focus {
+	cursor: auto;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	background-color: var(--color-menu-botao-active);
+}
+
+/* SEÇÃO DE NAVEGAÇÃO */
+.barra-menu .caixa-items {
+	flex-grow: 5;
+	border-bottom: 1.2px dotted rgba(100, 100, 100, 0.3);
+}
+
+.caixa-items .lista {
+	box-sizing: border-box;
+	align-content: stretch;
+}
+
+.caixa-items .texto-hover,
+.caixa-sociais .texto-hover {
+	display: none;
+}
+
+.caixa-items .item:hover .texto-hover,
+.caixa-sociais .item:hover .texto-hover {
+	display: inline;
+}
+
+.caixa-items .item:hover .icone,
+.caixa-sociais .item:hover .icone {
+	display: none;
+}
+
+.caixa-items .item:hover,
+.caixa-sociais .item:hover:first-child {
+	width: 95px;
+
+	animation: showBox 0.3s ease-in 0s 1 normal;
+	-webkit-animation: showBox 0.3s ease-in 0s 1 normal;
+	-moz-animation: showBox 0.3s ease-in 0s 1 normal;
+	-o-animation: showBox 0.3s ease-in 0s 1 normal;
+
+	border-radius: 0px 50px 50px 0px;
+	-webkit-border-radius: 0px 50px 50px 0px;
+	-moz-border-radius: 0px 50px 50px 0px;
+
+	background-color: var(--color-one);
+}
+
+.caixa-items .link,
+.caixa-items .link:visited,
+.caixa-sociais .link,
+.caixa-sociais .link:visited {
+	font-size: 1.3rem;
+	display: block;
+	color: var(--color-zero);
+}
+
+.caixa-items .link:hover,
+.caixa-sociais .link:hover:first-child {
+	padding: 8px;
+	font-size: 0.85rem;
+	outline: none;
+	text-decoration: none;
+	color: var(--color-two);
+	background-color: transparent;
+}
+
+.caixa-items .ativo,
+.caixa-sociais .ativo {
+	font-size: 1.3rem;
+	display: block;
+	border-radius: 100px;
+	-webkit-border-radius: 100px;
+	-moz-border-radius: 100px;
+	background-color: var(--color-menu-botao-active);
+	color: var(--color-one);
+}
+
+.caixa-items .ativo:active,
+.caixa-sociais .ativo:active {
+	font-size: 0.85rem;
+	outline: none;
+	text-decoration: none;
+	color: var(--color-two);
+}
+
+.caixa-items .ativo:hover,
+.caixa-sociais .ativo:hover {
+	padding: 8px;
+	font-size: 0.85rem;
+	outline: none;
+	text-decoration: none;
+	color: var(--color-two);
+	background-color: transparent;
+}
+
+.caixa-items .item:hover .ativo,
+.caixa-sociais .item:hover .ativo {
+	width: 100%;
+	border-radius: 0;
+}
+
+/* REDES SOCIAIS */
+.barra-menu .caixa-sociais {
+	flex-grow: 3;
+}
+
+.caixa-sociais .lista {
+	box-sizing: border-box;
+}
+
+.caixa-sociais .link {
+	color: var(--color-zero);
+	font-size: 1.3rem;
+}
+
+.caixa-sociais .link:not(#contato):hover {
+	padding: 0; 
+	font-size: 1.3rem;
+	color: var(--color-one);
+}
+
+.caixa-sociais .link:not(#contato):active {
+	color: var(--color-two);
+}

@@ -1,0 +1,19 @@
+{
+	"home": [
+		{ 
+			"conteudo": [
+				{ "texto": "Desenvolvimento Web" }, 
+				{ "id": "secao-home" },
+				{ "classe": "texto" }
+			]
+		},
+
+		{
+			"conteudo": [
+				{ "texto": "Conheça o meu trabalho" },
+				{ "id": "secao-home" },
+				{ "classe": "botao" }
+			]
+		}
+	]
+}

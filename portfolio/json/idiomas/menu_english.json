@@ -1,0 +1,45 @@
+{
+	"menu": [
+		{
+			"navegacoes" : [
+				{ 
+					"navegacao": [
+						{ "texto_hover": "Home" },
+						{ "id": "home" },
+						{ "link": "home.json" }
+					]
+				},
+				{ 
+					"navegacao": [
+						{ "texto_hover": "About me" },
+						{ "id": "sobre" },
+						{ "link": "sobre.json" }
+					]
+				},
+				{ 
+					"navegacao": [
+						{ "texto_hover": "Skills" },
+						{ "id": "competencias" },
+						{ "link": "competencias.json" }
+					]
+				},
+				{ 
+					"navegacao": [
+						{ "texto_hover": "Projects" },
+						{ "id": "projetos" },
+						{ "link": "projetos.json" }
+					]
+				}
+			],
+			"sociais" : [
+				{
+					"social": [
+						{ "texto_hover": "Send me a message"},
+						{ "id": "contato" },
+						{ "link": "contato.json" }
+					]
+				}
+			]
+		}
+	]
+}

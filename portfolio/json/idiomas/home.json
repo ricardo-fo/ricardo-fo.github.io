@@ -1,0 +1,19 @@
+{
+	"home": [
+		{ 
+			"conteudo": [
+				{ "texto": "Web Development" }, 
+				{ "id": "secao-home" },
+				{ "classe": "texto" }
+			]
+		},
+
+		{
+			"conteudo": [
+				{ "texto": "Take a look at my work" },
+				{ "id": "secao-home" },
+				{ "classe": "botao" }
+			]
+		}
+	]
+}
