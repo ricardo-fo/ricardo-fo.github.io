@@ -92,7 +92,7 @@ function carregarMenu(id){
 	}
 
 	let xmlHttp = new XMLHttpRequest();
-	xmlHttp.open('GET', `http://localhost/portfolio/json/idiomas/${arquivo}`);
+	xmlHttp.open('GET', `https://github.com/ricardo-fo/ricardo-fo.github.io/blob/master/portfolio/json/idiomas/${arquivo}`);
 
 	// Leitura dos estados da requisição.
 	xmlHttp.onreadystatechange = () => {
@@ -154,7 +154,7 @@ function carregarHome(id){
 	}
 
 	let xmlHttp = new XMLHttpRequest();
-	xmlHttp.open('GET', `http://localhost/portfolio/json/idiomas/${arquivo}`);
+	xmlHttp.open('GET', `https://github.com/ricardo-fo/ricardo-fo.github.io/blob/master/portfolio/json/idiomas/${arquivo}`);
 
 	// Leitura dos estados da requisição.
 	xmlHttp.onreadystatechange = () => {
