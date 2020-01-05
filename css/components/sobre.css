@@ -1,0 +1,41 @@
+@import url('../base/normaliza.css');
+.sobre {
+    background-color:#250d1d;
+    height: 100%;
+    padding-bottom: 2%; 
+}
+
+.sobre .titulo {
+    font-size: 3em;
+    color: #7dc332;
+    font-family: monospace;
+    border-bottom: 1px solid #ccc;
+}
+
+.sobre .subtitulo {
+	color: #d6e3e0;
+}
+
+.sobre .sinal-seta {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: #ccc;
+}
+
+.sobre .link {
+    color: #d6d6d6;
+    border-bottom: 1px dotted #7dc332;
+    text-decoration: none;
+}
+
+.sobre .link:hover {
+    background-color: rgb(125, 195, 50, 0.4);
+}
+
+.sobre .texto {
+    text-align: justify;
+}
+
+.sobre .universidade {
+    margin-top: 1%;
+}
