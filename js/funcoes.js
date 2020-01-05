@@ -234,7 +234,7 @@ $(document).ready(() => {
 	if(idioma.id == '0'){
 		mensagem.push("./saudacoes");
 	} else {
-		mensagem.push("helloworld --greetings");
+		mensagem.push("./saudacoes");
 	}
 	$('.conheca').fadeOut(0);
 
@@ -264,4 +264,17 @@ $(document).ready(() => {
 		}
 	}
 	startTextAnimation(0);
+
+	/* Página Competências */
+	// Mostrar e esconder de habilidades
+	$('#competencias .lista-habilidades .corpo').slideUp();
+	$('#competencias .habilidades .lista-habilidades .corpo:first').slideDown();
+	$('#competencias .cursos .lista-habilidades .corpo:first').slideDown();
+	$('#competencias .lista-habilidades .habilidade').on('click', e => {
+		let corpo = $(e.target).parent().find('.corpo');
+		let sinal = $(e.target).parent().find('.cabecalho .sinal-expandir i');
+		corpo.slideToggle();
+		sinal.toggleClass('fa-chevron-right');
+		sinal.toggleClass('fa-chevron-down');
+	});
 });

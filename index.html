@@ -11,7 +11,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 
 		<!-- Transpiler Babel -->
-		<script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+		<script src="https://unpkg.com/@babel/standalone@7.7.7/babel.min.js"></script>
 
 		<!-- Bootstrap CDN -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
@@ -26,9 +26,6 @@
 		<!-- CSS -->
 		<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 990px)" href="css/mobile.css" />
 		<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 991px)" href="css/desktop.css" />
-
-		<!-- Scripts -->
-		<script type="text/babel" src="js/funcoes.js"></script>
 
 		<title>Ricardo Oliveira | Desenvolvimento Web</title>
 
@@ -81,13 +78,13 @@
 					</li>
 
 					<!-- Contato -->
-					<li class="nav-item item">
+					<li class="nav-item item mr-2">
 						<a class="nav-link link" href="#contato" id="link-contato">
 							<span class="texto">Contato</span>
 						</a>
 					</li>
 
-					<!-- Seleção de idioma -->
+					<!-- Seleção de idioma
 					<li class="nav-item item dropdown caixa-idiomas" id="btn-idioma">
 						<a class="nav-link link dropdown-toggle" href="#" id="idiomaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<i class="fas fa-language">
@@ -103,6 +100,7 @@
 							<a class="dropdown-item" href="#" value="1">EN-US<span class="sr-only sro"></span></a>
 						</div>
 					</li>
+					 -->
 				</ul>
 			</div>
 		</nav>
@@ -110,7 +108,7 @@
 		<!-- Conteúdo principal do site -->
 		<main>
 			<!-- Página home -->
-			<section id="home" class="secao home">
+			<section id="home" class="secao home mt-5">
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
@@ -168,9 +166,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-                            <div class="margin-space"></div>
-							<article class="titulo">Sobre mim
-                            </article>
+							<h2 class="titulo">Sobre mim</h2>
 
                             <article class="conteudo">
                                 <section class="universidade">
@@ -204,12 +200,128 @@
 			</section>
 
 			<!-- Página competências -->
-			<section id="competencias" class="secao competencias bg-warning">
+			<section id="competencias" class="secao competencias">
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<article class="titulo">
-								
+							<h2 class="titulo">Competências</h2>
+
+							<article class="conteudo">
+								<section class="habilidades">
+									<h3>
+										<span class="sinal-seta">></span>
+										<span class="subtitulo">Habilidades</span>
+									</h3>
+									<p class="texto">As habilidades a seguir são tecnologias ou ferramentas que possuo algum grau de conhecimento técnico.</p>
+
+									<li class="lista-habilidades">
+										<ul class="habilidade">
+											<section class="cabecalho">
+												<span class="sinal-expandir"><i class="fas fa-chevron-down"></i></span>
+												<h4 class="titulo">PHP -</h4>
+												<small class="resumo">Laravel, Blade, PHPMyAdmin</small>
+											</section>
+
+											<section class="corpo">
+												<h5 class="subtitulo">Experiência</h5>
+												<p class="texto">Meu primeiro contato com PHP foi através de um curso com mais de 100 horas de duração, o foco do curso era tanto o front-end quanto o back-end. Além disso, utilizo PHP, Laravel e Blade no dia-a-dia no local de trabalho e, também, em alguns projetos do grupo de pesquisa da faculdade.</p>
+											</section>
+										</ul>
+										<ul class="habilidade">
+											<section class="cabecalho">
+												<span class="sinal-expandir"><i class="fas fa-chevron-right"></i></span>
+												<h4 class="titulo">JavaScript -</h4>
+												<small class="resumo">VueJs, Jquery</small>
+											</section>
+
+											<section class="corpo">
+												<h5 class="subtitulo">Experiência</h5>
+												<p class="texto">Pude estudar e praticar JavaScript através de cursos online e projetos, estes tanto pessoais quanto propostos. Ademais, algumas aulas e projetos universitários foram feitos nessa linguagem de programação. Utilizo JavaScript, JQuery e VueJS no local de trabalho e em projetos do grupo de pesquisa da faculdade.</p>
+											</section>
+										</ul>
+										<ul class="habilidade">
+											<section class="cabecalho">
+												<span class="sinal-expandir"><i class="fas fa-chevron-right"></i></span>
+												<h4 class="titulo">HTML e CSS -</h4>
+												<small class="resumo">BootStrap</small>
+											</section>
+
+											<section class="corpo">
+												<h5 class="subtitulo">Experiência</h5>
+												<p class="texto">HTML, CSS e BootStrap foram tecnologias que foram vistas tanto em aulas na universidade quanto em cursos onlines. Utilizo-as em ambiente de trabalho e em alguns projetos.</p>
+											</section>
+										</ul>
+										<ul class="habilidade">
+											<section class="cabecalho">
+												<span class="sinal-expandir"><i class="fas fa-chevron-right"></i></span>
+												<h4 class="titulo">C -</h4>
+												<small class="resumo">Code::Blocks</small>
+											</section>
+
+											<section class="corpo">
+												<h5 class="subtitulo">Experiência</h5>
+												<p class="texto">C é, de longe, a linguagem de programação que, até então, pude ter mais tempo de contato, ela foi utilizada no decorrer dos 4 primeiros semestre do curso da faculdade. Com C pude praticar algoritmos específicos, como para ordenação, busca etc., utilizar em estruturas de dados e outras práticas. No início do curso, fomos apresentados a IDE Code::Blocks, que foi utilizada por um tempo, mas logo foi substituída pelo GCC no Ubuntu.</p>
+											</section>
+										</ul>
+										<ul class="habilidade">
+											<section class="cabecalho">
+												<span class="sinal-expandir"><i class="fas fa-chevron-right"></i></span>
+												<h4 class="titulo">Python</h4>
+												<small class="resumo"></small>
+											</section>
+
+											<section class="corpo">
+												<h5 class="subtitulo">Experiência</h5>
+												<p class="texto">Foi amplamente utilizada durante o primeiro semestre de 2019, durante a disciplina de Linguagens de Programação. Também foi estudada através de cursos onlines e projetos pessoais.</p>
+											</section>
+										</ul>
+										<ul class="habilidade">
+											<section class="cabecalho">
+												<span class="sinal-expandir"><i class="fas fa-chevron-right"></i></span>
+												<h4 class="titulo">SQL -</h4>
+												<small class="resumo">MySQL</small>
+											</section>
+
+											<section class="corpo">
+												<h5 class="subtitulo">Experiência</h5>
+												<p class="texto">Estudada durante cursos onlines que fiz, obtive conhecimento razoavelmente bom na linguagem de pesquisa declarativa. Utilizo-a com o SGBD MySQL no trabalho e em projetos que requerem consulta a bancos de dados.</p>
+											</section>
+										</ul>
+										<ul class="habilidade">
+											<section class="cabecalho">
+												<span class="sinal-expandir"><i class="fas fa-chevron-right"></i></span>
+												<h4 class="titulo">Ferramentas -</h4>
+												<small class="resumo">Git, Vagrant, Visual Studio Code, Ubuntu GNU-Linux</small>
+											</section>
+
+											<section class="corpo">
+												<h5 class="subtitulo">Experiência</h5>
+												<p class="texto">Pude estudar Git em cursos onlines e praticar com projetos pessoais e no trabalho. Tive meu primeiro contato com Vagrant quando surgiu a necessidade de padronizar um ambiente de desenvolvimento para Laravel, utilizando o Homestead; é amplamente utilizado em ambiente de trabalho. Visual Studio Code é a IDE padrão que utilizo para desenvolver projetos em geral. Quanto ao Ubuntu, é o Sistema Operacional que utilizo nas aulas da universidade e que possuo em minha própria máquina.</p>
+											</section>
+										</ul>
+									</li>
+								</section>
+								<section class="cursos mt-5">
+									<h3>
+										<span class="sinal-seta">></span>
+										<span class="subtitulo">Cursos</span>
+									</h3>
+									<p class="texto">Os cursos a seguir possuem certificado ou repositórios para comprovar suas autenticidades.</p>
+									<li class="lista-habilidades">
+										<ul class="habilidade">
+											<section class="cabecalho">
+												<span class="sinal-expandir"><i class="fas fa-chevron-down"></i></span>
+												<h4 class="titulo">Desenvolvimento Web -</h4>
+												<small class="resumo">Foco no desenvolviemntos front-end e back-end.</small>
+											</section>
+
+											<section class="corpo">
+												<h5 class="subtitulo">Sobre o curso</h5>
+												<p class="texto">...</p>
+											</section>
+										</ul>
+									</li>
+								</section>
 							</article>
 						</div>
 					</div>
@@ -221,9 +333,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<article class="titulo">
-								
-							</article>
+							<h2 class="titulo">Projetos</h2>
 						</div>
 					</div>
 				</div>
@@ -234,9 +344,7 @@
 				<div class="container">
 					<div class="row">
 						<div class="col-12">
-							<article class="titulo">
-
-							</article>
+							<h2 class="titulo">Contato</h2>
 						</div>
 					</div>
 				</div>
@@ -246,5 +354,8 @@
 		<footer class="rodape">
 			
 		</footer>
+
+		<!-- Scripts -->
+		<script type="text/javascript" src="js/funcoes.js"></script>
 	</body>
 </html>

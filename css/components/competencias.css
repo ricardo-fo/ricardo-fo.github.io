@@ -1,0 +1,85 @@
+@import url('../base/normaliza.css');
+.competencias {
+    background-color:#250d1d;
+    height: 100%;
+    padding-bottom: 2%;
+    padding-top: 0;
+}
+
+.competencias .titulo {
+    font-size: 3em;
+    color: #7dc332;
+    font-family: monospace;
+    border-bottom: 1px solid #ccc;
+}
+
+.competencias .subtitulo {
+	color: #d6e3e0;
+}
+
+.competencias .sinal-seta {
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 900;
+    color: #ccc;
+}
+
+.competencias .lista-habilidades {
+    list-style: none;
+}
+
+.competencias .habilidade {
+    margin-bottom: 0.5%;
+    cursor: pointer;
+}
+
+.lista-habilidades .cabecalho {
+    background-color: rgba(0, 0, 0, 0.2);
+    border-bottom: 1px solid rgba(200, 200, 200, 0.5);
+    display: flex;
+    justify-content: flex-start;
+    padding: 0.25% 0.5% 0.25% 0;
+}
+
+.lista-habilidades .titulo {
+    min-height: 100%;
+    margin: 0;
+    padding: 0% 1% 0 0.5%;
+    border: none;
+    font-size: 1.2em;
+    color: #7dc332;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.lista-habilidades .resumo {
+    min-height: 100%;
+    margin: 0;
+    padding: 0.25% 0%;
+    color: #FFFFFF;
+}
+
+.lista-habilidades .sinal-expandir {
+    min-height: 100%;
+    margin-left: 1%;
+    color: #7dc332;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+.lista-habilidades .corpo {
+    background-color: white;
+    padding: 0.5% 1%;
+    cursor: default;
+}
+
+.lista-habilidades .subtitulo {
+    color: black;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.lista-habilidades .texto {
+    color: #000000;
+    margin: 0;
+    padding: 0;
+}
