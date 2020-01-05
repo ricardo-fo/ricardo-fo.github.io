@@ -1,0 +1,26 @@
+.nav-menu {
+	background-color: black;
+	display: flex;
+	align-items: stretch;
+	padding: 0 0 0 1%;
+	border-bottom: 1px solid rgba(100, 100, 100, 0.2);
+}
+
+.nav-menu .caixa-menu {
+	display: flex;
+	justify-content: flex-end;
+	align-items: stretch;
+	text-align: center;
+}
+
+.caixa-menu .ativo {
+	border-bottom: 2px solid #7dc332;
+	color: #FFF !important;
+}
+
+.caixa-menu .link {
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}

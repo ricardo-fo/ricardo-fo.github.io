@@ -1,0 +1,106 @@
+@import url('../base/normaliza.css');
+.home {
+	background-color: black;
+	min-height: 100vh;
+	height: 110%;
+	padding-bottom: 10%;
+}
+
+.home .apresentacao {
+	display: flex;
+	flex-direction: column;
+}
+
+.apresentacao .terminal {
+	flex-grow: 4;
+	padding: 3%;
+	margin-bottom: 2%;
+	display: flex;
+	flex-direction: column;
+	border-radius: 10px;
+
+	background-color: #250d1d;
+}
+
+.terminal .conteudo {
+	flex-grow: 1;
+}
+
+.conteudo .nome {
+	color: #7dc332;
+	margin-right: 10px;
+}
+
+.conteudo .sinais {
+	letter-spacing: -3px;
+	margin-left: -8px;
+}
+
+.conteudo .sinal-dois-pontos,
+.conteudo .sinal-cifrao,
+.conteudo .texto {
+	color: #d6e3e0;
+}
+
+.conteudo .usuario {
+	font-size: 1.1rem;
+}
+
+.conteudo .cursor {
+	animation: piscar 1s steps(1) infinite;
+	border-right: 0.5em solid;
+}
+
+@keyframes piscar {
+	50% {
+		border-color: transparent;
+	}
+}
+
+.conteudo .sinal-tio {
+	color: #17a2b8;
+}
+
+.mensagem .link {
+	color: #7dc332;
+}
+
+.mensagem .link:hover {
+	text-decoration: underline;
+}
+
+.apresentacao .conheca {
+	flex-grow: 10;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: flex-end;
+}
+
+.apresentacao .botao {
+	transition: color, box-shadow 0.2s;
+	display: block;
+}
+
+.apresentacao .botao {
+	cursor: pointer;
+	border-radius: 10px;
+	border: none;
+	padding: 5px 10px;
+	background-color: #250d1d;
+	color: #AAA;
+}
+
+.apresentacao .conheca .link {
+	margin-top: 15px;
+}
+
+.apresentacao .conheca .link:hover {
+	text-decoration: none;
+}
+
+.apresentacao .link:hover .botao {
+	transition: all 0.2s;
+	color: #7dc332;
+	box-shadow: 0px 0px 5px #7dc332;
+}

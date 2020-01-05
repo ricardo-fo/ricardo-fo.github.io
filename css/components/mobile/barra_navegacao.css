@@ -1,0 +1,13 @@
+.nav-menu {
+	background-color: black;
+	display: flex;
+	align-items: stretch;
+	padding: 0 0 0 1%;
+	border-bottom: 1px solid rgba(100, 100, 100, 0.2);
+}
+
+.caixa-menu .ativo {
+	color: #FFF !important;
+	background-color: rgba(125, 195, 50, 0.2);
+	border-bottom: 1px solid rgba(250, 250, 250, 0.5);
+}

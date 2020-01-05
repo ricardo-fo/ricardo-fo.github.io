@@ -1,9 +1,0 @@
-/* Configurações do container-home */
-.container-home {
-	position: absolute;
-	top: 0;
-	left: 0;
-	width: 100vw;
-	height: 100vh;
-	color: var(--color-zero);
-}

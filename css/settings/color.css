@@ -1,38 +1,7 @@
 :root {
-	/* Cores padrões e suas versões suaves */
-	--color-zero: #FFF;
-	--color-zero-light: rgba(255, 255, 255, 0.6);
-	--color-zero-lighter: rgba(255, 255, 255, 0.2);
-
-	--color-negative: #000;
-	--color-negative-light: rgba(0, 0, 0, 0.9);
-	--color-negative-lighter: rgba(0, 0, 0, 0.6);
-	--color-negative-very-lighter: rgba(0, 0, 0, 0.3);
-	
-	--color-medium: #666;
-	--color-medium-light: rgba(150, 150, 150, 0.5);
-	--color-medium-lighter: rgba(150, 150, 150, 0.2);
-
-	--color-dark-grey: rgba(20, 20, 20, 1);
-	--color-dark-grey-light: rgba(20, 20, 20, 0.6);
-	--color-dark-grey-lighter: rgba(20, 20, 20, 0.3);
-
-	--color-first: #343A48;
-	--color-first-light: #616774;
-	--color-second: #68BAC6;
-	--color-second-light: #B2D9DF;
-
-	--color-link-alt: #6A74BB;
-
-	/* Cores do efeito do botão da página home */
-	--color-pulse-start: rgba(150, 150, 150, 0);
-	--color-pulse-middle: rgba(150, 150, 150, 0.2);
-	--color-pulse-end: rgba(150, 150, 150, 0.5);
-
-	/* Cores para teste */
-	--color-base: #162128;
-	--color-right: #26323E;
-	--color-most-right: #C16763;
-	--color-left: #DAB6C1;
-	--color-most-left: #A58D91;
+	--color-menu-background: rgb(10, 10, 10);
+	--color-menu-botao-active: rgba(30, 30, 30, 0.7);
+	--color-zero: rgba(200, 200, 200, 1.0);
+	--color-one: rgba(0, 226, 169);
+	--color-two: rgba(0, 0, 0, 1.0);
 }

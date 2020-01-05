@@ -1,0 +1,23 @@
+html {
+	scroll-behavior: smooth;
+}
+
+body {
+	overflow-x: hidden;
+	font-size: 16px;
+}
+
+main > section {
+	width: 100vw;
+	height: 100vh;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
