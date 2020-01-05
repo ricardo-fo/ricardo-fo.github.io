@@ -232,7 +232,7 @@ $(document).ready(() => {
 	/* Efeito de digitação da home page */
 	let mensagem = Array();
 	if(idioma.id == '0'){
-		mensagem.push("olamundo --saudacoes");
+		mensagem.push("./saudacoes");
 	} else {
 		mensagem.push("helloworld --greetings");
 	}
