@@ -79,7 +79,17 @@
 }
 
 .lista-habilidades .texto {
-    color: #000000;
+    color: #222222;
     margin: 0;
     padding: 0;
+}
+
+.lista-habilidades .link {
+    color: #222222;
+    border-bottom: 1px dotted #7dc332;
+}
+
+.lista-habilidades .link:hover {
+    background-color: rgba(125, 195, 50, 0.7);
+    text-decoration: none;
 }
