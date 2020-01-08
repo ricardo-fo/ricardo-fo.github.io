@@ -1,8 +1,7 @@
 @import url('../base/normaliza.css');
 .home {
 	background-color: black;
-	min-height: 100vh;
-	/*height: 110%;*/
+	height: 100vh;
 	padding-bottom: 10%;
 }
 

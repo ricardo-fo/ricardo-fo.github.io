@@ -251,6 +251,7 @@ $(document).ready(() => {
 			$('.hidden').css('display', 'inline');
 			$('#texto-digitado').removeClass('cursor');
 			$('.conheca').fadeIn(1000);
+			$('.home').css('height', '100%');
 			return;
 		}
 		if(i < mensagem[i].length) {
