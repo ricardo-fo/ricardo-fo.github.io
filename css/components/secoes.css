@@ -1,7 +1,4 @@
-.secao {
-	min-height: 100vh;
-}
-
+.secao, 
 .secao .margin-space {
 	min-height: 10vh;
 }

@@ -1,0 +1,17 @@
+@import url('../base/normaliza.css');
+.rodape {
+    padding-top: 3%;
+    background-color: #000000;
+    text-align: center;
+    margin-bottom: 0;
+    min-height: 5vh;
+}
+
+.rodape .criador {
+    color: #7dc332;
+    font-family: monospace;
+    font-size: 1em;
+    min-height: inherit;
+    display: inline-block;
+    line-height: inherit;
+}
