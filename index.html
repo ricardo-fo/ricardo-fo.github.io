@@ -1,90 +1,99 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- JQuery CDN -->
-		<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-		<!-- Ajax -->
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+  <!-- JQuery CDN -->
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
 
-		<!-- Transpiler Babel -->
-		<script src="https://unpkg.com/@babel/standalone@7.7.7/babel.min.js"></script>
+  <!-- Ajax -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous">
+  </script>
 
-		<!-- Bootstrap CDN -->
-		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-		<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  <!-- Transpiler Babel -->
+  <script src="https://unpkg.com/@babel/standalone@7.7.7/babel.min.js"></script>
 
-		<!-- Fontawesome CDN -->
-		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+  <!-- Bootstrap CDN -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous">
+  </script>
 
-		<!-- Favicon -->
-		<link rel="icon" href="img/logo.svg">
+  <!-- Fontawesome CDN -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-		<!-- CSS -->
-		<link rel="stylesheet" type="text/css" media="screen and (max-device-width: 990px)" href="css/mobile.css" />
-		<link rel="stylesheet" type="text/css" media="screen and (min-device-width: 991px)" href="css/desktop.css" />
+  <!-- Favicon -->
+  <link rel="icon" href="img/logo.svg">
 
-		<title>Ricardo Oliveira | Desenvolvimento Web</title>
+  <!-- CSS -->
+  <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 990px)" href="css/mobile.css" />
+  <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 991px)" href="css/desktop.css" />
 
-	</head>
-	
-	<body>
-		<nav class="navbar navbar-expand-lg fixed-top navbar-dark nav-menu">
-			<!-- Seção do logotipo -->
-			<a class="navbar-brand" href="#">
-				<img src="img/logo.png" class="img-fluid" width="60" alt="RFO">
-				<span class="texto">Ricardo Oliveira<span class="d-none d-sm-inline sro"></span></span>
-				<span class="sr-only sro"></span>
-			</a>
+  <title>Ricardo Oliveira | Desenvolvimento Web</title>
 
-			<!-- Botão hambúrguer -->
-			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudo-menu" aria-controls="conteudo-menu" aria-expanded="false" aria-label="Toggle navigation">
-				<span class="navbar-toggler-icon botao"></span>
-			</button>
+</head>
 
-			<!-- Conteúdo do menu -->
-			<div class="collapse navbar-collapse caixa-menu" id="conteudo-menu">
-				<ul class="navbar-nav" id="links">
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark nav-menu">
+    <!-- Seção do logotipo -->
+    <a class="navbar-brand" href="#">
+      <img src="img/logo.png" class="img-fluid" width="60" alt="RFO">
+      <span class="texto">Ricardo Oliveira<span class="d-none d-sm-inline sro"></span></span>
+      <span class="sr-only sro"></span>
+    </a>
 
-					<!-- Home -->
-					<li class="nav-item item">
-						<a class="nav-link link ativo" href="#home" id="link-home">
-							<span class="texto">Início</span>
-						</a>
-					</li>
+    <!-- Botão hambúrguer -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#conteudo-menu"
+      aria-controls="conteudo-menu" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon botao"></span>
+    </button>
 
-					<!-- Sobre -->
-					<li class="nav-item item">
-						<a class="nav-link link" href="#sobre" id="link-sobre">
-							<span class="texto">Sobre mim</span>
-						</a>
-					</li>
+    <!-- Conteúdo do menu -->
+    <div class="collapse navbar-collapse caixa-menu" id="conteudo-menu">
+      <ul class="navbar-nav" id="links">
 
-					<!-- Competências -->
-					<li class="nav-item item">
-						<a class="nav-link link" href="#competencias" id="link-competencias">
-							<span class="texto">Competências</span>
-						</a>
-					</li>
+        <!-- Home -->
+        <li class="nav-item item">
+          <a class="nav-link link ativo" href="#home" id="link-home">
+            <span class="texto">Início</span>
+          </a>
+        </li>
 
-					<!-- Projetos -->
-					<li class="nav-item item">
-						<a class="nav-link link" href="#projetos" id="link-projetos">
-							<span class="texto">Projetos</span>
-						</a>
-					</li>
+        <!-- Sobre -->
+        <li class="nav-item item">
+          <a class="nav-link link" href="#sobre" id="link-sobre">
+            <span class="texto">Sobre mim</span>
+          </a>
+        </li>
 
-					<!-- Contato -->
-					<li class="nav-item item mr-2">
-						<a class="nav-link link" href="#contato" id="link-contato">
-							<span class="texto">Contato</span>
-						</a>
-					</li>
+        <!-- Competências -->
+        <li class="nav-item item">
+          <a class="nav-link link" href="#competencias" id="link-competencias">
+            <span class="texto">Competências</span>
+          </a>
+        </li>
 
-					<!-- Seleção de idioma
+        <!-- Projetos -->
+        <li class="nav-item item">
+          <a class="nav-link link" href="#projetos" id="link-projetos">
+            <span class="texto">Projetos</span>
+          </a>
+        </li>
+
+        <!-- Contato -->
+        <li class="nav-item item mr-2">
+          <a class="nav-link link" href="#contato" id="link-contato">
+            <span class="texto">Contato</span>
+          </a>
+        </li>
+
+        <!-- Seleção de idioma
 					<li class="nav-item item dropdown caixa-idiomas" id="btn-idioma">
 						<a class="nav-link link dropdown-toggle" href="#" id="idiomaDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
 							<i class="fas fa-language">
@@ -101,468 +110,490 @@
 						</div>
 					</li>
 					 -->
-				</ul>
-			</div>
-		</nav>
+      </ul>
+    </div>
+  </nav>
 
-		<!-- Conteúdo principal do site -->
-		<main>
-			<!-- Página home -->
-			<section id="home" class="secao home mt-5">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<!-- Apresentação -->
-							<article class="apresentacao">
+  <!-- Conteúdo principal do site -->
+  <main>
+    <!-- Página home -->
+    <section id="home" class="secao home mt-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <!-- Apresentação -->
+            <article class="apresentacao">
 
-								<!-- Terminal -->
-								<section class="terminal">
-									<article class="conteudo">
-										<section class="mensagem text-monospace">
-											<div class="usuario">
-                        <!-- Nome do usuário -->
-												<span class="nome">ricardo@ubuntu
-													<span class="sinais">
-														<span class="sinal-dois-pontos">:</span>
-														<span class="sinal-tio">~</span>
-														<span class="sinal-cifrao">$</span>
-													</span>
-												</span>
-												<!-- Texto digitado -->
-												<span class="texto cursor" id="texto-digitado"></span>
-
-												<!-- Texto de apresentação -->
-												<br>
-												<span class="texto hidden before-link" style="display: none">
-                          Bem-vindo(a)! Chamo-me Ricardo Oliveira, sou Desenvolvedor Web Full-Stack. 
-                          Desenvolvo sites utilizando tecnologias como tecnologias como NodeJS, PHP, 
-                          VueJS, MySQL, SQL Server etc.<br>Nasci no ano de 2000, no Guarujá, uma 
-                          cidade litorânea do estado de São Paulo. Atualmente, sou estudante de 
-                          bacharelado do curso de Ciência da Computação pela 
+              <!-- Terminal -->
+              <section class="terminal">
+                <article class="conteudo">
+                  <section class="mensagem text-monospace">
+                    <div class="usuario">
+                      <!-- Nome do usuário -->
+                      <span class="nome">ricardo@ubuntu
+                        <span class="sinais">
+                          <span class="sinal-dois-pontos">:</span>
+                          <span class="sinal-tio">~</span>
+                          <span class="sinal-cifrao">$</span>
                         </span>
-												<a
-                          href="https://unisantos.br"
-                          target="_blank"
-                          class="link hidden"
-                          style="display: none"
-                        >Universidade Católica de Santos <i class="fas fa-external-link-alt"></i>
-                        </a> 
-												<span
-                          class="texto hidden after-link"
-                          style="display: none"
-                        > tendo iniciado em janeiro de 2018.<br><br>
-                          Busco sempre aprender e desenvolver habilidades novas de forma independente, 
-                          ou seja, tendo os estudos como um processo constante, que vão além da área 
-                          acadêmica e fazem-se presentes no dia-a-dia. Almejo fazer grandes contribuições 
-                          e ser lembrado por ter participado delas.
+                      </span>
+                      <!-- Texto digitado -->
+                      <span class="texto cursor" id="texto-digitado"></span>
+
+                      <!-- Texto de apresentação -->
+                      <br>
+                      <span class="texto hidden before-link" style="display: none">
+                        Bem-vindo(a)! Chamo-me Ricardo Oliveira, sou Desenvolvedor Web Full-Stack.
+                        Desenvolvo sites utilizando tecnologias como NodeJS, PHP,
+                        VueJS, MySQL, SQL Server etc.<br>Nasci no ano de 2000, no Guarujá, uma
+                        cidade litorânea do estado de São Paulo. Atualmente, sou estudante de
+                        bacharelado do curso de Ciência da Computação pela
+                      </span>
+                      <a href="https://unisantos.br" target="_blank" class="link hidden"
+                        style="display: none">Universidade Católica de Santos <i class="fas fa-external-link-alt"></i>
+                      </a>
+                      <span class="texto hidden after-link" style="display: none"> tendo iniciado em janeiro de
+                        2018.<br><br>
+                        Busco sempre aprender e desenvolver habilidades novas de forma independente,
+                        ou seja, tendo os estudos como um processo constante, que vão além da área
+                        acadêmica e fazem-se presentes no dia-a-dia. Almejo fazer grandes contribuições
+                        e ser lembrado por ter participado delas.
+                      </span>
+                      <br>
+                      <span class="nome hidden" style="display: none">ricardo@ubuntu
+                        <span class="sinais">
+                          <span class="sinal-dois-pontos">:</span>
+                          <span class="sinal-tio">~</span>
+                          <span class="sinal-cifrao cursor" style="letter-spacing: 0.8em">$</span>
                         </span>
-												<br>
-												<span class="nome hidden" style="display: none">ricardo@ubuntu
-													<span class="sinais">
-														<span class="sinal-dois-pontos">:</span>
-														<span class="sinal-tio">~</span>
-														<span class="sinal-cifrao cursor" style="letter-spacing: 0.8em">$</span>
-													</span>
-												</span>
-											</div>
-										</section>
-									</article>
-								</section>
+                      </span>
+                    </div>
+                  </section>
+                </article>
+              </section>
 
-								<!-- Saiba mais -->
-								<div class="conheca">
-									<a href="#sobre" class="link">
-										<button class="botao">Confira meu trabalho</button>	
-									</a>
-								</div>
-							</article>
-						</div>
-					</div>
-				</div>
-			</section>
+              <!-- Saiba mais -->
+              <div class="conheca">
+                <a href="#sobre" class="link">
+                  <button class="botao">Confira meu trabalho</button>
+                </a>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
 
-			<!-- Página sobre -->
-			<section id="sobre" class="secao sobre">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h2 class="titulo">Sobre mim</h2>
+    <!-- Página sobre -->
+    <section id="sobre" class="secao sobre">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="titulo">Sobre mim</h2>
 
-						    	<article class="conteudo">
-								<section class="universidade">
-									<h3>
-										<span class="sinal-seta">></span>
-										<span class="subtitulo">Universidade</span>
-                  </h3>
-                  <p class="texto">
-                    Como estudante da UNISANTOS, pude desenvolver habilidades em diversos tipos 
-                    campos da computação, passando desde Algoritmos, Engenharia de Software, uma 
-                    forte base matemática como, por exemplo, Cálculo, Álgebra, Geometria, indo até 
-                    áreas mais avançadas, tais como Sistemas Distribuídos, Programação Paralela e 
-                    Concorrente, Inteligência Artificial, Gestão de Projetos etc.
-                  </p>
-                  <p class="texto">
-                    Ademais, fiz parte do grupo que desenvolveu o site do 
-                    <a
-                      href="https://www.facebook.com/ObservaBS/"
-                      target="_blank"
-                      class="link">Obseva BS
-                    </a> <i class="fas fa-external-link-alt"></i>, 
-                    sendo ele uma parceria entre os alunos dos cursos de Ciência da Computação, 
-                    Sistemas da Informação e Arquitetura e Urbanismo. Observa BS é um grupo de 
-                    pesquisa da área de Arquitetura e Urbanismo que estuda as questões urbanas e 
-                    metropolitanas da baixada santista.
-                  </p>
-								</section>
-								<section class="experiencia">
-                  <h3>
-										<span class="sinal-seta">></span>
-										<span class="subtitulo">Experiências</span>
-                  </h3>
-                  <h4><span class="subtitulo"># Evewhere</span></h4>
-                  <p class="texto">
-										Prestei serviços para a <i>startup</i> Evewhere, dona de alguns projetos, tais 
-                    como a
-                    <a
-                      href="https://streamfy.com.br/"
-                      target="_blank"
-                      class="link"
-                    >Streamfy</a> <i class="fas fa-external-link-alt"></i>,
-                    uma plataforma de criação e comercialização de cursos e vídeos <i>on demand</i>, 
-                    <a
-                      href="https://mentorizze.com/"
-                      target="_blank"
-                      class="link"
-                    >Mentorizze</a> <i class="fas fa-external-link-alt"></i>,
-                    uma aplicação de venda de vídeo-chamadas privadas, e a
-                    Referai, um sistema para integração de afiliados em plataformas terceiras. 
-                    Nesses diferentes projetos, pude utilizar tecnologias como NodeJS, NestJS, Prisma, 
-                    SQL Server, PostgreSQL, Redis, JWT, Docker etc. Além disso, APIs externas e serviços 
-                    de nuvem, tais como AWS S3, AWS EC2, Cloudflare, Dacast, PagarMe, Pusher, SMTPs 
-                    etc. O ambiente pôde proporcionar aprendizados como o trabalho em equipe, 
-                    comunicação através de reuniões, metodologias ágeis etc. Prestei serviços como 
-                    desenvolvedor backend, criando soluções, arquiteturas, diagramações do banco de dados, 
-                    correções de bugs e muito mais.
-									</p>
-                  <h4><span class="subtitulo"># Spacemoon</span></h4>
-                  <p class="texto">
-                    Trabalhei como Desenvolvedor Full-Stack na aceleradora
-                    <a href="https://www.spacemoon.com.br/" target="_blank" class="link">SpaceMoon</a> <i class="fas fa-external-link-alt"></i>,
-                    localizada em Santos, São Paulo. Utilizei tecnologias como PHP7, Laravel, MySQL,
-                    VueJs, Jquery, Bootstrap, Git, Dart, Flutter etc. Fui o responsável pela
-                    arquitetura da API; por um período, mexi com a aplicação móvel, e, no frontend,
-                    corrigi bugs e criei novas funcionalidades. Devido ao ambiente de coworking e aos
-                    divesos desenvolvedores no mesmo ambiente, era comum a utlização de metodologias
-                    ágeis.
-                  </p>
-                  <p class="texto">Pude participar de três maratonas de programação, a <a href="https://portal.unisantos.br/santoscuderi/santo-scuderi.html" target="_blank" class="link">Santo Scuderi</a> <i class="fas fa-external-link-alt"></i>. Na primeira participação, em 2018, pude ser classificado, junto à equipe que fiz parte, em <strong>sérimo lugar</strong>, tendo participado mais de 20 equipes de diferentes universidades. No ano seguinte, em 2019, conseguimos a <strong>quinta colocação</strong> dentre as 27 demais equipes. E, em seguida, fomos classificados em <strong>terceiro lugar</strong>.</p>
-								</section>
+            <article class="conteudo">
+              <section class="universidade">
+                <h3>
+                  <span class="sinal-seta">></span>
+                  <span class="subtitulo">Universidade</span>
+                </h3>
+                <p class="texto">
+                  Como estudante da UNISANTOS, pude desenvolver habilidades em diversos tipos
+                  campos da computação, passando desde Algoritmos, Engenharia de Software, uma
+                  forte base matemática como, por exemplo, Cálculo, Álgebra, Geometria, indo até
+                  áreas mais avançadas, tais como Sistemas Distribuídos, Programação Paralela e
+                  Concorrente, Inteligência Artificial, Gestão de Projetos etc.
+                </p>
+                <p class="texto">
+                  Ademais, fiz parte do grupo que desenvolveu o site do
+                  <a href="https://www.facebook.com/ObservaBS/" target="_blank" class="link">Obseva BS
+                  </a> <i class="fas fa-external-link-alt"></i>,
+                  sendo ele uma parceria entre os alunos dos cursos de Ciência da Computação,
+                  Sistemas da Informação e Arquitetura e Urbanismo. Observa BS é um grupo de
+                  pesquisa da área de Arquitetura e Urbanismo que estuda as questões urbanas e
+                  metropolitanas da baixada santista.
+                </p>
+              </section>
+              <section class="experiencia">
+                <h3>
+                  <span class="sinal-seta">></span>
+                  <span class="subtitulo">Experiências</span>
+                </h3>
+                <h4><span class="subtitulo"># Evewhere</span></h4>
+                <p class="texto">
+                  Prestei serviços para a <i>startup</i> Evewhere, dona de alguns projetos, tais
+                  como a
+                  <a href="https://streamfy.com.br/" target="_blank" class="link">Streamfy</a> <i
+                    class="fas fa-external-link-alt"></i>,
+                  uma plataforma de criação e comercialização de cursos e vídeos <i>on demand</i>,
+                  <a href="https://mentorizze.com/" target="_blank" class="link">Mentorizze</a> <i
+                    class="fas fa-external-link-alt"></i>,
+                  uma aplicação de venda de vídeo-chamadas privadas, e a
+                  Referai, um sistema para integração de afiliados em plataformas terceiras.
+                  Nesses diferentes projetos, pude utilizar tecnologias como NodeJS, NestJS, Prisma,
+                  SQL Server, PostgreSQL, Redis, JWT, Docker etc. Além disso, APIs externas e serviços
+                  de nuvem, tais como AWS S3, AWS EC2, Cloudflare, Dacast, PagarMe, Pusher, SMTPs
+                  etc. O ambiente pôde proporcionar aprendizados como o trabalho em equipe,
+                  comunicação através de reuniões, metodologias ágeis etc. Prestei serviços como
+                  desenvolvedor backend, criando soluções, arquiteturas, diagramações do banco de dados,
+                  correções de bugs e muito mais.
+                </p>
+                <h4><span class="subtitulo"># Spacemoon</span></h4>
+                <p class="texto">
+                  Trabalhei como Desenvolvedor Full-Stack na aceleradora
+                  <a href="https://www.spacemoon.com.br/" target="_blank" class="link">SpaceMoon</a> <i
+                    class="fas fa-external-link-alt"></i>,
+                  localizada em Santos, São Paulo. Utilizei tecnologias como PHP7, Laravel, MySQL,
+                  VueJs, Jquery, Bootstrap, Git, Dart, Flutter etc. Fui o responsável pela
+                  arquitetura da API; por um período, mexi com a aplicação móvel, e, no frontend,
+                  corrigi bugs e criei novas funcionalidades. Devido ao ambiente de coworking e aos
+                  divesos desenvolvedores no mesmo ambiente, era comum a utlização de metodologias
+                  ágeis.
+                </p>
+                <p class="texto">Pude participar de três maratonas de programação, a <a
+                    href="https://portal.unisantos.br/santoscuderi/santo-scuderi.html" target="_blank"
+                    class="link">Santo Scuderi</a> <i class="fas fa-external-link-alt"></i>. Na primeira participação,
+                  em 2018, pude ser classificado, junto à equipe que fiz parte, em <strong>sérimo lugar</strong>, tendo
+                  participado mais de 20 equipes de diferentes universidades. No ano seguinte, em 2019, conseguimos a
+                  <strong>quinta colocação</strong> dentre as 27 demais equipes. E, em seguida, fomos classificados em
+                  <strong>terceiro lugar</strong>.</p>
+              </section>
 
-								<section class="idioma">
-									<h3>
-										<span class="sinal-seta">></span>
-										<span class="subtitulo">Idiomas</span>
-								    	</h3>
-								    	<p class="texto">Tenho conhecimento intermediário no idioma inglês. Atualmente, estudo na rede de ensino de idiomas <a href="https://www.wizard.com.br/" target="_blank" class="link">Wizard</a> <i class="fas fa-external-link-alt"></i>, sendo aluno desde o segundo semestre de 2018.</p>
-								</section>
-						    	</article>
-						</div>
-					</div>
-				</div>
-			</section>
+              <section class="idioma">
+                <h3>
+                  <span class="sinal-seta">></span>
+                  <span class="subtitulo">Idiomas</span>
+                </h3>
+                <p class="texto">Tenho conhecimento intermediário no idioma inglês. Atualmente, estudo na rede de ensino
+                  de idiomas <a href="https://www.wizard.com.br/" target="_blank" class="link">Wizard</a> <i
+                    class="fas fa-external-link-alt"></i>, sendo aluno desde o segundo semestre de 2018.</p>
+              </section>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
 
-			<!-- Página competências -->
-			<section id="competencias" class="secao competencias">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h2 class="titulo">Competências</h2>
+    <!-- Página competências -->
+    <section id="competencias" class="secao competencias">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="titulo">Competências</h2>
 
-							<article class="conteudo">
-								<section class="habilidades">
-									<h3>
-										<span class="sinal-seta">></span>
-										<span class="subtitulo">Habilidades</span>
-									</h3>
-									<p class="texto">As habilidades a seguir são tecnologias ou ferramentas que possuo algum grau de conhecimento técnico.</p>
+            <article class="conteudo">
+              <section class="habilidades">
+                <h3>
+                  <span class="sinal-seta">></span>
+                  <span class="subtitulo">Habilidades</span>
+                </h3>
+                <p class="texto">As habilidades a seguir são tecnologias ou ferramentas que possuo algum grau de
+                  conhecimento técnico.</p>
 
-									<ul class="lista-habilidades">
-                    <li class="habilidade">
-											<section class="cabecalho">
-												<span class="sinal-expandir"><i class="fas fa-chevron-right"></i></span>
-												<h4 class="titulo">JavaScript -</h4>
-												<small class="resumo">NodeJS, NestJS, Express, TypeORM, Prisma, VueJs, Jquery</small>
-											</section>
+                <ul class="lista-habilidades">
+                  <li class="habilidade">
+                    <section class="cabecalho">
+                      <span class="sinal-expandir"><i class="fas fa-chevron-right"></i></span>
+                      <h4 class="titulo">JavaScript -</h4>
+                      <small class="resumo">NodeJS, NestJS, Express, TypeORM, Prisma, VueJs, Jquery</small>
+                    </section>
 
-											<section class="corpo">
-												<h5 class="subtitulo">Experiência</h5>
-												<p class="texto">
-                          Pude ter a oportunidade de trabalhar com essas tecnologias de JavaScript nas 
-                          empresas das quais trabalhei. Além disso, horas de estudos foram dedicadas 
-                          nos cursos profissionalizantes para que eu pudesse ter maior conhecimento 
-                          sobre essas tecnologias.
-                        </p>
-											</section>
-										</li>
-										<li class="habilidade">
-											<section class="cabecalho">
-												<span class="sinal-expandir"><i class="fas fa-chevron-right"></i></span>
-												<h4 class="titulo">PHP -</h4>
-												<small class="resumo">Laravel, Blade, PHPMyAdmin</small>
-											</section>
-
-											<section class="corpo">
-												<h5 class="subtitulo">Experiência</h5>
-												<p class="texto">
-                          Pude trablhar alguns meses com PHP e Laravel. A manutenção e criação de novas 
-                          funcionalidades na API de um curso de inglês foram fatores decisivos para que 
-                          eu pudesse me aprofundar no PHP e suas ferramentes, junto a isso, horas de estudos 
-                          em cursos puderam agregar valor a esses conhecimentos.
-                        </p>
-											</section>
-										</li>
-										<li class="habilidade">
-											<section class="cabecalho">
-												<span class="sinal-expandir"><i class="fas fa-chevron-right"></i></span>
-												<h4 class="titulo">HTML e CSS -</h4>
-												<small class="resumo">BootStrap</small>
-											</section>
-
-											<section class="corpo">
-												<h5 class="subtitulo">Experiência</h5>
-												<p class="texto">
-                          Onde tudo começou, a base para que eu pudesse entrar no desenvolvimento para 
-                          aplicações web. Com o HTML, CSS e Bootstrap, consegui desenvolver aplicações 
-                          pessoais e profissionais, utilizando essas tecnologias tanto para projetos 
-                          da faculdade quanto durante minhas horas de trabalho.
-                        </p>
-											</section>
-										</li>
-										<li class="habilidade">
-											<section class="cabecalho">
-												<span class="sinal-expandir"><i class="fas fa-chevron-right"></i></span>
-												<h4 class="titulo">C -</h4>
-												<small class="resumo">C++, OpenMP, OpenACC, Code::Blocks</small>
-											</section>
-
-											<section class="corpo">
-												<h5 class="subtitulo">Experiência</h5>
-												<p class="texto">
-                          A primeira linguagem de programação que tive um contato profundo. O C foi 
-                          a linguagem mais utilizada durante toda a minha graduação, não a utilizei 
-                          profissionalmente, mas, devido às horas de estudo e dedicação, pude ter 
-                          um vasto conhecimento em diversas funcionalidades providas por essa linguagem. 
-                          Agregado a isso, algumas bibliotecas para programação de alto desempenho, como 
-                          a OpenMP e OpenACC, para programação paralela e concorrente, foram utilzadas. 
-                          O C++ e o Code::Blocks também foram utilizados durante todo esse processo de 
-                          formação que durou 4 anos.
-                        </p>
-											</section>
-										</li>
-										<li class="habilidade">
-											<section class="cabecalho">
-												<span class="sinal-expandir"><i class="fas fa-chevron-right"></i></span>
-												<h4 class="titulo">Python -</h4>
-												<small class="resumo">OpenCV, Numpy</small>
-											</section>
-
-											<section class="corpo">
-												<h5 class="subtitulo">Experiência</h5>
-												<p class="texto">
-                          Python foi outra linguagem utilizada durante minha gradução. Além disso, pude 
-                          desenvolver projetos pessoais com o Python, tais como um bot de Twitter, cujo 
-                          objetivo é, caso alguém o siga, enviar para o novo seguidor uma página específica 
-                          do Wikipedia.
-                        </p>
-											</section>
-										</li>
-										<li class="habilidade">
-											<section class="cabecalho">
-												<span class="sinal-expandir"><i class="fas fa-chevron-right"></i></span>
-												<h4 class="titulo">SQL -</h4>
-												<small class="resumo">SQL Server, MySQL, PostgreSQL</small>
-											</section>
-
-											<section class="corpo">
-												<h5 class="subtitulo">Experiência</h5>
-												<p class="texto">
-                          Durante os anos de desenvolvimento profissional, pude lidar com diferentes 
-                          tipos de bancos de dados. Inicialmente, utilizei o MySQL e, após alguns meses, 
-                          os projetos das empresas que passei e a faculdade fizeram necessário o uso 
-                          de SQL Server, por último, utilizei, também, PostgreSQL.
-                        </p>
-											</section>
-										</li>
-										<li class="habilidade">
-											<section class="cabecalho">
-												<span class="sinal-expandir"><i class="fas fa-chevron-right"></i></span>
-												<h4 class="titulo">Ferramentas -</h4>
-												<small class="resumo">Docker, Redis, AWS S3, AWS EC2, Jira, Git, Vagrant, Visual Studio Code, Ubuntu GNU-Linux</small>
-											</section>
-
-											<section class="corpo">
-												<h5 class="subtitulo">Experiência</h5>
-												<p class="texto">
-                          O Docker se faz útil durante minha vida profissional. Serviços em nuvem, 
-                          como os da AWS, também foram utilizados durante o período de trabalho. O 
-                          Jira como ferramente para gerenciamento de equipes foi muito útil. O Git é o 
-                          versionador de códigos utilizados nos projetos, junto com o Bitbucket ou o Github. 
-                          Durante o trabalho, faculdade e vida pessoal, adquiri experiência em Ubuntu. 
-                          O Vagrante foi utilizado, inicialmente, junto ao Laravel com o PHP.
-                        </p>
-											</section>
-										</li>
-									</ul>
-								</section>
-								<section class="cursos mt-5">
-									<h3>
-										<span class="sinal-seta">></span>
-										<span class="subtitulo">Cursos</span>
-									</h3>
-									<p class="texto">Os cursos a seguir possuem certificado ou repositórios para comprovar suas autenticidades.</p>
-									<ul class="lista-habilidades">
-										<li class="habilidade">
-											<section class="cabecalho">
-												<span class="sinal-expandir"><i class="fas fa-chevron-down"></i></span>
-												<h4 class="titulo">Desenvolvimento Web -</h4>
-												<small class="resumo">Foco no desenvolvimentos front-end e back-end.</small>
-											</section>
-
-											<section class="corpo">
-												<small><strong>Iniciado em:</strong> janeiro de 2019</small>
-												<p class="texto">O curso de <a href="https://www.udemy.com/course/web-completo/" target="_blank" class="link rounded px-1">Desenvolvimento Web</a> <i class="fas fa-external-link-alt"></i> é oferecido pela Udemy. Conta com 20 projetos, tem mais de 107 horas de aulas e possui mais de 550 aulas.</p>
-												<p class="texto">Este curso pôde me proporcionar um bom conhecimento em desenvolvimento web, passando desde HTML, CSS e JavaScript, indo até PHP com PDO, MySQL, PHPMyAdmin, AJAX, padrão de arquitetura MVC etc.</p>
-												<a href="https://github.com/ricardo-fo/cursos/tree/master/desenvolvimento-web" target="_blank" class="bg-secondary text-light rounded px-1 d-inline-block mt-2">
-													<small>Respositório</small>
-												</a>
-											</section>
-										</li>
-									</ul>
-								</section>
-							</article>
-						</div>
-					</div>
-				</div>
-			</section>
-
-			<!-- Página projetos -->
-			<section id="projetos" class="secao projetos">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h2 class="titulo">Projetos</h2>
-							<article class="conteudo">
-								<!-- Timeline -->
-								<ul class="timeline">
-                  <li class="item left">
-										<div class="projeto">
-											<h2>
-												<a href="https://github.com/ricardo-fo/movies-api" target="_blank" class="subtitulo">API de filmes</a>
-												<span class="simbolo-link" title="Clique no link ao lado!"><i class="fas fa-link"></i></span>
-											</h2>
-											<small>Feito utilizando: NodeJS, NestJS, Express, Prisma, JWT, PostgreSQL, Redis, Bull</small>
-											<hr/>
-											<p class="texto">
-                        Um projeto para estudo do NestJS, feito com NodeJS e Express, onde algumas 
-                        funcionalidades foram desenvolvidas, como o agendamento de emails usando o 
-                        Bull junto ao Redis e o Nodemailer, com autenticação usando JWT, o ORM foi 
-                        em Prisma, com um banco de dados em PostgreSQL.
+                    <section class="corpo">
+                      <h5 class="subtitulo">Experiência</h5>
+                      <p class="texto">
+                        Pude ter a oportunidade de trabalhar com essas tecnologias de JavaScript nas
+                        empresas das quais trabalhei. Além disso, horas de estudos foram dedicadas
+                        nos cursos profissionalizantes para que eu pudesse ter maior conhecimento
+                        sobre essas tecnologias.
                       </p>
-										</div>
-									</li>
-									<li class="item right">
-										<div class="projeto">
-											<h2>
-												<a href="https://github.com/ricardo-fo/politicos" target="_blank" class="subtitulo">O que fazem os deputados federais?</a>
-												<span class="simbolo-link" title="Clique no link ao lado!"><i class="fas fa-link"></i></span>
-											</h2>
-											<small>Feito utilizando: JavaScript, Jquery, AJAX e BootStrap</small>
-											<hr/>
-											<p class="texto">Este projeto divulga dados de deputados federais brasileiros, isso é possível atraveś do consumo da API de <a href="https://dadosabertos.camara.leg.br/" target="_blank" class="link rounded">Dados Abertos</a> <i class="fas fa-external-link-alt"></i></p>
-											<p class="texto">Foi desenvolvido em 2019, feito em um grupo de três alunos para um trabalho universitário.</p>
-										</div>
-									</li>
-									<li class="item left">
-										<div class="projeto">
-											<h2>
-												<a href="https://ricardo-fo.github.io/projetos/Jogo-mata-mosquito/index.html" target="_blank" class="subtitulo">Jogo Mata Mosquito</a>
-												<span class="simbolo-link" title="Clique no link ao lado!"><i class="fas fa-link"></i></span>
-											</h2>
-											<small>Feito utilizando: JavaScript, HTML e CSS</small>
-											<hr/>
-											<p class="texto">Este jogo, feito utilizando apenas JavaScript, HTML e CSS, foi um dos projetos iniciais propostos durante o ínicio de um curso online que fiz. O jogo tem como objetivo matar o maior número possível de mosquitos na menor quantidade de tempo. Foi feito em 2019.</p>
-										</div>
-									</li>
-                  <li class="item right">
-										<div class="projeto">
-											<h2>
-												<a href="https://ricardo-fo.github.io/projetos/Spotify/" target="_blank" class="subtitulo">Clone do layout do Spotify</a>
-												<span class="simbolo-link" title="Clique no link ao lado!"><i class="fas fa-link"></i></span>
-											</h2>
-											<small>Feito utilizando: BootStrap, HTML e CSS</small>
-											<hr/>
-											<p class="texto">Um clone do layout do Spotify feito durante um dos cursos profissionalizantes.</p>
-										</div>
-									</li>
-                  <li class="item left">
-										<div class="projeto">
-											<h2>
-												<a href="https://github.com/ricardo-fo/cobertura_vacinal" target="_blank" class="subtitulo">Cobertura Vacinal</a>
-												<span class="simbolo-link" title="Clique no link ao lado!"><i class="fas fa-link"></i></span>
-											</h2>
-											<small>Feito utilizando: C</small>
-											<hr/>
-											<p class="texto">Como um trabalho de universitário, pedido na disciplina de Estrurtura de Dados II, foi proposto a criação de uma aplicação, utilizando conceitos de estruturas de dados, como árvores e hashing, e a linguagem de programação C, que lê arquivos do tipo CSV, com dados sobre a cobertura vacinal de todos os municípios do Brasil. Após ler o arquivo, a aplicação deve oferecer opções ao usuário como 'exibir as n cidades (código, nome e cobertura vacinal) com maior cobertura vacinal' e 'exibir as n cidades (código, nome e cobertura vacinal) com menor cobertura vacinal'. Foi desenvolvido em um grupo de três alunos, no ano de 2019.</p>
-										</div>
-									</li>
-								</ul> 
-								<div class="text-center bg-light py-2 my-3 rounded">Para ver mais projetos, visite meu <a href="#contato" class="link px-1 rounded">Github</a> =)</div>
-							</article>
-						</div>
-					</div>
-				</div>
-			</section>
+                    </section>
+                  </li>
+                  <li class="habilidade">
+                    <section class="cabecalho">
+                      <span class="sinal-expandir"><i class="fas fa-chevron-right"></i></span>
+                      <h4 class="titulo">PHP -</h4>
+                      <small class="resumo">Laravel, Blade, PHPMyAdmin</small>
+                    </section>
 
-			<!-- Página contato -->
-			<section id="contato" class="secao contato">
-				<div class="container">
-					<div class="row">
-						<div class="col-12">
-							<h2 class="titulo">Entre em contato</h2>
-							<article class="conteudo">
-								<!-- Lista de contatos -->
-								<ul class="lista-contatos">
-									<li class="item">
-										<h3 class="subtitulo rounded">Telefone</h3>
-										<p class="info">+55 (13) 97413-7872</p>
-									</li>
-									<li class="item">
-										<h3 class="subtitulo rounded">E-mail</h3>
-										<p class="info">ricardofo.366@gmail.com</p>
-									</li>
-									<li class="item">
-										<h3 class="subtitulo rounded">Github</h3>
-										<br/>
-										<a href="https://github.com/ricardo-fo/" target="_blank" class="link rounded">ricardo-fo</a>
-									</li>
-									<li class="item">
-										<h3 class="subtitulo rounded">Linkedin</h3>
-										<br/>
-										<a href="https://www.linkedin.com/in/ricardo-oliveira-gj/" target="_blank" class="link rounded">ricardo-oliveira-gj</a>
-									</li>
-								</ul>
-							</article>
-						</div>
-					</div>
-				</div>
-			</section>
-		</main>
+                    <section class="corpo">
+                      <h5 class="subtitulo">Experiência</h5>
+                      <p class="texto">
+                        Pude trablhar alguns meses com PHP e Laravel. A manutenção e criação de novas
+                        funcionalidades na API de um curso de inglês foram fatores decisivos para que
+                        eu pudesse me aprofundar no PHP e suas ferramentes, junto a isso, horas de estudos
+                        em cursos puderam agregar valor a esses conhecimentos.
+                      </p>
+                    </section>
+                  </li>
+                  <li class="habilidade">
+                    <section class="cabecalho">
+                      <span class="sinal-expandir"><i class="fas fa-chevron-right"></i></span>
+                      <h4 class="titulo">HTML e CSS -</h4>
+                      <small class="resumo">BootStrap</small>
+                    </section>
 
-		<footer class="rodape">
-			<h3 class="criador">Criado por Ricardo Oliveira - 2019</h3>
-		</footer>
+                    <section class="corpo">
+                      <h5 class="subtitulo">Experiência</h5>
+                      <p class="texto">
+                        Onde tudo começou, a base para que eu pudesse entrar no desenvolvimento para
+                        aplicações web. Com o HTML, CSS e Bootstrap, consegui desenvolver aplicações
+                        pessoais e profissionais, utilizando essas tecnologias tanto para projetos
+                        da faculdade quanto durante minhas horas de trabalho.
+                      </p>
+                    </section>
+                  </li>
+                  <li class="habilidade">
+                    <section class="cabecalho">
+                      <span class="sinal-expandir"><i class="fas fa-chevron-right"></i></span>
+                      <h4 class="titulo">C -</h4>
+                      <small class="resumo">C++, OpenMP, OpenACC, Code::Blocks</small>
+                    </section>
 
-		<!-- Scripts -->
-		<script type="text/javascript" src="js/funcoes.js"></script>
-	</body>
+                    <section class="corpo">
+                      <h5 class="subtitulo">Experiência</h5>
+                      <p class="texto">
+                        A primeira linguagem de programação que tive um contato profundo. O C foi
+                        a linguagem mais utilizada durante toda a minha graduação, não a utilizei
+                        profissionalmente, mas, devido às horas de estudo e dedicação, pude ter
+                        um vasto conhecimento em diversas funcionalidades providas por essa linguagem.
+                        Agregado a isso, algumas bibliotecas para programação de alto desempenho, como
+                        a OpenMP e OpenACC, para programação paralela e concorrente, foram utilzadas.
+                        O C++ e o Code::Blocks também foram utilizados durante todo esse processo de
+                        formação que durou 4 anos.
+                      </p>
+                    </section>
+                  </li>
+                  <li class="habilidade">
+                    <section class="cabecalho">
+                      <span class="sinal-expandir"><i class="fas fa-chevron-right"></i></span>
+                      <h4 class="titulo">Python -</h4>
+                      <small class="resumo">OpenCV, Numpy</small>
+                    </section>
+
+                    <section class="corpo">
+                      <h5 class="subtitulo">Experiência</h5>
+                      <p class="texto">
+                        Python foi outra linguagem utilizada durante minha gradução. Além disso, pude
+                        desenvolver projetos pessoais com o Python, tais como um bot de Twitter, cujo
+                        objetivo é, caso alguém o siga, enviar para o novo seguidor uma página específica
+                        do Wikipedia.
+                      </p>
+                    </section>
+                  </li>
+                  <li class="habilidade">
+                    <section class="cabecalho">
+                      <span class="sinal-expandir"><i class="fas fa-chevron-right"></i></span>
+                      <h4 class="titulo">SQL -</h4>
+                      <small class="resumo">SQL Server, MySQL, PostgreSQL</small>
+                    </section>
+
+                    <section class="corpo">
+                      <h5 class="subtitulo">Experiência</h5>
+                      <p class="texto">
+                        Durante os anos de desenvolvimento profissional, pude lidar com diferentes
+                        tipos de bancos de dados. Inicialmente, utilizei o MySQL e, após alguns meses,
+                        os projetos das empresas que passei e a faculdade fizeram necessário o uso
+                        de SQL Server, por último, utilizei, também, PostgreSQL.
+                      </p>
+                    </section>
+                  </li>
+                  <li class="habilidade">
+                    <section class="cabecalho">
+                      <span class="sinal-expandir"><i class="fas fa-chevron-right"></i></span>
+                      <h4 class="titulo">Ferramentas -</h4>
+                      <small class="resumo">Docker, Redis, AWS S3, AWS EC2, Jira, Git, Vagrant, Visual Studio Code,
+                        Ubuntu GNU-Linux</small>
+                    </section>
+
+                    <section class="corpo">
+                      <h5 class="subtitulo">Experiência</h5>
+                      <p class="texto">
+                        O Docker se faz útil durante minha vida profissional. Serviços em nuvem,
+                        como os da AWS, também foram utilizados durante o período de trabalho. O
+                        Jira como ferramente para gerenciamento de equipes foi muito útil. O Git é o
+                        versionador de códigos utilizados nos projetos, junto com o Bitbucket ou o Github.
+                        Durante o trabalho, faculdade e vida pessoal, adquiri experiência em Ubuntu.
+                        O Vagrante foi utilizado, inicialmente, junto ao Laravel com o PHP.
+                      </p>
+                    </section>
+                  </li>
+                </ul>
+              </section>
+              <section class="cursos mt-5">
+                <h3>
+                  <span class="sinal-seta">></span>
+                  <span class="subtitulo">Cursos</span>
+                </h3>
+                <p class="texto">Os cursos a seguir possuem certificado ou repositórios para comprovar suas
+                  autenticidades.</p>
+                <ul class="lista-habilidades">
+                  <li class="habilidade">
+                    <section class="cabecalho">
+                      <span class="sinal-expandir"><i class="fas fa-chevron-down"></i></span>
+                      <h4 class="titulo">Desenvolvimento Web -</h4>
+                      <small class="resumo">Foco no desenvolvimentos front-end e back-end.</small>
+                    </section>
+
+                    <section class="corpo">
+                      <small><strong>Iniciado em:</strong> janeiro de 2019</small>
+                      <p class="texto">O curso de <a href="https://www.udemy.com/course/web-completo/" target="_blank"
+                          class="link rounded px-1">Desenvolvimento Web</a> <i class="fas fa-external-link-alt"></i> é
+                        oferecido pela Udemy. Conta com 20 projetos, tem mais de 107 horas de aulas e possui mais de 550
+                        aulas.</p>
+                      <p class="texto">Este curso pôde me proporcionar um bom conhecimento em desenvolvimento web,
+                        passando desde HTML, CSS e JavaScript, indo até PHP com PDO, MySQL, PHPMyAdmin, AJAX, padrão de
+                        arquitetura MVC etc.</p>
+                      <a href="https://github.com/ricardo-fo/cursos/tree/master/desenvolvimento-web" target="_blank"
+                        class="bg-secondary text-light rounded px-1 d-inline-block mt-2">
+                        <small>Respositório</small>
+                      </a>
+                    </section>
+                  </li>
+                </ul>
+              </section>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Página projetos -->
+    <section id="projetos" class="secao projetos">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="titulo">Projetos</h2>
+            <article class="conteudo">
+              <!-- Timeline -->
+              <ul class="timeline">
+                <li class="item left">
+                  <div class="projeto">
+                    <h2>
+                      <a href="https://github.com/ricardo-fo/movies-api" target="_blank" class="subtitulo">API de
+                        filmes</a>
+                      <span class="simbolo-link" title="Clique no link ao lado!"><i class="fas fa-link"></i></span>
+                    </h2>
+                    <small>Feito utilizando: NodeJS, NestJS, Express, Prisma, JWT, PostgreSQL, Redis, Bull</small>
+                    <hr />
+                    <p class="texto">
+                      Um projeto para estudo do NestJS, feito com NodeJS e Express, onde algumas
+                      funcionalidades foram desenvolvidas, como o agendamento de emails usando o
+                      Bull junto ao Redis e o Nodemailer, com autenticação usando JWT, o ORM foi
+                      em Prisma, com um banco de dados em PostgreSQL.
+                    </p>
+                  </div>
+                </li>
+                <li class="item right">
+                  <div class="projeto">
+                    <h2>
+                      <a href="https://github.com/ricardo-fo/politicos" target="_blank" class="subtitulo">O que fazem os
+                        deputados federais?</a>
+                      <span class="simbolo-link" title="Clique no link ao lado!"><i class="fas fa-link"></i></span>
+                    </h2>
+                    <small>Feito utilizando: JavaScript, Jquery, AJAX e BootStrap</small>
+                    <hr />
+                    <p class="texto">Este projeto divulga dados de deputados federais brasileiros, isso é possível
+                      atraveś do consumo da API de <a href="https://dadosabertos.camara.leg.br/" target="_blank"
+                        class="link rounded">Dados Abertos</a> <i class="fas fa-external-link-alt"></i></p>
+                    <p class="texto">Foi desenvolvido em 2019, feito em um grupo de três alunos para um trabalho
+                      universitário.</p>
+                  </div>
+                </li>
+                <li class="item left">
+                  <div class="projeto">
+                    <h2>
+                      <a href="https://ricardo-fo.github.io/projetos/Jogo-mata-mosquito/index.html" target="_blank"
+                        class="subtitulo">Jogo Mata Mosquito</a>
+                      <span class="simbolo-link" title="Clique no link ao lado!"><i class="fas fa-link"></i></span>
+                    </h2>
+                    <small>Feito utilizando: JavaScript, HTML e CSS</small>
+                    <hr />
+                    <p class="texto">Este jogo, feito utilizando apenas JavaScript, HTML e CSS, foi um dos projetos
+                      iniciais propostos durante o ínicio de um curso online que fiz. O jogo tem como objetivo matar o
+                      maior número possível de mosquitos na menor quantidade de tempo. Foi feito em 2019.</p>
+                  </div>
+                </li>
+                <li class="item right">
+                  <div class="projeto">
+                    <h2>
+                      <a href="https://ricardo-fo.github.io/projetos/Spotify/" target="_blank" class="subtitulo">Clone
+                        do layout do Spotify</a>
+                      <span class="simbolo-link" title="Clique no link ao lado!"><i class="fas fa-link"></i></span>
+                    </h2>
+                    <small>Feito utilizando: BootStrap, HTML e CSS</small>
+                    <hr />
+                    <p class="texto">Um clone do layout do Spotify feito durante um dos cursos profissionalizantes.</p>
+                  </div>
+                </li>
+                <li class="item left">
+                  <div class="projeto">
+                    <h2>
+                      <a href="https://github.com/ricardo-fo/cobertura_vacinal" target="_blank"
+                        class="subtitulo">Cobertura Vacinal</a>
+                      <span class="simbolo-link" title="Clique no link ao lado!"><i class="fas fa-link"></i></span>
+                    </h2>
+                    <small>Feito utilizando: C</small>
+                    <hr />
+                    <p class="texto">Como um trabalho de universitário, pedido na disciplina de Estrurtura de Dados II,
+                      foi proposto a criação de uma aplicação, utilizando conceitos de estruturas de dados, como árvores
+                      e hashing, e a linguagem de programação C, que lê arquivos do tipo CSV, com dados sobre a
+                      cobertura vacinal de todos os municípios do Brasil. Após ler o arquivo, a aplicação deve oferecer
+                      opções ao usuário como 'exibir as n cidades (código, nome e cobertura vacinal) com maior cobertura
+                      vacinal' e 'exibir as n cidades (código, nome e cobertura vacinal) com menor cobertura vacinal'.
+                      Foi desenvolvido em um grupo de três alunos, no ano de 2019.</p>
+                  </div>
+                </li>
+              </ul>
+              <div class="text-center bg-light py-2 my-3 rounded">Para ver mais projetos, visite meu <a href="#contato"
+                  class="link px-1 rounded">Github</a> =)</div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Página contato -->
+    <section id="contato" class="secao contato">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="titulo">Entre em contato</h2>
+            <article class="conteudo">
+              <!-- Lista de contatos -->
+              <ul class="lista-contatos">
+                <li class="item">
+                  <h3 class="subtitulo rounded">Telefone</h3>
+                  <p class="info">+55 (13) 97413-7872</p>
+                </li>
+                <li class="item">
+                  <h3 class="subtitulo rounded">E-mail</h3>
+                  <p class="info">ricardofo.366@gmail.com</p>
+                </li>
+                <li class="item">
+                  <h3 class="subtitulo rounded">Github</h3>
+                  <br />
+                  <a href="https://github.com/ricardo-fo/" target="_blank" class="link rounded">ricardo-fo</a>
+                </li>
+                <li class="item">
+                  <h3 class="subtitulo rounded">Linkedin</h3>
+                  <br />
+                  <a href="https://www.linkedin.com/in/ricardo-oliveira-gj/" target="_blank"
+                    class="link rounded">ricardo-oliveira-gj</a>
+                </li>
+              </ul>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="rodape">
+    <h3 class="criador">Criado por Ricardo Oliveira - 2019</h3>
+  </footer>
+
+  <!-- Scripts -->
+  <script type="text/javascript" src="js/funcoes.js"></script>
+</body>
+
 </html>
