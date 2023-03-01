@@ -40,6 +40,7 @@
       var begin = 2018;
       var currentYear = (new Date()).getFullYear();
       document.getElementById("yearsAsDev").innerHTML = currentYear - begin;
+      document.getElementById("currentYear").innerHTML = currentYear;
     }
   </script>
 
@@ -662,7 +663,7 @@
   </main>
 
   <footer class="rodape">
-    <h3 class="criador">Criado por Ricardo Oliveira - 2019</h3>
+    <h3 class="criador">Criado por Ricardo Oliveira - <span id="currentYear"></span></h3>
   </footer>
 
   <!-- Scripts -->
