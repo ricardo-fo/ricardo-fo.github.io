@@ -35,11 +35,19 @@
   <link rel="stylesheet" type="text/css" media="screen and (max-device-width: 990px)" href="css/mobile.css" />
   <link rel="stylesheet" type="text/css" media="screen and (min-device-width: 991px)" href="css/desktop.css" />
 
+  <script>
+    function getCurrentYearsAsDev() {
+      var begin = 2018;
+      var currentYear = (new Date()).getFullYear();
+      document.getElementById("yearsAsDev").innerHTML = currentYear - begin;
+    }
+  </script>
+
   <title>Ricardo Oliveira | Desenvolvimento Web</title>
 
 </head>
 
-<body>
+<body onload="getCurrentYearsAsDev()">
   <nav class="navbar navbar-expand-lg fixed-top navbar-dark nav-menu">
     <!-- Seção do logotipo -->
     <a class="navbar-brand" href="#">
@@ -143,21 +151,25 @@
                       <!-- Texto de apresentação -->
                       <br>
                       <span class="texto hidden before-link" style="display: none">
-                        Bem-vindo(a)! Chamo-me Ricardo Oliveira, sou Desenvolvedor Web Full-Stack.
-                        Desenvolvo sites utilizando tecnologias como NodeJS, PHP,
-                        VueJS, MySQL, SQL Server etc.<br>Nasci no ano de 2000, no Guarujá, uma
-                        cidade litorânea do estado de São Paulo. Atualmente, sou estudante de
-                        bacharelado do curso de Ciência da Computação pela
+                        Bem-vindo(a)! Chamo-me Ricardo Oliveira, sou Desenvolvedor Backend 
+                        há <span id="yearsAsDev"></span> anos. Já trabalhei com tecnologias como
+                        C# (.NET Core, Dapper, EntityFramework), NodeJS (NestJS, Express, Prisma), 
+                        PHP (Laravel, Twig), SQL (PL SQL/Oracle, T-SQL/SQL Server, MySQL, Postgres), 
+                        Docker, AWS, Trello, Jira etc. <br>
+                        Sou bacharel em Ciência da Computação pela 
                       </span>
                       <a href="https://unisantos.br" target="_blank" class="link hidden"
                         style="display: none">Universidade Católica de Santos <i class="fas fa-external-link-alt"></i>
                       </a>
-                      <span class="texto hidden after-link" style="display: none"> tendo iniciado em janeiro de
-                        2018.<br><br>
-                        Busco sempre aprender e desenvolver habilidades novas de forma independente,
-                        ou seja, tendo os estudos como um processo constante, que vão além da área
-                        acadêmica e fazem-se presentes no dia-a-dia. Almejo fazer grandes contribuições
-                        e ser lembrado por ter participado delas.
+                      <span class="texto hidden after-link" style="display: none"> (2018 - 2021). Além disso, 
+                        estou realizando uma pós-graduação em Arquitetura de Soluções pela 
+                      <a href="https://www.pucminas.br/" target="_blank" class="link hidden"
+                        style="display: none">PUC Minas <i class="fas fa-external-link-alt"></i>
+                      </a> (2022 - 2023).
+                      <span class="texto hidden after-link" style="display: none">
+                        <br><br>
+                        Possuo experiência em diversas startups, competições de programação, trabalho em equipe e
+                        vivência como Scrum Master e líder de um pequeno time de backend.
                       </span>
                       <br>
                       <span class="nome hidden" style="display: none">ricardo@ubuntu
